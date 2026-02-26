@@ -12,7 +12,8 @@ import {
   School, Assignment, Quiz, Computer, Science, BusinessCenter, 
   Functions, HistoryEdu, Gavel, Psychology, People, BarChart, 
   LocalHospital, Biotech, PsychologyAlt, MenuBook, Home as HomeIcon,
-  Star as StarIcon, Info as InfoIcon, Close as CloseIcon, ContactSupport
+  Star as StarIcon, Info as InfoIcon, Close as CloseIcon, ContactSupport,
+  AutoStories // Added for a general subject icon
 } from '@mui/icons-material';
 import styles from './navbar.module.scss';
 
@@ -48,13 +49,14 @@ const Navbar = () => {
     { name: "Statistics Class", icon: <BarChart /> }
   ];
 
-  const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+    setOpenDropdown(null); // Close any open dropdown when closing drawer
+  };
+
   const handleDropdown = (name: string) => setOpenDropdown(openDropdown === name ? null : name);
 
-  // Helper function to check if a link is active
   const isActive = (path: string) => pathname === path;
-  
-  // Helper to check if any child of a category is active (for Services/Subjects)
   const isCategoryActive = (basePath: string) => pathname.startsWith(basePath);
 
   return (
@@ -80,7 +82,7 @@ const Navbar = () => {
               </Link>
             </Box>
 
-            {/* CENTER: NAV LINKS */}
+            {/* CENTER: NAV LINKS (Desktop) */}
             <Box className={styles.centerNav}>
               <Link href="/" className={`${styles.navLink} ${isActive('/') ? styles.active : ''}`}>
                 Home
@@ -164,15 +166,21 @@ const Navbar = () => {
           <Divider />
           
           <List className={styles.mobileList}>
+            {/* Home Link */}
             <ListItem className={`${styles.mobileListItem} ${isActive('/') ? styles.mobActive : ''}`}>
               <Link href="/" onClick={handleDrawerToggle}><HomeIcon /> Home</Link>
             </ListItem>
 
+            {/* About Link */}
             <ListItem className={`${styles.mobileListItem} ${isActive('/about-us') ? styles.mobActive : ''}`}>
               <Link href="/about-us" onClick={handleDrawerToggle}><InfoIcon /> About Us</Link>
             </ListItem>
 
-            <ListItem className={`${styles.mobileListItem} ${isCategoryActive('/services') ? styles.mobActive : ''}`} onClick={() => handleDropdown('ser')}>
+            {/* Services Dropdown (Mobile) */}
+            <ListItem 
+              className={`${styles.mobileListItem} ${isCategoryActive('/services') ? styles.mobActive : ''}`} 
+              onClick={() => handleDropdown('ser')}
+            >
               <Box className={styles.labelWithIcon}><School /> Services</Box>
               <KeyboardArrowDown sx={{ transform: openDropdown === 'ser' ? 'rotate(180deg)' : 'none', transition: '0.3s' }} />
             </ListItem>
@@ -189,10 +197,33 @@ const Navbar = () => {
               </div>
             </Collapse>
 
+            {/* --- SUBJECTS DROPDOWN (NEW IN MOBILE) --- */}
+            <ListItem 
+              className={`${styles.mobileListItem} ${isCategoryActive('/subjects') ? styles.mobActive : ''}`} 
+              onClick={() => handleDropdown('sub')}
+            >
+              <Box className={styles.labelWithIcon}><AutoStories /> Subjects</Box>
+              <KeyboardArrowDown sx={{ transform: openDropdown === 'sub' ? 'rotate(180deg)' : 'none', transition: '0.3s' }} />
+            </ListItem>
+            <Collapse in={openDropdown === 'sub'} timeout="auto" unmountOnExit>
+              <div className={styles.mobileSubList}>
+                {subjects.map(sub => {
+                  const href = `/subjects/${sub.name.toLowerCase().replace(/ /g, '-')}`;
+                  return (
+                    <Link key={sub.name} href={href} onClick={handleDrawerToggle} className={isActive(href) ? styles.mobSubActive : ''}>
+                      {sub.icon} {sub.name}
+                    </Link>
+                  );
+                })}
+              </div>
+            </Collapse>
+
+            {/* Reviews Link */}
             <ListItem className={`${styles.mobileListItem} ${isActive('/reviews') ? styles.mobActive : ''}`}>
               <Link href="/reviews" onClick={handleDrawerToggle}><StarIcon /> Reviews</Link>
             </ListItem>
 
+            {/* Mobile Contact Button */}
             <Box sx={{ p: 2, mt: 2 }}>
               <Link href="/contact-us" className={styles.ctaBtnMob} onClick={handleDrawerToggle}>
                 <ContactSupport /> Contact Us
