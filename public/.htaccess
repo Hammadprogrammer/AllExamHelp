@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# 1. Force HTTPS and Remove WWW (Final Version: https://hireclassbuddy.com)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.hireclassbuddy\.com [NC]
+RewriteRule ^(.*)$ https://hireclassbuddy.com/$1 [L,R=301]
+
+# 2. Redirect index.php or default.php to Home Page
+RewriteCond %{THE_REQUEST} ^.*/(index|default)\.php [NC]
+RewriteRule ^(.*)(index|default)\.php$ https://hireclassbuddy.com/ [R=301,L]
+
+# 3. Clean HTML extensions (Optional but good for SEO)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
