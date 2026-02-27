@@ -13,19 +13,19 @@ const WorkProcess = () => {
       id: 1,
       icon: <AssignmentOutlined />,
       title: "Submit Your Requirements",
-      desc: "Reach out to us through live chat, whatsapp, or call. Submit your exam requirements such as format, date, time, guidelines, etc."
+      desc: "Reach out to us through live chat, whatsapp, or call. Submit your exam requirements such as format, date, time, guidelines, etc. The more information you share, the better we can customize our approach to meet your needs."
     },
     {
       id: 2,
       icon: <PaymentsOutlined />,
       title: "Make Payments",
-      desc: "Once everything is confirmed, proceed to pay someone to take my online exam by making the transaction through the given payment methods."
+      desc: "Once everything is confirmed, proceed to pay someone to take my online exam by making the transaction through the given payment methods. Rest assured that our payment methods are secured and completely transparent."
     },
     {
       id: 3,
       icon: <EmojiEventsOutlined />,
       title: "Enjoy Good Grades",
-      desc: "When the big day arrives then our professionals handle everything expertly while ensuring that your decision was the right one."
+      desc: "When the big day arrives then our professionals handle everything expertly while ensuring that your decision to hire our expert to take my test for me was the right one. So, enjoy the score which you will achieve through our exam taking service."
     }
   ];
 

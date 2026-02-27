@@ -47,14 +47,14 @@
   &:hover {
     .iconWrapper {
       transform: scale(1.1) rotate(10deg);
-      color: #1e88e5;
+      color: #ffab2e;
     }
   }
 }
 
 .iconWrapper {
   font-size: 50px;
-  color: #3b82f6; // Professional Blue from image_0c1b34.png
+  color: #ffab2e; // Professional Blue from image_0c1b34.png
   margin-bottom: 25px;
   transition: all 0.4s ease;
   display: flex;
@@ -85,7 +85,7 @@
   top: 20%;
   height: 60%;
   width: 1px;
-  background-color: #3b82f6;
+  background-color: #ffab2e;
   opacity: 0.5;
 
   @media (max-width: 992px) {
