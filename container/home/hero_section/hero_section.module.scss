@@ -1,3 +1,6 @@
+.main{
+background-color: #061f3a;
+}
 .heroSection {
   background-color: #061f3a;
   color: #ffffff;
@@ -8,6 +11,8 @@
   gap: 40px;
   min-height: 90vh;
   font-family: 'Inter', sans-serif;
+  max-width: 1560px;
+  margin: auto;
 
   @media (max-width: 992px) {
     flex-direction: column;
@@ -21,7 +26,7 @@
   flex: 1.2;
 
   .mainHeading {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 800;
     margin-bottom: 20px;
     // line-height: 1.1;

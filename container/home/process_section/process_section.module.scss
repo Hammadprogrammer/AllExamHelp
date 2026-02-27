@@ -1,0 +1,94 @@
+.processSection {
+  padding: 0px 0px 60px;
+  background-color: #ffffff;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+
+  .mainTitle {
+    font-size: 36px;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 20px;
+    @media (max-width: 768px) { font-size: 18px; }
+  }
+
+  .subTitle {
+    font-size: 16px;
+    color: #444;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+      @media (max-width: 768px) { font-size: 14px; }
+  }
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+.stepCard {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+
+  &:hover {
+    .iconWrapper {
+      transform: scale(1.1) rotate(10deg);
+      color: #1e88e5;
+    }
+  }
+}
+
+.iconWrapper {
+  font-size: 50px;
+  color: #3b82f6; // Professional Blue from image_0c1b34.png
+  margin-bottom: 25px;
+  transition: all 0.4s ease;
+  display: flex;
+  justify-content: center;
+
+  svg {
+    font-size: 60px;
+  }
+}
+
+.stepTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.stepDesc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+}
+
+// Vertical Blue Divider from image_0c1b34.png
+.divider {
+  position: absolute;
+  right: -10px;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background-color: #3b82f6;
+  opacity: 0.5;
+
+  @media (max-width: 992px) {
+    display: none; // Mobile pe line chupa di
+  }
+}

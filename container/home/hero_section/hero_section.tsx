@@ -4,6 +4,7 @@ import styles from './hero_section.module.scss';
 // Next.js (SSG) focus: Content static hai isliye ye server par hi render ho jayega.
 const Hero: React.FC = () => {
   return (
+    <div className={styles.main}>
     <section className={styles.heroSection}>
       {/* LEFT CONTENT */}
       <div className={styles.contentSide}>
@@ -54,6 +55,7 @@ const Hero: React.FC = () => {
         </form>
       </div>
     </section>
+    </div>
   );
 };
 

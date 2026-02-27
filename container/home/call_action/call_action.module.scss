@@ -1,0 +1,95 @@
+.ctaSection {
+  padding: 80px 0;
+  // New unique gradient background
+  background: linear-gradient(135deg, #01112b 45%, #0a3376 100%);
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+
+  // Adding a subtle glow effect in the background
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 171, 46, 0.03) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 10px;
+  }
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Ensures center alignment on all screens
+}
+
+.mainHeading {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  max-width: 900px;
+
+  span {
+    color: #ffab2e; 
+  }
+
+  @media (max-width: 768px) {
+    font-size: 18px; 
+    text-align: center;
+  }
+}
+
+.subHeading {
+  font-size: 18px;
+  color: #94a3b8;
+  margin-bottom: 40px;
+  max-width: 700px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.buttonWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.ctaButton {
+  background-color: #ffab2e;
+  color: #1a1f2b;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 16px 40px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 20px rgba(255, 171, 46, 0.2);
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: #fca110;
+    box-shadow: 0 15px 30px rgba(255, 171, 46, 0.4);
+  }
+
+  @media (max-width: 600px) {
+    width: 100%; // Full width button on mobile for better alignment
+    max-width: 320px;
+    font-size: 16px;
+  }
+}

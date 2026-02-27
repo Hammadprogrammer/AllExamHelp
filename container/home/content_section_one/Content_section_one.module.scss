@@ -1,0 +1,122 @@
+.contentSection {
+  padding: 40px 0;
+  background-color: #ffffff;
+
+  @media (max-width: 768px) {
+    padding: 20px 0;
+  }
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center; 
+  background: #002147; 
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+  @media (max-width: 992px) {
+    flex-direction: column-reverse; 
+  }
+}
+
+.textContent {
+  flex: 1;
+  padding: 40 ;
+
+  @media (max-width: 768px) {
+    padding: 35px 20px;
+    text-align: center;
+  }
+}
+
+.mainHeading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #e2e8f0;
+  margin-bottom: 30px;
+  @media (max-width: 768px) {
+     font-size: 14px;
+  }
+
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.primaryBtn {
+  background-color: #ffab2e;
+  color: #1a1f2b;
+  padding: 14px 30px;
+  border-radius: 6px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  
+  &:hover { 
+    background-color: #e69a28; 
+    transform: translateY(-2px);
+  }
+}
+
+.secondaryBtn {
+  background-color: #5b748e;
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover { 
+    background-color: #4a5f75;
+    transform: translateY(-2px);
+  }
+}
+
+.imageWrapper {
+  flex: 1;
+  display: flex;
+  align-self: stretch; // Desktop par height match karega
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+  }
+
+  @media (max-width: 992px) {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    
+    img {
+        object-fit: cover; 
+    }
+  }
+}
