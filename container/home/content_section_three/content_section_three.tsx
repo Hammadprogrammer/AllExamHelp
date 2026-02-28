@@ -4,6 +4,7 @@ import styles from './content_section_three.module.scss';
 
 const ContentSectionThree = () => {
   return (
+    <div  className={styles.main}>
     <section className={styles.contentSectionThree}>
       {/* Upper Flex Section */}
       <div className={styles.topFlex}>
@@ -68,6 +69,7 @@ const ContentSectionThree = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 
