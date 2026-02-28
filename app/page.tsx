@@ -8,6 +8,8 @@ import StatsSection from '@/container/home/stats_section/stats_section'
 import ContentSectionTwo from '@/container/home/content_section_two/content_section_two'
 import ProcessSection from '@/container/home/process_section/process_section'
 import ServicesSection from '@/container/home/service_section/service_section'
+import ContentSectionThree from '@/container/home/content_section_three/content_section_three'
+import Testimonial from '@/container/home/testimonial/testimonial'
 
 const page = () => {
   return (
@@ -21,6 +23,8 @@ const page = () => {
     <ContentSectionTwo/>
     <ProcessSection/>
     <ServicesSection/>
+    <ContentSectionThree/>
+    <Testimonial/>
    </>
   )
 }
