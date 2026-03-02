@@ -1,6 +1,11 @@
 .processSection {
-  padding: 0px 0px 60px;
+  padding: 50px 0px 80px;
   background-color: #ffffff;
+      @media (max-width: 768px){
+     padding: 0px 0px 30px;
+        
+      }
+  
 }
 
 .header {

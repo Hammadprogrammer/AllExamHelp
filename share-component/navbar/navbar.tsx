@@ -130,7 +130,7 @@ const Navbar = () => {
                 </Box>
               </Box>
 
-              <Link href="/reviews" className={`${styles.navLink} ${isActive('/reviews') ? styles.active : ''}`}>
+              <Link href="/reviews" className={`${styles.navLink} ${isActive('/reviews/') ? styles.active : ''}`}>
                 Reviews
               </Link>
             </Box>

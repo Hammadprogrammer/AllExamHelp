@@ -21,6 +21,7 @@ const Footer = () => {
   ];
 
   const legalLinks = [
+    // { name: "About Us", url: "/about-us" },
     { name: "Privacy Policy", url: "/privacy-policy" },
     { name: "Refund Policy", url: "/refund-policy" },
     { name: "Terms & Conditions", url: "/terms-and-conditions" },
