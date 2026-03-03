@@ -68,7 +68,7 @@
     .footerLink {
       text-decoration: none;
       color: #b0b3b8;
-      font-size: 14px;
+      font-size: 12px;
       display: flex;
       align-items: center;
       transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -174,3 +174,164 @@
     color: #ffffff;
   }
 }
+
+
+
+
+// .footerWrapper {
+//   background-color: #0e1c36;
+//   color: #ffffff;
+//   padding: 80px 0 30px;
+//   width: 100%;
+
+//   .footerGrid {
+//     display: grid;
+//     // Adjusted fractions to allow a single long column for subjects
+//     grid-template-columns: 1.2fr 0.8fr 1fr 1.2fr; 
+//     gap: 40px;
+
+//     @media (max-width: 1024px) {
+//       grid-template-columns: 1fr 1fr;
+//     }
+
+//     @media (max-width: 600px) {
+//       grid-template-columns: 1fr;
+//     }
+//   }
+// }
+
+// .footerCol {
+//   .colTitle {
+//     font-size: 19px;
+//     font-weight: 700;
+//     margin-bottom: 30px;
+//     color: #fff;
+//     position: relative;
+//     &::after {
+//       content: '';
+//       position: absolute;
+//       left: 0;
+//       bottom: -10px;
+//       width: 45px;
+//       height: 3px;
+//       background: #f9a825;
+//       border-radius: 2px;
+//     }
+//   }
+// }
+
+// .linkList {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+
+//   &.mobileTwoCol {
+//     @media (max-width: 600px) {
+//       display: grid;
+//       grid-template-columns: 1fr 1fr;
+//       gap: 10px;
+//     }
+//   }
+
+//   &.subjectGrid {
+//     display: grid;
+//     grid-template-columns: 1fr; // Desktop: Single column
+//     gap: 8px 15px;
+
+//     @media (max-width: 600px) {
+//         grid-template-columns: 1fr 1fr; // Mobile: Two columns (as per your original)
+//     }
+//   }
+
+//   li {
+//     margin-bottom: 12px;
+    
+//     .footerLink {
+//       text-decoration: none;
+//       color: #b0b3b8;
+//       font-size: 13px; // Slightly increased for readability
+//       display: flex;
+//       align-items: center;
+//       transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+//       .arrow {
+//         font-size: 16px;
+//         color: #f9a825;
+//         margin-right: 6px;
+//         transition: transform 0.3s;
+//       }
+
+//       &:hover {
+//         color: #ffffff;
+//         transform: translateX(8px);
+//         .arrow {
+//           transform: scale(1.3);
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // ... Rest of your CSS (contactDetails, socialBox, paymentSection, bottomBar) remains exactly the same
+// .contactDetails {
+//   .contactItem {
+//     display: flex;
+//     align-items: center;
+//     gap: 12px;
+//     margin-bottom: 18px;
+//     font-size: 14px;
+//     color: #b0b3b8;
+//     text-decoration: none;
+//     transition: 0.3s;
+//     .icon { color: #f9a825; font-size: 20px; }
+//     &:hover { color: #f9a825; .icon { transform: scale(1.1); } }
+//   }
+// }
+
+// .socialBox {
+//   display: flex;
+//   gap: 12px;
+//   margin-top: 20px;
+//   a {
+//     color: #fff;
+//     background: rgba(255, 255, 255, 0.05);
+//     width: 38px;
+//     height: 38px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 50%;
+//     transition: 0.4s;
+//     &:hover {
+//       background: #f9a825;
+//       transform: translateY(-5px);
+//       box-shadow: 0 5px 15px rgba(249, 168, 37, 0.3);
+//     }
+//   }
+// }
+
+// .paymentSection {
+//   margin-top: 30px;
+//   p { font-size: 14px; font-weight: 600; margin-bottom: 10px; color: #ffffff; }
+//   img { filter: grayscale(0.3) contrast(1.1); transition: 0.3s; &:hover { filter: grayscale(0); } }
+// }
+
+// .divider {
+//   background-color: rgba(255, 255, 255, 0.08) !important;
+//   margin: 50px 0 25px !important;
+// }
+
+// .bottomBar {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 20px;
+//   .legalLinks {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     gap: 15px 30px;
+//     a { color: #babec5; font-size: 13px; text-decoration: none; transition: 0.3s; &:hover { color: #f9a825; } }
+//   }
+//   .copyright { font-size: 12px; color: #ffffff; }
+// }
