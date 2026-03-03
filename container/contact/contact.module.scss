@@ -1,0 +1,189 @@
+// Variables
+$notion-bg: #051635;
+$notion-text: #ffffff;
+$notion-muted: #a0aec0;
+$notion-accent: #f39c12;
+$notion-border: rgba(243, 156, 18, 0.3);
+
+.main {
+  background-color: $notion-bg;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  gap: 60px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+}
+
+.bgGlow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba($notion-accent, 0.1) 0%, transparent 70%);
+  bottom: -10%;
+  right: -5%;
+  z-index: 1;
+}
+
+.textContent {
+  flex: 1;
+  z-index: 2;
+
+  .promoBadge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid $notion-border;
+    color: $notion-text;
+    padding: 6px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-bottom: 25px;
+
+    span {
+      background: $notion-accent;
+      color: $notion-bg;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-right: 10px;
+      font-size: 11px;
+    }
+  }
+
+  .title {
+    font-size: clamp(30px, 5vw, 48px);
+    color: $notion-text;
+    line-height: 1.2;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+    .highlight {
+      color: $notion-accent;
+      text-shadow: 0 0 15px rgba($notion-accent, 0.3);
+    }
+  }
+
+  .description {
+    color: $notion-muted;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 550px;
+  }
+}
+
+.featureGrid {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+
+  @media (max-width: 1024px) { justify-content: center; }
+
+  .featureItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $notion-text;
+    font-weight: 500;
+  }
+}
+
+.actionArea {
+  display: flex;
+  gap: 15px;
+  
+  @media (max-width: 1024px) { justify-content: center; }
+  @media (max-width: 480px) { flex-direction: column; }
+
+  .btnPrimary {
+    background: $notion-accent;
+    color: $notion-bg;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba($notion-accent, 0.2); }
+  }
+
+  .btnSecondary {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover { background: #fff; color: $notion-bg; }
+  }
+}
+
+.imageSection {
+  flex: 1;
+  position: relative;
+  max-width: 500px;
+  z-index: 2;
+}
+
+.animatedBorder {
+  padding: 4px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, $notion-accent, #ffffff, $notion-accent);
+  background-size: 200% auto;
+  animation: borderMove 3s linear infinite;
+
+  .imageContainer {
+    background: $notion-bg;
+    border-radius: 22px;
+    padding: 5px;
+    overflow: hidden;
+
+    .mainImg {
+      width: 100%;
+      height: auto;
+      border-radius: 18px;
+      display: block;
+    }
+  }
+}
+
+@keyframes borderMove { to { background-position: 200% center; } }
+
+.floatingCard {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .statusDot {
+    width: 10px;
+    height: 10px;
+    background: #2ecc71;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #2ecc71;
+  }
+
+  p { color: $notion-bg; margin: 0; font-size: 13px; font-weight: 600; }
+}
