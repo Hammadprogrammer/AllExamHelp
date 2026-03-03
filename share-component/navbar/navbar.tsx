@@ -51,7 +51,7 @@ const Navbar = () => {
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
-    setOpenDropdown(null); // Close any open dropdown when closing drawer
+    setOpenDropdown(null); 
   };
 
   const handleDropdown = (name: string) => setOpenDropdown(openDropdown === name ? null : name);

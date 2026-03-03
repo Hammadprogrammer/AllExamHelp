@@ -5,26 +5,48 @@ import Image from 'next/image';
 import { Container, Divider } from '@mui/material';
 import { 
   Email, Phone, Facebook, Instagram, X, 
-  ChevronRight, LocationOn
+  ChevronRight, LocationOn, WhatsApp
 } from '@mui/icons-material';
 import styles from './footer.module.scss';
 
 const Footer = () => {
-  // SSG safe way to get year
+  // SSG safe way for dynamic year
   const currentYear = new Date().getFullYear();
 
-  const quickLinks = [
-    { name: "Do My Online Class", url: "/services/online-class-help" },
-    { name: "Online Exam", url: "/services/online-exam-help" },
-    { name: "Assignment Help", url: "/services/online-assignment-help" },
-    { name: "Awards & Reviews", url: "/reviews" },
+  const services = [
+    { name: "Online Class Help", url: "/services/online-class-help" },
+    { name: "Online Exam Help", url: "/services/online-exam-help" },
+    { name: "Online Course Help", url: "/services/online-course-help" },
+    { name: "Online Assignment Help", url: "/services/online-assignment-help" },
+    { name: "Online Test & Quizzes", url: "/services/online-test-&-quizzes" },
+    { name: "Online Proctored Exam", url: "/services/online-proctored-exam" }
   ];
 
-  const legalLinks = [
-    // { name: "About Us", url: "/about-us" },
+  const subjects = [
+    { name: "Biology Class", url: "/subjects/biology-class" },
+    { name: "Business Class", url: "/subjects/business-class" },
+    { name: "Chemistry Class", url: "/subjects/chemistry-class" },
+    { name: "Computer Class", url: "/subjects/computer-class" },
+    { name: "Economics Class", url: "/subjects/economics-class" },
+    { name: "Finance Class", url: "/subjects/finance-class" },
+    { name: "History Class", url: "/subjects/history-class" },
+    { name: "Law Class", url: "/subjects/law-class" },
+    { name: "Math Class", url: "/subjects/math-class" },
+    { name: "Nursing Class", url: "/subjects/nursing-class" },
+    { name: "Philosophy Class", url: "/subjects/philosophy-class" },
+    { name: "Physics Class", url: "/subjects/physics-class" },
+    { name: "Psychology Class", url: "/subjects/psychology-class" },
+    { name: "Sociology Class", url: "/subjects/sociology-class" },
+    { name: "Statistics Class", url: "/subjects/statistics-class" }
+  ];
+
+  const companyLinks = [
+    { name: "Home", url: "/" },
+    { name: "About Us", url: "/about-us" },
+    { name: "Reviews", url: "/reviews" },
+    { name: "Contact Us", url: "/contact-us" },
     { name: "Privacy Policy", url: "/privacy-policy" },
-    { name: "Refund Policy", url: "/refund-policy" },
-    { name: "Terms & Conditions", url: "/terms-and-conditions" },
+    { name: "Terms & Conditions", url: "/terms-and-conditions" }
   ];
 
   return (
@@ -32,86 +54,69 @@ const Footer = () => {
       <Container maxWidth="lg">
         <div className={styles.footerGrid}>
           
-          {/* Column 1: Logo and About */}
+          {/* Logo & Intro */}
           <div className={styles.footerCol}>
             <div className={styles.logoContainer}>
               <Link href="/">
-                <Image 
-                  src="/done.png" 
-                  alt="Hire Class Buddy Logo" 
-                  width={160} 
-                  height={50} 
-                  className={styles.footerLogo}
-                  priority 
-                />
+                <Image src="/done.png" alt="Hire Class Buddy" width={160} height={50} priority />
               </Link>
             </div>
             <p className={styles.description}>
-              HireClassBuddy.com is a reputable platform providing top-notch academic assistance. 
-              Our skilled specialists manage online lessons and tests to ensure your success.
+              Expert academic assistance at your fingertips. We help you navigate online classes and exams with ease.
             </p>
-          </div>
-
-          {/* Column 2: Quick Links */}
-          <div className={styles.footerCol}>
-            <h4 className={styles.colTitle}>Quick Links</h4>
-            <nav aria-label="Quick links">
-              <ul className={styles.linkList}>
-                {quickLinks.map((item) => (
-                  <li key={item.name}>
-                    <Link href={item.url} className={styles.footerLink}>
-                      <ChevronRight className={styles.arrow} /> {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
-
-          {/* Column 3: Company */}
-          <div className={styles.footerCol}>
-            <h4 className={styles.colTitle}>Company</h4>
-            <nav aria-label="Legal links">
-              <ul className={styles.linkList}>
-                {legalLinks.map((item) => (
-                  <li key={item.name}>
-                    <Link href={item.url} className={styles.footerLink}>
-                      <ChevronRight className={styles.arrow} /> {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
             <div className={styles.socialBox}>
-              <Link href="#" aria-label="Facebook"><Facebook /></Link>
-              <Link href="#" aria-label="Instagram"><Instagram /></Link>
-              <Link href="#" aria-label="Twitter"><X /></Link>
+              <Link href="#" className={styles.fb}><Facebook /></Link>
+              <Link href="#" className={styles.insta}><Instagram /></Link>
+              <Link href="#" className={styles.tw}><X /></Link>
+              <Link href="https://wa.me/447400465932" className={styles.wa}><WhatsApp /></Link>
             </div>
           </div>
 
-          {/* Column 4: Contact */}
+          {/* Services - Row wise on mobile */}
           <div className={styles.footerCol}>
-            <h4 className={styles.colTitle}>Connect with Us</h4>
+            <h4 className={styles.colTitle}>Services</h4>
+            <ul className={`${styles.linkList} ${styles.mobileTwoCol}`}>
+              {services.map((item) => (
+                <li key={item.name}>
+                  <Link href={item.url} className={styles.footerLink}>
+                    <ChevronRight className={styles.arrow} /> {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Subjects - Row wise always */}
+          <div className={styles.footerCol}>
+            <h4 className={styles.colTitle}>Subjects</h4>
+            <ul className={`${styles.linkList} ${styles.subjectGrid}`}>
+              {subjects.map((sub) => (
+                <li key={sub.name}>
+                  <Link href={sub.url} className={styles.footerLink}>
+                    <ChevronRight className={styles.arrow} /> {sub.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact Details */}
+          <div className={styles.footerCol}>
+            <h4 className={styles.colTitle}>Connect With Us</h4>
             <div className={styles.contactDetails}>
+              <a href="mailto:info@hireclassbuddy.com" className={styles.contactItem}>
+                <Email className={styles.icon} /> <span>info@hireclassbuddy.com</span>
+              </a>
+              <a href="tel:+447400465932" className={styles.contactItem}>
+                <Phone className={styles.icon} /> <span>+44 7400 465932</span>
+              </a>
               <div className={styles.contactItem}>
-                <Email /> <a href="mailto:info@hireclassbuddy.com">info@hireclassbuddy.com</a>
-              </div>
-              <div className={styles.contactItem}>
-                <Phone /> <a href="tel:+447400465932">+44 7400 465932</a>
-              </div>
-              <div className={styles.contactItem}>
-                <LocationOn /> <span>124 City Road, London, EC1V2NX</span>
+                <LocationOn className={styles.icon} /> <span>124 City Road, London, EC1V2NX</span>
               </div>
             </div>
-
-            <p className={styles.paymentHeading}>We Accept Major Cards</p>
-            <div className={styles.paymentIcons}>
-              <Image 
-                src="/paymenticon.png" 
-                alt="Visa, Mastercard, American Express accepted" 
-                width={220} 
-                height={35} 
-              />
+            <div className={styles.paymentSection}>
+              <p>We Accept Major Cards</p>
+              <Image src="/paymenticon.png" alt="Accepted Payments" width={200} height={35} />
             </div>
           </div>
 
@@ -119,11 +124,15 @@ const Footer = () => {
 
         <Divider className={styles.divider} />
 
-     
-
-        <div className={styles.copyrightSection}>
-          <p suppressHydrationWarning>
-            Copyright © {currentYear} Hire Class Buddy. All Rights Reserved.
+        {/* Bottom Bar */}
+        <div className={styles.bottomBar}>
+          <div className={styles.legalLinks}>
+            {companyLinks.map((link) => (
+              <Link key={link.name} href={link.url}>{link.name}</Link>
+            ))}
+          </div>
+          <p className={styles.copyright} suppressHydrationWarning>
+              Copyright © {currentYear} Hire Class Buddy. All Rights Reserved.
           </p>
         </div>
       </Container>
