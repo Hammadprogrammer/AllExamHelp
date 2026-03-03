@@ -1,0 +1,162 @@
+// Color Variables
+$bg-dark: #051635;
+$accent-gold: #f39c12;
+$text-dim: #a0aec0;
+$glass-border: rgba(255, 255, 255, 0.1);
+
+.formSection {
+  background-color: $bg-dark;
+  padding: 120px 5%;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, $glass-border, transparent);
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: flex-start;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    text-align: center;
+  }
+}
+
+.infoSide {
+  .tag {
+    color: $accent-gold;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  .heading {
+    font-size: clamp(32px, 4.5vw, 52px);
+    color: white;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 25px;
+
+    .goldText {
+      color: $accent-gold;
+      background: linear-gradient(to bottom, $accent-gold, #ffcc33);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .subText {
+    color: $text-dim;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+
+  .featureList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .feature {
+      display: flex;
+      gap: 20px;
+      text-align: left;
+      
+      .dot {
+        width: 12px; height: 12px;
+        background: $accent-gold;
+        border-radius: 50%;
+        margin-top: 6px;
+        box-shadow: 0 0 10px $accent-gold;
+      }
+
+      h4 { color: white; font-size: 18px; margin: 0 0 5px; }
+      p { color: $text-dim; font-size: 14px; margin: 0; }
+    }
+  }
+}
+
+.formContainer {
+  position: relative;
+}
+
+.animatedBorder {
+  padding: 4px;
+  border-radius: 28px;
+  background: linear-gradient(90deg, $accent-gold, #ffffff, $accent-gold);
+  background-size: 200% auto;
+  animation: moveBorder 4s linear infinite;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+
+  .formCard {
+    background: #0a1f44;
+    padding: 45px;
+    border-radius: 24px;
+
+    .formTitle {
+      color: white;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+}
+
+.mainForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+
+    label { color: white; font-size: 14px; font-weight: 600; }
+
+    .notionInput, .notionSelect, .notionTextarea {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid $glass-border;
+      padding: 14px;
+      border-radius: 10px;
+      color: white;
+      font-size: 15px;
+      transition: all 0.3s ease;
+
+      &:focus {
+        outline: none;
+        border-color: $accent-gold;
+        background: rgba(255, 255, 255, 0.08);
+      }
+    }
+  }
+
+  .submitBtn {
+    background: $accent-gold;
+    color: $bg-dark;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+@keyframes moveBorder { to { background-position: 200% center; } }
