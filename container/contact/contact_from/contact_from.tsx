@@ -32,6 +32,7 @@ const TrustItem = ({ icon, title, desc }: { icon: React.ReactNode, title: string
 const ContactForm = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   
   const initialState = {
     fullName: '',
@@ -52,6 +53,7 @@ const ContactForm = () => {
     } else {
       setFormData(prev => ({ ...prev, [name]: value }));
     }
+    // Type hone par error remove karna
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: null }));
     }
@@ -59,26 +61,56 @@ const ContactForm = () => {
 
   const validate = () => {
     let tempErrors: Record<string, string> = {};
+    
     if (!formData.fullName.trim()) tempErrors.fullName = "Name is required";
+    
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) tempErrors.email = "Valid email required";
+    if (!formData.email.trim()) {
+        tempErrors.email = "Email is required";
+    } else if (!emailRegex.test(formData.email)) {
+        tempErrors.email = "Please enter a valid email";
+    }
+
     if (!formData.whatsapp) {
       tempErrors.whatsapp = "WhatsApp number is required";
     } else if (formData.whatsapp.length < 10) {
       tempErrors.whatsapp = "Minimum 10 digits required";
     }
-    if (formData.taskType === 'Select Task Type') tempErrors.taskType = "Please select a task type";
+
+    if (formData.taskType === 'Select Task Type') {
+        tempErrors.taskType = "Please select a task type";
+    }
+
     if (!formData.message.trim()) tempErrors.message = "Message cannot be empty";
+
     setErrors(tempErrors);
     return Object.keys(tempErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (validate()) {
-      setIsSubmitted(true);
-      setFormData(initialState);
-      setTimeout(() => setIsSubmitted(false), 4000);
+      setIsLoading(true);
+      try {
+        const response = await fetch('https://contact-a-pi-one.vercel.app/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          setIsSubmitted(true);
+          setFormData(initialState);
+          setTimeout(() => setIsSubmitted(false), 5000);
+        } else {
+          alert("Submission failed. Please try again.");
+        }
+      } catch (err) {
+        console.error("API Error:", err);
+        alert("Server error. Check your connection.");
+      } finally {
+        setIsLoading(false);
+      }
     }
   };
 
@@ -122,45 +154,50 @@ const ContactForm = () => {
                   </div>
 
                   <form className={styles.mainForm} onSubmit={handleSubmit} noValidate>
+                    {/* Full Name */}
                     <div className={styles.inputGroup}>
                       <input 
                         type="text" name="fullName" placeholder="Full Name" 
                         value={formData.fullName} onChange={handleChange}
-                        autoComplete="off" // Disables suggestions
+                        autoComplete="off"
                         className={errors.fullName ? styles.errorInput : ''}
                       />
-                      {errors.fullName && <span className={styles.errorText}>{errors.fullName}</span>}
+                      {errors.fullName && <span className={styles.errorText} style={{ color: 'red', fontSize: '12px', marginTop: '4px', display: 'block' }}>{errors.fullName}</span>}
                     </div>
 
+                    {/* Email */}
                     <div className={styles.inputGroup}>
                       <input 
                         type="email" name="email" placeholder="Email Address" 
                         value={formData.email} onChange={handleChange}
-                        autoComplete="off" // Disables suggestions
+                        autoComplete="off"
                         className={errors.email ? styles.errorInput : ''}
                       />
-                      {errors.email && <span className={styles.errorText}>{errors.email}</span>}
+                      {errors.email && <span className={styles.errorText} style={{ color: 'red', fontSize: '12px', marginTop: '4px', display: 'block' }}>{errors.email}</span>}
                     </div>
 
+                    {/* WhatsApp */}
                     <div className={styles.inputGroup}>
                       <input 
                         type="tel" name="whatsapp" placeholder="WhatsApp Number" 
                         value={formData.whatsapp} onChange={handleChange}
-                        autoComplete="off" // Disables suggestions
+                        autoComplete="off"
                         className={errors.whatsapp ? styles.errorInput : ''}
                       />
-                      {errors.whatsapp && <span className={styles.errorText}>{errors.whatsapp}</span>}
+                      {errors.whatsapp && <span className={styles.errorText} style={{ color: 'red', fontSize: '12px', marginTop: '4px', display: 'block' }}>{errors.whatsapp}</span>}
                     </div>
 
+                    {/* Task Dropdown */}
                     <div className={styles.dropdownContainer}>
                       <div 
                         className={`${styles.customSelect} ${isOpen ? styles.active : ''} ${errors.taskType ? styles.errorInput : ''}`}
                         onClick={() => setIsOpen(!isOpen)}
+                        style={errors.taskType ? { borderColor: 'red' } : {}}
                       >
                         {formData.taskType}
                         <KeyboardArrowDownIcon className={`${styles.arrow} ${isOpen ? styles.rotate : ''}`} />
                       </div>
-                      {errors.taskType && <span className={styles.errorText}>{errors.taskType}</span>}
+                      {errors.taskType && <span className={styles.errorText} style={{ color: 'red', fontSize: '12px', marginTop: '4px', display: 'block' }}>{errors.taskType}</span>}
                       
                       <AnimatePresence>
                         {isOpen && (
@@ -179,18 +216,26 @@ const ContactForm = () => {
                       </AnimatePresence>
                     </div>
 
+                    {/* Message */}
                     <div className={styles.inputGroup}>
                       <textarea 
                         name="message" rows={3} placeholder="Tell us about your task & deadline..."
                         value={formData.message} onChange={handleChange}
-                        autoComplete="off" // Disables suggestions
+                        autoComplete="off"
                         className={errors.message ? styles.errorInput : ''}
                       ></textarea>
-                      {errors.message && <span className={styles.errorText}>{errors.message}</span>}
+                      {errors.message && <span className={styles.errorText} style={{ color: 'red', fontSize: '12px', marginTop: '4px', display: 'block' }}>{errors.message}</span>}
                     </div>
 
-                    <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} type="submit" className={styles.submitBtn}>
-                      Send Now <RocketLaunchIcon style={{ marginLeft: '10px', fontSize: '20px' }} />
+                    <motion.button 
+                        whileHover={!isLoading ? { scale: 1.02 } : {}} 
+                        whileTap={!isLoading ? { scale: 0.98 } : {}} 
+                        type="submit" 
+                        className={styles.submitBtn}
+                        disabled={isLoading}
+                    >
+                      {isLoading ? "Processing..." : "Send Now"} 
+                      {!isLoading && <RocketLaunchIcon style={{ marginLeft: '10px', fontSize: '20px' }} />}
                     </motion.button>
                   </form>
                 </motion.div>
