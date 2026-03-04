@@ -23,7 +23,7 @@ const ContactHero = () => {
           </div>
           
           <h1 className={styles.title}>
-            Have a Question? <br />
+            Have a Question? 
             <span className={styles.highlight}>Connect with Experts</span>
           </h1>
           

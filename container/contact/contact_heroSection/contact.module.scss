@@ -24,7 +24,7 @@ $notion-border: rgba(243, 156, 18, 0.3);
   @media (max-width: 1024px) {
     flex-direction: column;
     text-align: center;
-    padding: 60px 20px ;
+    padding: 60px 10px ;
   }
 }
 
@@ -47,10 +47,13 @@ $notion-border: rgba(243, 156, 18, 0.3);
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid $notion-border;
     color: $notion-text;
-    padding: 6px 15px;
+    padding: 6px 12px;
     border-radius: 30px;
     font-size: 14px;
     margin-bottom: 25px;
+      @media (max-width: 768px) {
+   font-size: 10px;
+  }
 
     span {
       background: $notion-accent;
@@ -59,20 +62,28 @@ $notion-border: rgba(243, 156, 18, 0.3);
       padding: 2px 8px;
       border-radius: 4px;
       margin-right: 10px;
-      font-size: 11px;
+      font-size: 10px;
+   
+
     }
   }
 
   .title {
-    font-size: clamp(30px, 5vw, 48px);
+    font-size: 36px;
     color: $notion-text;
     line-height: 1.2;
     font-weight: 800;
     margin-bottom: 20px;
+    @media (max-width: 768px) {
+   font-size: 18px;
+  }
 
     .highlight {
       color: $notion-accent;
       text-shadow: 0 0 15px rgba($notion-accent, 0.3);
+        @media (max-width: 768px) {
+   font-size: 18px;
+  }
     }
   }
 
@@ -82,7 +93,11 @@ $notion-border: rgba(243, 156, 18, 0.3);
     line-height: 1.6;
     margin-bottom: 30px;
     max-width: 550px;
+         @media (max-width: 768px) {
+   font-size: 14px;
   }
+  }
+
 }
 
 .featureGrid {

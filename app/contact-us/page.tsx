@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactSection from '@/container/contact/contact'
+import ContactSection from '@/container/contact/contact_heroSection/contact'
 import ContactForm from '@/container/contact/contact_from/contact_from'
 // import Hero from '@/container/home/hero_section/hero_section'
 

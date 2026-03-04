@@ -1,6 +1,8 @@
-.main{
-background-color: #061f3a;
+.main {
+  background-color: #061f3a;
+  width: 100%;
 }
+
 .heroSection {
   background-color: #061f3a;
   color: #ffffff;
@@ -16,30 +18,23 @@ background-color: #061f3a;
 
   @media (max-width: 992px) {
     flex-direction: column;
-    padding: 40px 5%;
+    padding: 60px 5%;
     text-align: center;
-    gap: 40px;
   }
 }
 
 .contentSide {
   flex: 1.2;
+  width: 100%;
 
   .mainHeading {
     font-size: 36px;
     font-weight: 800;
     margin-bottom: 20px;
-    // line-height: 1.1;
+    span { color: #ffab2e; }
 
-    span {
-      color: #ffab2e;
-    }
-
-    @media (max-width: 768px) {
-      font-size: 18px;
-    }
-
-
+    @media (max-width: 768px) { font-size: 26px; }
+    @media (max-width: 480px) { font-size: 22px; }
   }
 
   .subText {
@@ -47,11 +42,7 @@ background-color: #061f3a;
     line-height: 1.6;
     margin-bottom: 30px;
     color: #e0e0e0;
-
-    @media (max-width: 480px) {
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
+    @media (max-width: 480px) { font-size: 15px; }
   }
 }
 
@@ -59,10 +50,11 @@ background-color: #061f3a;
   list-style: none;
   padding: 0;
   margin-bottom: 40px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 
   li {
-    margin-bottom: 12px;
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -83,13 +75,10 @@ background-color: #061f3a;
       font-size: 10px;
     }
 
-    @media (max-width: 992px) {
-       justify-content: center; // Center on tablet
-    }
-
-    @media (max-width: 480px) {
-      font-size: 13px; // Smaller for mobile
-      justify-content: flex-start;
+    @media (max-width: 992px) { justify-content: center; }
+    @media (max-width: 480px) { 
+      font-size: 14px; 
+      justify-content: flex-start; // Mobile pe left hi acha lagta hai
     }
   }
 }
@@ -97,20 +86,10 @@ background-color: #061f3a;
 .buttonGroup {
   display: flex;
   gap: 15px;
-
-  @media (max-width: 992px) {
-    justify-content: center;
-  }
-
-  @media (max-width: 480px) {
+  @media (max-width: 992px) { justify-content: center; }
+  @media (max-width: 480px) { 
     flex-direction: column; 
-    gap: 10px;
-    
-    button {
-        width: 100%;
-        padding: 12px !important;
-        font-size: 14px !important;
-    }
+    button { width: 100%; }
   }
 }
 
@@ -121,22 +100,10 @@ background-color: #061f3a;
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
 }
 
-.btnPrimary {
-  background-color: #ffab2e;
-  color: #fff;
-  &:hover { background-color: #e69a28; }
-}
-
-.btnSecondary {
-  background-color: #5b7696;
-  color: #fff;
-  &:hover { background-color: #4a617c; }
-}
+.btnPrimary { background-color: #ffab2e; color: #fff; }
+.btnSecondary { background-color: #5b7696; color: #fff; }
 
 .formContainer {
   flex: 0.8;
@@ -147,57 +114,96 @@ background-color: #061f3a;
   max-width: 400px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 
-  @media (max-width: 480px) {
-    padding: 20px;
-    max-width: 100%;
-  }
+  @media (max-width: 480px) { padding: 20px; }
 
   .formHeading {
     color: #00234b;
-    font-size: 20px; // H4 styling
+    font-size: 18px;
     font-weight: 800;
     text-align: center;
     margin-bottom: 20px;
-    text-transform: uppercase;
-
-    @media (max-width: 480px) {
-        font-size: 16px;
-    }
   }
 }
 
 .leadForm {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
 
-  input, select {
+  input {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 14px;
     color: #333;
+    &:focus { border-color: #ffab2e; outline: none; }
+  }
 
-    &:focus {
-      border-color: #ffab2e;
-      outline: none;
+  /* CUSTOM DROPDOWN - HAR WINDOW ME SAME */
+  .customSelectWrapper {
+    position: relative;
+    width: 100%;
+    text-align: left; // Alignment fix
+  }
+
+  .selectedBox {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &.active { border-color: #ffab2e; }
+    
+    .arrow { font-size: 10px; color: #666; }
+  }
+
+  .optionsList {
+    position: absolute;
+    top: 105%;
+    left: 0;
+    width: 100%;
+    background: #ffffff; // Hamesha White
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+
+  .optionItem {
+    padding: 12px;
+    color: #000; // Hamesha Black
+    font-size: 14px;
+    cursor: pointer;
+    background: #fff;
+
+    &:hover {
+      background-color: #ffab2e; // Hover Yellow
+      color: #fff;
     }
   }
 
   .submitBtn {
     background-color: #ffab2e;
     color: #fff;
-    padding: 14px;
+    padding: 15px;
     border: none;
     border-radius: 5px;
     font-weight: 800;
-    font-size: 16px;
     cursor: pointer;
     text-transform: uppercase;
-    margin-top: 10px;
-    transition: 0.3s;
-
     &:hover { background-color: #e69a28; }
   }
 }
