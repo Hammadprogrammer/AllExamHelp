@@ -256,7 +256,6 @@
 
 // export default ContactForm;
 
-
 "use client";
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -379,30 +378,44 @@ const ContactForm = () => {
             <AnimatePresence mode="wait">
               {!isSubmitted ? (
                 <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                  <form className={styles.mainForm} onSubmit={handleSubmit} noValidate>
+                  {/* Added autoComplete="off" to the main form */}
+                  <form className={styles.mainForm} onSubmit={handleSubmit} noValidate autoComplete="off">
+                    
                     <div className={styles.inputGroup}>
                       <input 
-                        type="text" name="fullName" placeholder="Full Name" 
-                        value={formData.fullName} onChange={handleChange}
+                        type="text" 
+                        name="fullName" 
+                        placeholder="Full Name" 
+                        value={formData.fullName} 
+                        onChange={handleChange}
                         className={errors.fullName ? styles.errorInput : ''}
+                        autoComplete="new-password" // Using 'new-password' often bypasses Chrome's aggressive autofill
                       />
                       {errors.fullName && <span className={styles.errorText}>{errors.fullName}</span>}
                     </div>
 
                     <div className={styles.inputGroup}>
                       <input 
-                        type="email" name="email" placeholder="Email Address" 
-                        value={formData.email} onChange={handleChange}
+                        type="email" 
+                        name="email" 
+                        placeholder="Email Address" 
+                        value={formData.email} 
+                        onChange={handleChange}
                         className={errors.email ? styles.errorInput : ''}
+                        autoComplete="off"
                       />
                       {errors.email && <span className={styles.errorText}>{errors.email}</span>}
                     </div>
 
                     <div className={styles.inputGroup}>
                       <input 
-                        type="tel" name="whatsapp" placeholder="WhatsApp Number" 
-                        value={formData.whatsapp} onChange={handleChange}
+                        type="tel" 
+                        name="whatsapp" 
+                        placeholder="WhatsApp Number" 
+                        value={formData.whatsapp} 
+                        onChange={handleChange}
                         className={errors.whatsapp ? styles.errorInput : ''}
+                        autoComplete="off"
                       />
                       {errors.whatsapp && <span className={styles.errorText}>{errors.whatsapp}</span>}
                     </div>
@@ -436,9 +449,13 @@ const ContactForm = () => {
 
                     <div className={styles.inputGroup}>
                       <textarea 
-                        name="message" rows={4} placeholder="Tell us about your task & deadline..."
-                        value={formData.message} onChange={handleChange}
+                        name="message" 
+                        rows={4} 
+                        placeholder="Tell us about your task & deadline..."
+                        value={formData.message} 
+                        onChange={handleChange}
                         className={errors.message ? styles.errorInput : ''}
+                        autoComplete="off"
                       ></textarea>
                       {errors.message && <span className={styles.errorText}>{errors.message}</span>}
                     </div>
