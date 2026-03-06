@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link'; // SSG optimized routing ke liye
 import styles from './hero_section.module.scss';
 
 const Hero: React.FC = () => {
@@ -31,23 +32,29 @@ const Hero: React.FC = () => {
         {/* LEFT CONTENT */}
         <div className={styles.contentSide}>
           <h1 className={styles.mainHeading}>
-            Get A Full-Course Assistance From Our <span>Qualified Experts!</span>
+            Take My Online Class for Me by <span>Trusted Experts</span>
           </h1>
           
           <p className={styles.subText}>
-            The solutions we offer are result-generating. We have proven our 
-            excellence through our quality service.
+            Struggling alone with your poor class grades? Fret not, Hire Class Buddy 
+            is your one-stop shop for all your online class struggles. All you 
+            have to do is request <strong>“do my online class for me”</strong>.
           </p>
 
           <ul className={styles.bulletList}>
-            <li>Don't Miss Deadlines - or You Get a Full Refund</li>
-            <li>100% Original & Custom - Always In-depth research</li>
-            <li>Money-Back Guaranty - if you are not satisfied</li>
+            <li>On-Time Submission: Every class, Every Time</li>
+            <li>Plagiarism-Free class work: Fully Custom & Written from Scratch</li>
+            <li>24/7 Expert Support: Assistance Whenever You Need It</li>
           </ul>
 
           <div className={styles.buttonGroup}>
-            <button className={styles.btnPrimary}>Contact Us</button>
-            <button className={styles.btnSecondary}>Chat With Us</button>
+            {/* SSG optimized Links */}
+            <Link href="/contact-us" className={styles.btnPrimary}>
+              Contact Us
+            </Link>
+            <Link href="https://wa.me/yournumber" className={styles.btnSecondary}>
+              Chat With Us
+            </Link>
           </div>
         </div>
 
@@ -62,7 +69,6 @@ const Hero: React.FC = () => {
             <input type="email" placeholder="Enter your Email" name="email" required />
             <input type="tel" placeholder="Enter your Phone Num" name="phone" required />
             
-            {/* Custom Dropdown */}
             <div className={styles.customSelectWrapper} ref={dropdownRef}>
               <div 
                 className={`${styles.selectedBox} ${isOpen ? styles.active : ''}`} 

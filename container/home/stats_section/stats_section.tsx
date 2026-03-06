@@ -13,23 +13,22 @@ const StatsSection = () => {
           {/* Text Content Area - Mobile pe ye pehle (upar) show hoga */}
           <div className={styles.textContent}>
             <h3 className={styles.mainHeading}>
-              Order Now & Get <span>50% Discount</span> On Your 1st Online Class Order
+              Are You Looking to Pay Someone to Do My Class? Our Tutors are at Your Service
             </h3>
             
             <p className={styles.description}>
-              Reach out to one of our Customer Service Representatives today and hire 
-              someone to do online class. We'll work with you to create a plan that meets 
-              your individual needs and give you a quote for online class services. 
-              Never worry about saying take my online class for me again!
+             Sign up with us and send your class details. We will assign a subject specialist to handle your class and all pending work. Discuss your subject with us via live chat and get a plan for you with the best quotation.
             </p>
 
             <div className={styles.btnGroup}>
               <Link href="/contact-us" className={styles.contactBtn}>
                 Contact Us
               </Link>
+               <Link href="https://wa.me/923118270539" className={styles.secondaryBtn}>        
               <button className={styles.chatBtn}>
                 Chat With Us
               </button>
+              </Link>
             </div>
           </div>
 

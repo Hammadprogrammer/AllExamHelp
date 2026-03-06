@@ -2,56 +2,59 @@ import React from 'react';
 import { Container } from '@mui/material';
 import styles from './feature_section.module.scss';
 
-// MUI Icons
-import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
-import SecurityOutlinedIcon from '@mui/icons-material/SecurityOutlined';
+// MUI Icons - Content ke hisab se icons select kiye gaye hain
 import SpeedOutlinedIcon from '@mui/icons-material/SpeedOutlined';
-import VerifiedUserOutlinedIcon from '@mui/icons-material/VerifiedUserOutlined';
-import WorkspacePremiumOutlinedIcon from '@mui/icons-material/WorkspacePremiumOutlined';
-import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined';
+import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
+import EnhancedEncryptionOutlinedIcon from '@mui/icons-material/EnhancedEncryptionOutlined';
+import AssignmentTurnedInOutlinedIcon from '@mui/icons-material/AssignmentTurnedInOutlined';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import HeadsetMicOutlinedIcon from '@mui/icons-material/HeadsetMicOutlined';
 
 const FeaturesSection = () => {
   const features = [
     {
-      title: "Student-friendly prices",
-      desc: "We acknowledge that students and professionals have varying financial limitations, which is why we provide affordable rates.",
-      icon: <PaidOutlinedIcon />,
-    },
-    {
-      title: "Privacy guaranteed",
-      desc: "We value your anonymity, so our service is fully encrypted and we only need your email to get started.",
-      icon: <SecurityOutlinedIcon />,
-    },
-    {
-      title: "Timely delivery",
-      desc: "We know the significance of time deadlines and are dedicated to providing our services promptly.",
+      title: "Timely Delivery",
+      desc: "Understanding the importance of deadlines, we ensure to complete our work on time.",
       icon: <SpeedOutlinedIcon />,
     },
     {
-      title: "Plagiarism-free exams",
-      desc: "The paper when you ask to 'do my exams' is completely unique, and we provide a plagiarism report.",
-      icon: <VerifiedUserOutlinedIcon />,
+      title: "Student-Friendly Prices",
+      desc: "We also understand that students and professionals have different budgets, so we offer affordable rates.",
+      icon: <LocalOfferOutlinedIcon />,
     },
     {
-      title: "Top-notch helpers",
-      desc: "Our team has a wealth of experience in a variety of subjects and exam formats to ensure high quality.",
-      icon: <WorkspacePremiumOutlinedIcon />,
+      title: "Privacy Guaranteed",
+      desc: "We don't care who you are, which is why our service is completely encrypted and we don't share or sell any data to third parties.",
+      icon: <EnhancedEncryptionOutlinedIcon />,
     },
     {
-      title: "24/7/365 availability",
-      desc: "Our service has a customer support team that is accessible round the clock, any time you need us.",
-      icon: <SupportAgentOutlinedIcon />,
+      title: "Plagiarism-Free Courses",
+      desc: "When you pay someone to take my class, the paper is 100% original and has a plagiarism report.",
+      icon: <AssignmentTurnedInOutlinedIcon />,
+    },
+    {
+      title: "Top-Notch Helpers",
+      desc: "We have a large number of experienced experts with many subjects and exam styles to ensure quality.",
+      icon: <SchoolOutlinedIcon />,
+    },
+    {
+      title: "24/7/365 Availability",
+      desc: "We offer 24/7 customer support for our service to cater to your needs whenever you need us.",
+      icon: <HeadsetMicOutlinedIcon />,
     },
   ];
 
   return (
     <section className={styles.featuresSection}>
       <Container maxWidth="lg">
-        {/* Requirement: Heading H3 */}
-        <h3 className={styles.mainHeading}>Do my online exam service that meets your needs</h3>
+        {/* Main Heading from Image */}
+        <h3 className={styles.mainHeading}>Top-Notch Take My Class Solutions You Can Count On</h3>
+        
+        {/* Sub-text from Image */}
         <p className={styles.subText}>
-          Are you feeling overwhelmed by deadlines? You have come to the perfect location! 
-          Our expertise lies in delivering exceptional custom-made orders.
+          Are you feeling overwhelmed by tight deadlines and complex subjects? You’re in the right place! 
+          From privacy to top grades, our hire someone to do my online class service provides 
+          personalized guidance at every step.
         </p>
 
         <div className={styles.gridContainer}>
@@ -60,7 +63,6 @@ const FeaturesSection = () => {
               <div className={styles.iconWrapper}>
                 {item.icon}
               </div>
-              {/* Requirement: Icon Box Heading H5 */}
               <h5 className={styles.cardHeading}>{item.title}</h5>
               <p className={styles.cardDescription}>{item.desc}</p>
             </div>

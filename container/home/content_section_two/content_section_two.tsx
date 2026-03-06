@@ -25,15 +25,11 @@ const ContentSectionTwo = () => {
           {/* Text Content Area - Yeh mobile par image ke niche aayega */}
           <div className={styles.textContent}>
             <h2 className={styles.mainHeading}>
-              Pay someone to take my online GED exam for me? The GED test shows a candidate's college and job preparedness.
+              Do My Class for Me is a 100% Confidential Service: Your Privacy is Our Priority
             </h2>
             
             <p className={styles.description}>
-              This made up of around 4 sections or tests that are designed by the experts to measure your 
-              reading, thinking, and writing & problem-solving abilities. If you are 16 & above & are 
-              not enrolled in the school yet then this exam can be beneficial for you as it can assess 
-              your proficiency in the high school standard subjects. It is an opportunity for getting 
-              more education, better salaries jobs, and better rewarding career.
+              When you hire our online tutors, your privacy is always guaranteed. We do not share your login credentials, invoice information and personal identifiers with anyone. Data security for every request is 100% secure. With us, you can focus solely on your other goals while we take care of you, maintaining your grades while protecting all required personal data. We provide you with expert guidance in a trusted, secure environment so that all you have to think about is reaching your goals without fear. 
             </p>
 
             <div className={styles.buttonGroup}>
@@ -41,9 +37,9 @@ const ContentSectionTwo = () => {
               <Link href="/contact-us" className={styles.primaryBtn}>
                 Contact Us
               </Link>
-              <button className={styles.secondaryBtn}>
+              <Link href="https://wa.me/923118270539" className={styles.secondaryBtn}>          
                 Chat With Us
-              </button>
+              </Link>
             </div>
           </div>
 

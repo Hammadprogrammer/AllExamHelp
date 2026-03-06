@@ -21,10 +21,9 @@ const ContentSectionThree = () => {
         </div>
 
         <div className={styles.textContent}>
-          <h2>Countering the Never-Ending Challenges with Online Class Help Service</h2>
+          <h2>Looking for “Pay Someone to Take My Online Class”?</h2>
           <p>
-           You have been given a mountain of various projects, quizzes, and tasks ever since the start of an online semester. Students who have never taken an online course struggle the most because concentrating and keeping up with lectures is difficult. Additionally, many students struggle to keep up with each lesson because they work and study at the same time. They search for "do my online class" online at this difficult moment.
-          </p>
+            Are you seeking “hire someone to take my class”? It means you’re watching sunsets, juggling responsibilities, or just need a break. That’s where Hire Exam Buddy steps in. Our experts have ample knowledge and experience that enables you to excel in your assignment, quiz, exam, and course. So, for students looking for reliable people to help them who will not compromise academic standards. We are affordable and professional for all types of online classes.            </p>
           <button className={styles.ctaBtn}>
             Talk to the expert
           </button>
@@ -34,37 +33,30 @@ const ContentSectionThree = () => {
       {/* Lower Content Grid */}
       <div className={styles.bottomGrid}>
         <div className={styles.featureItem}>
-          <h4>Extensive Course Structures:</h4>
+          <h4>100% Confidentiality & Privacy</h4>
           <p>
-            Programs like online MBA class may seem simple, but their subjects can be difficult to keep up with. 
-            You must pay close attention in class to perform well on exams, tests, and assignments. 
-            With the support of an online tutor, professionals will complete the online course for you.
+            We take your privacy very seriously. All of your information is 100% confidential through strict data protection policies that we follow on our platform. We ensure that our service is safe and reliable, and students around the world entrust us with their classes, exams, coursework, etc. 
           </p>
         </div>
 
         <div className={styles.featureItem}>
-          <h4>Digital and Technical Literacy:</h4>
+          <h4>Affordable & Flexible Pricing</h4>
           <p>
-            There is a lot of strain on those who just started their semester of online school. 
-            We offer you the best and most inexpensive answer during this trying time. 
-            Our professionals have a Ph.D. and the necessary level of expertise in relation to online courses.
+            We offer exclusive discounts and special offers to clients who give us full courses or multiple tasks. We are also introducing an installment payment option for the users who are regular clients. We aim to provide high-quality academic writing help at the best rates possible without compromising on quality.
           </p>
         </div>
 
         <div className={styles.featureItem}>
-          <h4>Barriers to Quick Learning:</h4>
+          <h4>100% Plagiarism-Free Work</h4>
           <p>
-            Being able to deal with your teachers is the largest challenge in online education. 
-            With the support of our platform's specialists, you may take online classes, 
-            learn every subject, and get the results you want without any effort.
+            Our services uphold the values of originality and academic integrity. Every single piece of work prepared by our specialized team of experts is absolutely 100% original in order to fulfill academic needs. All assignments go through trusted plagiarism detection tools like Turnitin before submission to ensure authenticity.
           </p>
         </div>
 
         <div className={styles.featureItem}>
-          <h4>Time-Management:</h4>
+          <h4>On-Time Delivery Guarantee</h4>
           <p>
-            While conducting online classes, you have to be extremely cautious about managing your time. 
-            You can count on our Ph.D.-qualified writers as they take online classes with attentiveness and on time.
+            We adhere to strict deadlines. Be it any assignment, quiz, or coursework, we will never let it go after the deadline. We use an advanced deadline tracking system for each task to ensure that you get your work back as promised and on time!
           </p>
         </div>
       </div>

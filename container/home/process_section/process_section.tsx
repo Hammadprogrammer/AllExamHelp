@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container } from '@mui/material';
 import { 
-  AssignmentOutlined, 
-  PaymentsOutlined, 
-  EmojiEventsOutlined 
+  DescriptionOutlined, 
+  ShoppingCartCheckoutOutlined, 
+  TaskAltOutlined
 } from '@mui/icons-material';
 import styles from './process_section.module.scss';
 
@@ -11,21 +11,21 @@ const WorkProcess = () => {
   const steps = [
     {
       id: 1,
-      icon: <AssignmentOutlined />,
+      icon: <DescriptionOutlined />,
       title: "Submit Your Requirements",
-      desc: "Reach out to us through live chat, whatsapp, or call. Submit your exam requirements such as format, date, time, guidelines, etc. The more information you share, the better we can customize our approach to meet your needs."
+      desc: "You can reach us through live chat, WhatsApp, email, or phone call. Simply share your class or exam requirements, including the format, deadline, and any guidelines for the exam. The more information you provide, the better we can tailor our strategy to meet your needs."
     },
     {
       id: 2,
-      icon: <PaymentsOutlined />,
-      title: "Make Payments",
-      desc: "Once everything is confirmed, proceed to pay someone to take my online exam by making the transaction through the given payment methods. Rest assured that our payment methods are secured and completely transparent."
+      icon: <ShoppingCartCheckoutOutlined />,
+      title: "Confirm Your Order",
+      desc: "Our tutors will draw up an individual plan and price depending on how complex and urgent the task is. Fill out the form, confirm your order with a secure payment, and we can assign your class to an expert to complete it."
     },
     {
       id: 3,
-      icon: <EmojiEventsOutlined />,
-      title: "Enjoy Good Grades",
-      desc: "When the big day arrives then our professionals handle everything expertly while ensuring that your decision to hire our expert to take my test for me was the right one. So, enjoy the score which you will achieve through our exam taking service."
+      icon: <TaskAltOutlined />,
+      title: "Work Completion & Delivery",
+      desc: "After confirmation, we start working on your task and take note of all the requirements and deadlines. You will get timely progression updates about the process. In case of any convenience, our team is there to help."
     }
   ];
 
@@ -34,10 +34,9 @@ const WorkProcess = () => {
       <Container maxWidth="lg">
         {/* Requirement: Main Heading H3 */}
         <div className={styles.header}>
-          <h3 className={styles.mainTitle}>How Can I Hire You to Do My Exam Online For Me?</h3>
+          <h3 className={styles.mainTitle}>Do My Class Success Just 3 Steps Away! </h3>
           <p className={styles.subTitle}>
-            Getting our expert exam-taking services is a simple, quick, and seamless process. 
-            Just follow these 3 easy steps to get stress-free success:
+            This is a very easy, fast, and smooth process to get our top-notch class-taking service. To achieve success without major stress, do these 3 simple things: 
           </p>
         </div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from '@mui/material';
+import Link from 'next/link'; // Optimized linking ke liye
 import styles from './Content_section_one.module.scss';
 
 const ContentSectionOne = () => {
@@ -9,29 +10,33 @@ const ContentSectionOne = () => {
         <div className={styles.flexContainer}>
           
           <div className={styles.textContent}>
-            {/* Requirement: H2 */}
+            {/* Image se li gayi New Heading */}
             <h2 className={styles.mainHeading}>
-              Hire Someone To Do My Nursing Exam Hesi A2
+              100% Human Expertise – Pay Someone to Take My Class
             </h2>
             
+            {/* Image ka pehla paragraph */}
             <p className={styles.description}>
-              When I took the exam for the Certified Nursing Assistant position I knew I was going to 
-              do my HESI A2 Entrance Exam. There are many people that take time off their job 
-              and they get this certification so they can be a CNA for a few years. Others might 
-              take the exam and then go back to school and get a certificate in Nursing. In either 
-              case there are some expenses incurred.
+              All our take my online class for me requests are conducted by real, qualified tutors — not a bot or an automated system. Higher and secure grades need personalized guidance and human insights; that's our belief. With years of experience, our tutors are masters in their subjects and skilled to take online classes on your behalf with a commitment. Our professionals will help you 
+              enhance your confidence and achieve academic success. With personalized explanations, one-on-one focus, and interactive help on hand whenever they need it, we make sure that every student receives human-first approach as per their unique online class needs.
             </p>
 
+       
+
             <div className={styles.buttonGroup}>
-              <button className={styles.primaryBtn}>Contact Us</button>
-              <button className={styles.secondaryBtn}>Chat With Us</button>
+              <Link href="/contact-us" className={styles.primaryBtn}>
+                Contact Us
+              </Link>
+              <Link href="https://wa.me/yournumber" className={styles.secondaryBtn}>
+                Chat With Us
+              </Link>
             </div>
           </div>
 
           <div className={styles.imageWrapper}>
             <img 
               src="/contentone.jpeg" 
-              alt="Nursing Professional Study Group" 
+              alt="100% Human Expertise Tutors" 
             />
           </div>
 

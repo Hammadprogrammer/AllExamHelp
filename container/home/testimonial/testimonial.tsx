@@ -13,32 +13,32 @@ const Testimonial = () => {
 
   const testimonials = [
     {
-      text: "I struggled to understand arithmetic concepts, but with the excellent assistance of domyonlineclass.us.com, I achieved high marks.",
+      text: "I was trying to balance a job and classes, but this take my exam service made it all so much easier. The tutors were clear in their explanations and quickly helped me catch up. Highly recommended for busy students!",
       author: "Order # 28383 | Editing"
     },
     {
-      text: "The complexity of my engineering assignments was overwhelming, but their guidance turned my grades around completely. Highly professional and always on time!",
+      text: "I was working as a student, so I barely had time to study. Their flexible pay someone to do my online exam solutions helped bring my grades up without adding more stress to my schedule. Amazing experience!",
       author: "Order # 9921 | Engineering"
     },
     {
-      text: "Affordable and professional. They handled my entire history module while I focused on my full-time job. The support team is very helpful.",
+      text: "I was struggling with my assignments and exam preparation, and I got exactly what I needed. The tutors are very knowledgeable, professional and patient. My results improved a lot!",
       author: "Order # 4452 | History"
     },
         {
-      text: "Affordable and professional. They handled my entire history module while I focused on my full-time job. The support team is very helpful.",
+      text: "This service is great for busy students. The tutors are always on point, and the signup procedures are very easy to follow. I finally feel good about my grades again.",
       author: "Order # 4452 | History"
     },    {
-      text: "Affordable and professional. They handled my entire history module while I focused on my full-time job. The support team is very helpful.",
+      text: " recommend this tutoring platform to anyone! They assisted me with coursework as I worked a part-time job. The one-on-one do my online assignment support was incredibly helpful.",
       author: "Order # 4452 | History"
     }
   ];
 
   const faqs = [
-    { q: "Can I pay someone to do my online class for me at an affordable rate?", a: "Ans. Many platforms on the market provide admirable services, but what makes us stand out is the reasonable pricing. We are aware of the financial constraints faced by students. Our platform has affordable charges, so you can stay within your budget." },
-    { q: "How can I hire someone to do my online class in simple steps?", a: "Ans. On our website, placing a purchase is incredibly simple and quick. We have developed an intuitive platform where you may engage an expert for your online lesson and follow a few simple steps." },
-    { q: "How much should I pay someone to do my online class?", a: "Ans. For this query, there isn't a single set quantity. Depending on the services you purchase through our platform, you may pay a different cost for online assistance." },
-    { q: "Can I communicate directly with the tutor?", a: "Ans. You can instruct and contact the instructor to clarify all your questions about your subject and online assignments. You are permitted to contact the tutor." },
-    { q: "Who will take my online class for me?", a: "Ans. Our teachers are extremely knowledgeable in every subject. They will also administer your online exams, tests, and quizzes in accordance with your authorization." }
+    { q: "Is it possible to pay someone to take my online class, at low cost?",a: "Ans. There are a number of excellent platforms on the market; however, we take pride in offering very competitive rates. We know that students are on a tight budget. We are budget-friendly as a platform, ensuring you won't break the bank!" },
+    { q: "How I can pay someone do my online class for me?", a: "Ans. Purchasing on our site is super easy and fast. We have created an easy-to-understand platform where you can get suggestions from an education expert for your online lesson and transparent steps." },
+    { q: "Can I choose the expert that assists me in my class?", a: "Absolutely. When you ask us to do my assignment your data and privacy is secured. Our systems are encrypted, and we work under high levels of confidentiality. No resale; you get ownership and academic security per project since each one is different." },
+    { q: "Can I speak directly with the tutor?", a: "Ans. Your instructor can guide you and reach out to the instructor to help clarify all your doubts about your subject and web-based assignments. You are allowed to get in touch with the tutor." },
+    { q: "Who will take my online class for me?", a: "Ans. These are very learned teachers all round. They will also help you with your online exams, tests, and quizzes according to what you authorize." }
   ];
 
   useEffect(() => {
@@ -53,9 +53,9 @@ const Testimonial = () => {
     <div className={styles.container}>
       {/* Testimonials Section */}
       <div className={styles.section}>
-        <h3 className={styles.heading}>Testimonials</h3>
+        <h3 className={styles.heading}>Hear from our happy clients</h3>
         <p className={styles.subHeading}>
-          Since its inception, offering top-notch online course assistance. Take note of what our devoted customers have to say about us.
+          Our students’ success speaks for itself. Read what they have to say about their online education journey with us.
         </p>
         
         <div className={styles.testimonialCard}>
@@ -87,7 +87,7 @@ const Testimonial = () => {
 
       {/* FAQ Section */}
       <div className={styles.section}>
-        <h2 className={styles.heading}>Frequently Asked Questions</h2>
+        <h2 className={styles.heading}>Frequently asked questions </h2>
         <div className={styles.faqContainer}>
           {faqs.map((faq, index) => (
             <div key={index} className={styles.faqItem}>

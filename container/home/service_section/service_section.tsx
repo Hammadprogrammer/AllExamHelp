@@ -1,28 +1,28 @@
 import React from 'react';
 import { Container } from '@mui/material';
 import { 
-  AutoStories, // For Online Classes
-  LaptopMac,   // For Online Examination
-  DriveFileRenameOutline // For Online Assessments
+  TimerOutlined,         
+  SchoolOutlined,         
+  HistoryEduOutlined
 } from '@mui/icons-material';
 import styles from './service_section.module.scss';
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: <AutoStories />,
-      title: "Online Classes",
-      desc: "We have experts with Ph.D.s who can enroll in online courses on your behalf. Our professionals put in an endless effort to help you stand out in every online degree program."
+      icon: <TimerOutlined />,
+      title: "Online Exam Help",
+      desc: "Our professionals offer reliable take my online exam assistance and ensure your privacy, and you get the highest grades possible. We follow your exam guidelines carefully and ensure accurate solutions are delivered within the exam time frame."
     },
     {
-      icon: <LaptopMac />,
-      title: "Online Examination",
-      desc: "It is demanding to administer online exams when the semester course is difficult. Fortunately, you can hire a professional to take your online exam to receive higher grades."
+      icon: <SchoolOutlined />,
+      title: "Online Class Help",
+      desc: "Unable to cope with your online classes? Our skilled tutors can take care of complete online class activities such as classwork, discussions, and weekly tasks to ensure you stay on track throughout the semester."
     },
     {
-      icon: <DriveFileRenameOutline />,
-      title: "Online Assessments",
-      desc: "You take multiple online tests and quizzes throughout the whole online degree program. We allow you to employ a professional who can accurately administer online tests."
+      icon: <HistoryEduOutlined />,
+      title: "Online Assignment Help",
+      desc: "We offer customized, well-researched assignments tailored to your requirements and timelines, prepared by subject specialists. We provide plagiarism-free, formatting and timely delivery to get you better grades."
     }
   ];
 

@@ -10,18 +10,16 @@ const CallAction = () => {
         <div className={styles.contentWrapper}>
           {/* H3 Heading with 18px on mobile */}
           <h3 className={styles.mainHeading}>
-            Pay Someone to Do My Online Exam <br />
-            Get <span>25% Off</span> On Your First Order
+            Hire Someone to Take My Class Now and Grab a Flat <span>50% Off</span>  on Your First Order
           </h3>
           
           <p className={styles.subHeading}>
-            Let our experts take your online exam while you relax! As a welcome bonus, 
-            enjoy a massive 25% off on your very first order.
+          Register now and book your online consultation for your online class, exam, quizand assignmentswith our real-time experts today! Your online class success awaits.
           </p>
 
           <div className={styles.buttonWrapper}>
-            <Link href="/contact" className={styles.ctaButton}>
-            Get your FREE quote fast!
+            <Link href="/contact-us" className={styles.ctaButton}>
+            Request a FREE quote now!
             </Link>
           </div>
         </div>
