@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './content_section_three.module.scss';
+import Link from 'next/link';
 
 const ContentSectionThree = () => {
   return (
@@ -24,9 +25,9 @@ const ContentSectionThree = () => {
           <h2>Looking for “Pay Someone to Take My Online Class”?</h2>
           <p>
             Are you seeking “hire someone to take my class”? It means you’re watching sunsets, juggling responsibilities, or just need a break. That’s where Hire Exam Buddy steps in. Our experts have ample knowledge and experience that enables you to excel in your assignment, quiz, exam, and course. So, for students looking for reliable people to help them who will not compromise academic standards. We are affordable and professional for all types of online classes.            </p>
-          <button className={styles.ctaBtn}>
+          <Link href="/contact-us" className={styles.ctaBtn}>
             Talk to the expert
-          </button>
+          </Link>
         </div>
       </div>
 
