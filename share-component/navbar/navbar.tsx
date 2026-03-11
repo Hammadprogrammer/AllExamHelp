@@ -78,7 +78,7 @@ const Navbar = () => {
             {/* LEFT: LOGO */}
             <Box className={styles.logoArea}>
               <Link href="/">
-                <Image src="/logo.png" alt="Logo" width={110} height={45} priority />
+                <Image src="/logo1.png" alt="Logo" width={100} height={45} priority />
               </Link>
             </Box>
 
