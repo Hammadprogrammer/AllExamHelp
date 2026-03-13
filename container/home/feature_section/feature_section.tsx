@@ -24,7 +24,7 @@ const FeaturesSection = () => {
     },
     {
       title: "Privacy Guaranteed",
-      desc: "We don't care who you are, which is why our service is completely encrypted and we don't share or sell any data to third parties.",
+      desc: "We don't care who you are, which is why our service is completely encrypted and we don’t share or sell any data to third parties.",
       icon: <EnhancedEncryptionOutlinedIcon />,
     },
     {
@@ -52,9 +52,7 @@ const FeaturesSection = () => {
         
         {/* Sub-text from Image */}
         <p className={styles.subText}>
-          Are you feeling overwhelmed by tight deadlines and complex subjects? You’re in the right place! 
-          From privacy to top grades, our hire someone to do my online class service provides 
-          personalized guidance at every step.
+          Are you feeling overwhelmed by tight deadlines and complex subjects? You’re in the right place! From privacy to top grades, our hire someone to take my online class service provides personalized guidance at every step.
         </p>
 
         <div className={styles.gridContainer}>

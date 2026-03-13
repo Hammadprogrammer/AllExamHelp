@@ -24,7 +24,8 @@ const ContentSectionThree = () => {
         <div className={styles.textContent}>
           <h2>Looking for “Pay Someone to Take My Online Class”?</h2>
           <p>
-            Are you seeking “hire someone to take my class”? It means you’re watching sunsets, juggling responsibilities, or just need a break. That’s where Hire Exam Buddy steps in. Our experts have ample knowledge and experience that enables you to excel in your assignment, quiz, exam, and course. So, for students looking for reliable people to help them who will not compromise academic standards. We are affordable and professional for all types of online classes.            </p>
+            Are you seeking “hire someone to take online class”? It means you’re watching sunsets, juggling responsibilities, or just need a break. That’s where Hire Class Buddy steps in. Our experts have ample knowledge and experience that enables you to excel in your assignment, quiz, exam, and course. So, for students looking for reliable people to help them who will not compromise academic standards. We are affordable and professional for all types of online classes.            
+          </p>
           <Link href="/contact-us" className={styles.ctaBtn}>
             Talk to the expert
           </Link>
@@ -43,14 +44,14 @@ const ContentSectionThree = () => {
         <div className={styles.featureItem}>
           <h4>Affordable & Flexible Pricing</h4>
           <p>
-            We offer exclusive discounts and special offers to clients who give us full courses or multiple tasks. We are also introducing an installment payment option for the users who are regular clients. We aim to provide high-quality academic writing help at the best rates possible without compromising on quality.
+            We offer exclusive discounts and special offers to clients who give us full courses or multiple tasks. We are also introducing an installment payment option for the users who are regular clients. We aim to provide high-quality pay to take my online class services at the best rates possible without compromising on quality.          
           </p>
         </div>
 
         <div className={styles.featureItem}>
           <h4>100% Plagiarism-Free Work</h4>
           <p>
-            Our services uphold the values of originality and academic integrity. Every single piece of work prepared by our specialized team of experts is absolutely 100% original in order to fulfill academic needs. All assignments go through trusted plagiarism detection tools like Turnitin before submission to ensure authenticity.
+            Our services uphold the values of originality and academic integrity. Every single piece of work prepared by our specialized team of experts is absolutely 100% original in order to fulfill academic needs. All assignments go through trusted plagiarism detection tools like Turnitin before submission to ensure authenticity.  
           </p>
         </div>
 

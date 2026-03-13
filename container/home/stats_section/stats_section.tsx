@@ -13,12 +13,11 @@ const StatsSection = () => {
           {/* Text Content Area - Mobile pe ye pehle (upar) show hoga */}
           <div className={styles.textContent}>
             <h3 className={styles.mainHeading}>
-              Are You Looking to Pay Someone to Do My Class? Our Tutors are at Your Service
+              Are You Looking to Pay Someone to Take Online Class? Our Tutors are at Your Service
             </h3>
             
             <p className={styles.description}>
-             Sign up with us and send your class details. We will assign a subject specialist to handle your class and all pending work. Discuss your subject with us via live chat and get a plan for you with the best quotation.
-            </p>
+             Sign up with us and send your class details. We will assign a subject specialist to handle your class and all pending work. Discuss your subject with us via live chat and get a plan for you with the best quotation.            </p>
 
             <div className={styles.btnGroup}>
               <Link href="/contact-us" className={styles.contactBtn}>

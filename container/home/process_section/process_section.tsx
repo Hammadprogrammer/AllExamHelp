@@ -34,7 +34,7 @@ const WorkProcess = () => {
       <Container maxWidth="lg">
         {/* Requirement: Main Heading H3 */}
         <div className={styles.header}>
-          <h3 className={styles.mainTitle}>Do My Class Success Just 3 Steps Away! </h3>
+          <h3 className={styles.mainTitle}>Take My Online Class Success Just 3 Steps Away! </h3>
           <p className={styles.subTitle}>
             This is a very easy, fast, and smooth process to get our top-notch class-taking service. To achieve success without major stress, do these 3 simple things: 
           </p>

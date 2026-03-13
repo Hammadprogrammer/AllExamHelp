@@ -14,7 +14,7 @@ const CallAction = () => {
           </h3>
           
           <p className={styles.subHeading}>
-          Register now and book your online consultation for your online class, exam, quizand assignmentswith our real-time experts today! Your online class success awaits.
+          Register now and book your online consultation for your online class, exam, quiz and assignments with our real-time experts today! Your online class success awaits.
           </p>
 
           <div className={styles.buttonWrapper}>

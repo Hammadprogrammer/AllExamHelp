@@ -31,7 +31,7 @@ const ServicesSection = () => {
       <Container maxWidth="lg">
         {/* Requirement: Main Heading H2 */}
         <div className={styles.header}>
-          <h2 className={styles.mainTitle}>Services We Provide</h2>
+          <h2 className={styles.mainTitle}>Services We Offer </h2>
         </div>
 
         <div className={styles.flexWrapper}>
