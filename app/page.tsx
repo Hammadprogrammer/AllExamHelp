@@ -1,7 +1,7 @@
 import React from 'react'
-import Hero from '../container/home/hero_section/hero_section'
+import HeroSection from '@/container/home/hero_section/hero_section'
 import UniSection from '@/container/home/uni_section/uni_section'
-import FeaturesSection from '@/container/home/feature_section/feature_section'
+import Features from '@/container/home/feature_section/feature_section'
 import CallAction from '@/container/home/call_action/call_acition'
 import ContentSectionOne from '@/container/home/content_section_one/Content_section_one'
 import StatsSection from '@/container/home/stats_section/stats_section'
@@ -14,9 +14,9 @@ import Testimonial from '@/container/home/testimonial/testimonial'
 const page = () => {
   return (
    <>
-   <Hero/>
+   <HeroSection/>
    <UniSection/>
-   <FeaturesSection/>
+   <Features/>
    <ContentSectionOne/>
    <CallAction/>
    <StatsSection/>
