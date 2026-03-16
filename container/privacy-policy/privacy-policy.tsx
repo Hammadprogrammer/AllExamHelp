@@ -87,17 +87,21 @@ const PrivacyPolicy = () => {
               <p className={styles.text}>
                 In case of any queries, issues or demands as to this Privacy Policy or how your personal data is processed, then contact us at:
               </p>
-              <div style={{ marginTop: '20px' }}>
-                <p className={styles.text}>
-                  <strong>Email: </strong>
-                  <Link href="mailto:info@hireclassbuddy.com" className={styles.contactLink}>
-                    info@hireclassbuddy.com
-                  </Link>
-                </p>
-                <p className={styles.text} style={{ marginTop: '10px' }}>
-                  <strong>Phone: </strong> +1 (XXX) XXX-XXXX
-                </p>
-              </div>
+             <div style={{ marginTop: '20px' }}>
+  <p className={styles.text}>
+    <strong>Email: </strong>
+    <Link href="mailto:info@hireclassbuddy.com" className={styles.contactLink}>
+      info@hireclassbuddy.com
+    </Link>
+  </p>
+  
+  <p className={styles.text} style={{ marginTop: '10px' }}>
+    <strong>Phone: </strong> 
+    <Link href="tel:+447400465932" className={styles.contactLink}>
+      +44 7400 465932
+    </Link>
+  </p>
+</div>
             </section>
 
           </div>

@@ -1,5 +1,5 @@
 
-import Hero from "@/container/All-props-comp/hero-setion/page";
+import Hero from "@/container/All-props-comp/hero-setion/hero_section";
 
 export default function OnlineClassHero() {
   

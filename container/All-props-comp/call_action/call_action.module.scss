@@ -1,0 +1,62 @@
+.ctaSection {
+  padding: 5rem 0;
+  background-color: #0a192f; // Deep Navy background from the image
+  text-align: center;
+  color: #ffffff;
+}
+
+.contentWrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mainHeading {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+
+  // The "50% Off" text color
+  span {
+    color: #ffb133; // Amber/Orange color from image
+  }
+
+  @media (max-width: 768px) {
+    font-size: 18px; // Your specific mobile requirement
+  }
+}
+
+.subHeading {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccd6f6; // Slightly muted white/blue for readability
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+  font-weight: 400;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.ctaButton {
+  background-color: #ffb133; // Match the heading's orange
+  color: #0a192f; // Dark text on light button
+  padding: 1.1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(255, 177, 51, 0.3);
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: #ffa31a;
+    box-shadow: 0 6px 25px rgba(255, 177, 51, 0.5);
+  }
+}

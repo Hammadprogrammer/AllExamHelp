@@ -2,9 +2,9 @@ import React from 'react'
 import HeroSection from '@/container/home/hero_section/hero_section'
 import UniSection from '@/container/home/uni_section/uni_section'
 import Features from '@/container/home/feature_section/feature_section'
-import CallAction from '@/container/home/call_action/call_acition'
+import CallActionSection from '@/container/home/call_action/call_acition'
 import ContentSectionOne from '@/container/home/content_section_one/Content_section_one'
-import StatsSection from '@/container/home/stats_section/stats_section'
+import Stats_section from '@/container/home/stats_section/stats_section'
 import ContentSectionTwo from '@/container/home/content_section_two/content_section_two'
 import ProcessSection from '@/container/home/process_section/process_section'
 import ServicesSection from '@/container/home/service_section/service_section'
@@ -18,8 +18,8 @@ const page = () => {
    <UniSection/>
    <Features/>
    <ContentSectionOne/>
-   <CallAction/>
-   <StatsSection/>
+   <CallActionSection/>
+   <Stats_section/>
     <ContentSectionTwo/>
     <ProcessSection/>
     <ServicesSection/>
