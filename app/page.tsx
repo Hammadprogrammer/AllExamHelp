@@ -5,7 +5,7 @@ import Features from '@/container/home/feature_section/feature_section'
 import CallActionSection from '@/container/home/call_action/call_acition'
 import ContentSectionOne from '@/container/home/content_section_one/Content_section_one'
 import Stats_section from '@/container/home/stats_section/stats_section'
-import ContentSectionTwo from '@/container/home/content_section_two/content_section_two'
+import Content_section_two from '@/container/home/content_section_two/content_section_two'
 import ProcessSection from '@/container/home/process_section/process_section'
 import ServicesSection from '@/container/home/service_section/service_section'
 import ContentSectionThree from '@/container/home/content_section_three/content_section_three'
@@ -20,7 +20,7 @@ const page = () => {
    <ContentSectionOne/>
    <CallActionSection/>
    <Stats_section/>
-    <ContentSectionTwo/>
+    <Content_section_two/>
     <ProcessSection/>
     <ServicesSection/>
     <ContentSectionThree/>

@@ -5,6 +5,10 @@ import Features from '@/container/online-class/feature_section/feature_section'
 import ContentSectionOne from '@/container/online-class/Content_section_one/Content_section_one'
 import CallActionSection from '@/container/online-class/call_action/call_acition'
 import Stats_section from '@/container/online-class/stats_section/stats_section'
+import Content_section_two from '@/container/online-class/content_section_two/content_section_two'
+import ProcessSection from '@/container/home/process_section/process_section'
+import ServicesSection from '@/container/home/service_section/service_section'
+import ContentSectionThree from '@/container/online-class/content_section_three/content_section_three'
 
 // Meta Data Configuration
 export const metadata: Metadata = {
@@ -20,6 +24,10 @@ const page = () => {
       <ContentSectionOne />
       <CallActionSection/>
       <Stats_section/>
+      <Content_section_two/>
+      <ProcessSection/>
+      <ServicesSection/>
+      <ContentSectionThree/>
     </>
   )
 }

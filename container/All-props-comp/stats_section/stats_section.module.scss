@@ -1,30 +1,35 @@
 .statsSection {
-  padding: 80px 0;
+  padding: clamp(40px, 8vw, 100px) 0; // Fluid padding based on screen size
   background-color: #ffffff;
-   @media (max-width: 768px) {
-      padding: 40px 0;
-
-  }
+  overflow: hidden;
 }
 
 .flexContainer {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
+  flex-direction: column; // Mobile first
 
-  @media (max-width: 992px) {
-    flex-direction: column; 
-    text-align: center;
-    gap: 40px;
+  @media (min-width: 992px) {
+    flex-direction: row; // Side-by-side for desktop
+    text-align: left;
+    gap: 60px;
   }
 }
 
 .textContent {
   flex: 1;
+  width: 100%;
+  text-align: center; // Centered on mobile
+
+  @media (min-width: 992px) {
+    text-align: left;
+  }
 }
 
 .mainHeading {
-  font-size: 36px;
+  // Scales smoothly from 24px on small mobile to 42px on desktop
+  font-size: clamp(24px, 5vw, 42px); 
   font-weight: 800;
   color: #1a1f2b;
   line-height: 1.2;
@@ -34,81 +39,109 @@
     color: #ffab2e; 
   }
 
-  @media (max-width: 768px) {
-    font-size: 18px;
+  // Override for your specific 18px request on very small screens if needed
+  @media (max-width: 480px) {
+    font-size: 22px; 
   }
 }
 
 .description {
-  font-size: 16px;
+  font-size: clamp(14px, 2vw, 16px);
   line-height: 1.6;
   color: #4b5563;
-  margin-bottom: 35px;
-   @media (max-width: 768px) {
-    font-size: 14px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 992px) {
+    margin-left: 0;
   }
 }
 
 .btnGroup {
   display: flex;
+  flex-direction: column; // Stack buttons on tiny screens
   gap: 15px;
+  align-items: center;
 
-  @media (max-width: 992px) {
+  @media (min-width: 480px) {
+    flex-direction: row;
     justify-content: center;
   }
 
-  @media (max-width: 480px) {
-    flex-direction: column;
+  @media (min-width: 992px) {
+    justify-content: flex-start;
+  }
+}
+
+.contactBtn, .chatBtn {
+  width: 100%; // Full width on mobile
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+
+  @media (min-width: 480px) {
+    width: auto; // Auto width on tablet/desktop
   }
 }
 
 .contactBtn {
   background-color: #ffab2e;
   color: #fff;
-  padding: 14px 35px;
-  border-radius: 6px;
-  font-weight: 700;
   text-decoration: none;
-  transition: 0.3s ease;
-  display: inline-block;
-
+  
   &:hover {
     background-color: #e69a28;
     transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 171, 46, 0.2);
   }
+}
+
+.secondaryBtn {
+  text-decoration: none;
+  width: 100%;
+  @media (min-width: 480px) { width: auto; }
 }
 
 .chatBtn {
   background-color: #1e293b;
   color: #fff;
-  padding: 14px 35px;
-  border-radius: 6px;
-  font-weight: 700;
   border: none;
   cursor: pointer;
-  transition: 0.3s ease;
 
   &:hover {
     background-color: #0f172a;
     transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(30, 41, 59, 0.2);
   }
 }
 
 .imageContent {
   flex: 1;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  
+  // Make image slightly smaller on mobile to keep focus on text
+  max-width: 400px; 
+  
+  @media (min-width: 992px) {
+    max-width: 550px;
+  }
 
   .statsImg {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    object-fit: contain;
     animation: float 4s ease-in-out infinite;
   }
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
+  0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-15px); }
-  100% { transform: translateY(0px); }
 }
