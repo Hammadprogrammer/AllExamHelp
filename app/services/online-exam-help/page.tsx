@@ -1,13 +1,35 @@
 import React from 'react'
+import type { Metadata } from 'next'
+import OnlineHero from '@/container/online-exam/hero_section/page'
+import Features from '@/container/online-class/feature_section/feature_section'
+import ContentSectionOne from '@/container/online-class/Content_section_one/Content_section_one'
+import CallActionSection from '@/container/online-class/call_action/call_acition'
+import Stats_section from '@/container/online-class/stats_section/stats_section'
+import Content_section_two from '@/container/online-class/content_section_two/content_section_two'
+import ProcessSection from '@/container/home/process_section/process_section'
 import ServicesSection from '@/container/home/service_section/service_section'
-import WorkProcess from '@/container/home/process_section/process_section'
+import ContentSectionThree from '@/container/online-class/content_section_three/content_section_three'
+import TestimonialSection from '@/container/online-class/testimonial/testimonial'
+
+// Meta Data Configuration
+export const metadata: Metadata = {
+  title: "Online Exam Help – Hire Someone to Take My Exam for Me",
+  description: "Looking for online exam help? Fret not our hire someone to take my exam got you covered. Just request us if you want to pay someone to take my online exam.",
+}
 
 const page = () => {
   return (
     <>
-      
-      <WorkProcess />
-      <ServicesSection />
+      <OnlineHero />
+      <Features />
+      <ContentSectionOne />
+      <CallActionSection/>
+      <Stats_section/>
+      <Content_section_two/>
+      <ProcessSection/>
+      <ServicesSection/>
+      <ContentSectionThree/>
+      <TestimonialSection/>
     </>
   )
 }
