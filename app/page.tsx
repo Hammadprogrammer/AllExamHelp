@@ -9,7 +9,7 @@ import Content_section_two from '@/container/home/content_section_two/content_se
 import ProcessSection from '@/container/home/process_section/process_section'
 import ServicesSection from '@/container/home/service_section/service_section'
 import ContentSectionThree from '@/container/home/content_section_three/content_section_three'
-import Testimonial from '@/container/home/testimonial/testimonial'
+import TestimonialSection from '@/container/home/testimonial/testimonial'
 
 const page = () => {
   return (
@@ -24,7 +24,7 @@ const page = () => {
     <ProcessSection/>
     <ServicesSection/>
     <ContentSectionThree/>
-    <Testimonial/>
+    <TestimonialSection/>
    </>
   )
 }

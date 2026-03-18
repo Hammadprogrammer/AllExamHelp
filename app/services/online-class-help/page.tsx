@@ -9,6 +9,7 @@ import Content_section_two from '@/container/online-class/content_section_two/co
 import ProcessSection from '@/container/home/process_section/process_section'
 import ServicesSection from '@/container/home/service_section/service_section'
 import ContentSectionThree from '@/container/online-class/content_section_three/content_section_three'
+import TestimonialSection from '@/container/online-class/testimonial/testimonial'
 
 // Meta Data Configuration
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ const page = () => {
       <ProcessSection/>
       <ServicesSection/>
       <ContentSectionThree/>
+      <TestimonialSection/>
     </>
   )
 }
