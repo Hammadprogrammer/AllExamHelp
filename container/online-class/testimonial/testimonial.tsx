@@ -3,33 +3,33 @@ import Testimonial from "@/container/All-props-comp/testimonial/testimonial";
 export default function TestimonialSection() {
   const testimonialsData = [
     {
-      text: "I was trying to balance a job and classes, but this take my online class service made it all so much easier. The tutors were clear in their explanations and quickly helped me catch up. Highly recommended for busy students!",
+      text: "Absolutely amazing service! My assignments are completed on time, thanks to the professional tutors. Their assistance helped me ace a difficult class, and I ultimately got an A in my online class. I couldn’t be happier! ",
       author: "Order # 28383 | Editing"
 
     },
     {
-      text: "I was working as a student, so I barely had time to study. Their flexible pay someone to take my online class solutions helped bring my grades up without adding more stress to my schedule. Amazing experience!",
+      text: "I was under a lot of pressure at that time and felt overwhelmed because I didn't have much time to devote to my pending class. The team was well-communicated and submitted all classwork on time, ensuring that I received the grades I wanted. Highly reliable and stress-free! ",
       author: "Order # 9921 | Engineering"
     },
     {
-      text: "I was struggling with my assignments and exam preparation, and I got exactly what I needed. The tutors are very knowledgeable, professional and patient. My results improved a lot!",
+      text: "Top-notch online class help! There wasn't a single task, from quizzes to projects, that the pros couldn't handle. There, I could follow along and even receive updates on tricky topics. Thanks to their support, I gained confidence, and my grades jumped up unbelievably! ",
       author: "Order # 4452 | History"
     },
     {
-      text: "This service is great for busy students. The tutors are always on point, and the signup procedures are very easy to follow. I finally feel good about my grades again.",
+      text: "Affordable, fast, and professional! The team values privacy, ensures 100% unique pieces and gives 24/7 support whenever required. I have recommended them to all my classmates and they haven’t disappointed any of them! ",
       author: "Order # 4452 | History"
     }, {
-      text: "I recommend this tutoring platform to anyone! They assisted me with coursework as I worked a part-time job. The one-on-one take my online class support was incredibly helpful.",
+      text: "I couldn’t imagine how stress-free my semester would feel after hiring them. Thank you so much for your assistance with my completed assignments. Truly a godsend for any student who suffers with online classes! ",
       author: "Order # 4452 | History"
     }
   ];
 
   const faqsData = [
-    { q: "Is it possible to pay someone to take online class, at low cost?", a: "Ans. There are a number of excellent platforms on the market; however, we take pride in offering very competitive rates. We know that students are on a tight budget. We are budget-friendly as a platform, ensuring you won't break the bank!" },
-    { q: "How I can pay someone take my online class for me?", a: "Ans. Purchasing on our site is super easy and fast. We have created an easy-to-understand platform where you can get suggestions from an education expert for your online lesson and transparent steps." },
-    { q: "Can I choose the expert who assists me in my class?", a: "Ans. Absolutely. When you ask us to hire someone to take online class, your data and privacy are secured. Our systems are encrypted, and we work under high levels of confidentiality. No resale; you get ownership and academic security per project since each one is different." },
-    { q: "Can I speak directly with the tutor?", a: "Ans. Your instructor can guide you and reach out to the instructor to help clarify all your doubts about your subject and web-based assignments. You are allowed to get in touch with the tutor." },
-    { q: "Who will take my online class for me?", a: "Ans. These are very learned teachers all round. They will also help you with your online exams, tests, and quizzes according to what you authorize." }
+    { q: "Is it true I can pay someone to do online class? ", a: "Ans. Yes! Let our qualified academic specialists handle your online class. Thus, you don’t need to worry about too much hard work when this service can provide you with the right solutions and reliable support to get the high scores.!" },
+    { q: "How do I know the work will be original and plagiarism-free? ", a: "Ans. We always try to provide 100% plagiarism-free content. All of the tasks are done from scratch by our tested and trusted tutors, examined and verified using advanced tools for the detection of copied and pasted content to ensure your submission is original." },
+    { q: "Does your service divulge the privacy of my data? ", a: "Ans. Absolutely. We are very serious about student privacy. All your personal information, including name, class and discussions with our experts, is well protected. All information remains anonymous, which means relaxation for you while we do the work on your course." },
+    { q: "How fast can my assignments or classwork be completed", a: "Ans. We are fast but still pay attention to detail. Whether you need help as part of your single assignment or a full course, we work around the clock to make sure all tasks are completed and submitted before deadlines. You will also get frequent updates on your work progress." },
+    { q: "What subjects and classes do you cover? ", a: "Ans. We cover over 5,000 subjects, including business, IT, nursing, engineering, math and science. Our professionals are well-versed in multiple disciplines, helping students across the USA seek help in almost any online course they are enrolled in." }
   ];
 
   return (
