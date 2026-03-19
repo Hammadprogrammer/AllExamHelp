@@ -5,8 +5,8 @@ const Content_section_two = () => {
   return (
     <>
       <ContentTwo 
-        heading="Choose Online Class Help at Affordable Rates in USA for more than 5000+ Subjects"
-        description="Want to make your online classes easier without the stress? Choose to pay for online class help at affordable rates in the USA with professional assistance for 5,000+ subjects. Business, IT, Nursing, Math and more. Our professional online tutors are PhD-qualified. We always do each work round the clock to submit on time and produce high-quality material. Students across the country turn to us to make learning easier, faster, and more effective with personalized guidance and 24/7 support tailored towards helping you succeed academically."
+        heading="Pay Someone to Take My Online Exam Secure and Fast Way"
+        description="If you are searching about take my exam for me you are at right place. No need to worry about the stress connected with taking an online exam. Now you can hire our tutors to do it on your behalf. Our online exam takers are very proficient in all aspects and are also very professional. The success of our service is quick and dependable. We count on deadlines and therefore your exams will be submitted in time and of the best quality. It can be a multiple-choice exam, a question-type examination or a short exam, we have you covered. Our process is secure and confidential and you can trust it to maintain your privacy. When you are with us, you will be able to concentrate on other things as we work on your academic performance."
       />
     </>
   )

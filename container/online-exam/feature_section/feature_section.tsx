@@ -1,56 +1,57 @@
 import React from 'react';
 import FeaturesSection from '@/container/All-props-comp/feature_section/feature_sectio';
 
-// Icons Import
-import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
-import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
-import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
-import HeadsetMicOutlinedIcon from '@mui/icons-material/HeadsetMicOutlined';
-import PaymentsOutlinedIcon from '@mui/icons-material/PaymentsOutlined';
-import AssignmentTurnedInOutlinedIcon from '@mui/icons-material/AssignmentTurnedInOutlined';
+// Updated Icons for better relevance
+import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined'; // For Scholars
+import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined'; // For Well-Researched Questions
+import WorkspacePremiumOutlinedIcon from '@mui/icons-material/WorkspacePremiumOutlined'; // For High Success Support
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined'; // For Confidentiality
+import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined'; // For 24/7 Availability
+import VerifiedUserOutlinedIcon from '@mui/icons-material/VerifiedUserOutlined'; // For Safe & Reliable
 
 const Features = () => {
-  // Features Data Array updated with your text
+  // Features Data Array updated with your specific content
   const myFeatures = [
     {
-      title: "200+ Qualified Experts",
-      desc: "Over 200 academic professionals across the main fields are a part of our service team and support them in achieving top grades in online classes.",
+      title: "Pool of 4598+ Scholars",
+      desc: "Select among a variety of exam professionals and forget about your exam concerns. Press the Order now button!",
       icon: <GroupsOutlinedIcon />,
     },
     {
-      title: "Low-Cost Rates",
-      desc: "We offer high-level class assistance at student-friendly rates, which means getting professional academic assistance without breaking the bank.",
-      icon: <LocalOfferOutlinedIcon />,
+      title: "Well-Researched Questions",
+      desc: "Our service is offered by professional tutors who prepare your exam questions after hours of research and they have a huge question bank. ",
+      icon: <MenuBookOutlinedIcon />,
     },
     {
-      title: "Connect with Experts Directly",
-      desc: "Instead of waiting for guidance or updates, students can communicate with their assigned experts directly and receive quick help or class-related support.",
-      icon: <ChatOutlinedIcon />,
+      title: "High Success Support",
+      desc: "Our professional tutors will follow all your given instructions, exam format, and original answers to get you the highest grades.",
+      icon: <WorkspacePremiumOutlinedIcon />,
     },
     {
-      title: "All Day, Every Day Support",
-      desc: "We have a trained team available 24/7 to answer all your queries and give you timely updates on the task given for online classes.",
-      icon: <HeadsetMicOutlinedIcon />,
+      title: "Confidentiality",
+      desc: "We do not compromise on the privacy of individual students. All the individual data and communications are kept confidential and locked.",
+      icon: <LockOutlinedIcon />,
     },
     {
-      title: "Quick Payment Options",
-      desc: "A speedy and simple payment experience that is safe and secure. All of your payment details and transactions are encrypted with us.",
-      icon: <PaymentsOutlinedIcon />,
+      title: "24/7 Availability",
+      desc: "Students could always contact us to seek academic support. Our tutors work 24 hours a day to respond to questions and offer study assistance.",
+      icon: <SupportAgentOutlinedIcon />,
     },
     {
-      title: "Proven Academic Results",
-      desc: "An average of A and A+ for the work we do, our service is focused on quality work provided well before time.",
-      icon: <AssignmentTurnedInOutlinedIcon />,
+      title: "Safe & Reliable",
+      desc: "We offer safe and reliable hire someone to take my exam, which can be accessed by students all over the globe. All you need to do is give us a buzz.",
+      icon: <VerifiedUserOutlinedIcon />,
     },
   ];
 
   return (
     <>
       <FeaturesSection 
-        mainHeading={<>Hire Our Trusted Do My Online Class - Your One-Stop Solutions</>}
+        mainHeading={<>Hire Class Buddy Your 24/7 Online Exam Help Partner is Here</>}
         subText={
           <p>
-            Take the burden of your class off your shoulders with secure assistance from our class takers! From project and quizzes to class management, we have everything you need in one place to keep you afloat. 
+            Take the burden of your exams off your shoulders with secure assistance from our professional tutors. 
+            From research-backed questions to 24/7 support, we have everything you need to succeed.
           </p>
         }
         features={myFeatures}

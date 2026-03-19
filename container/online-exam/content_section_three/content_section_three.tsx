@@ -3,24 +3,24 @@ import ContentThree from '@/container/All-props-comp/content_section_three/conte
 
 const ContentSectionThree = () => {
   const pageData = {
-    topHeading: "Secure Top Grades by Simply Requesting Online Class Help Services",
-    topDescription: "Want to get good grades without stressing up the deadlines and classwork? Just ask us to do my class for me, and our professional academic experts will cover everything and anything from assignments to class discussion and your class projects. We make sure your success with timely submissions, effective help and guidance so that you can have a helping hand in understanding the subjects. Let's keep A and A+ grades easy, efficient, and worry-free! ",
+    topHeading: "Why I need to Pay Someone to Take Exam?",
+    topDescription: "Modern education has presented a lot of challenges to students in a fast-paced environment. They are juggling between studying and life. Exam preparation can be stressful because of low confidence, lack of concentration, and poor time management. Our online exam help offers individualized help and practical tips as well as support to assist students to gain higher score in challenging subjects. With our pay someone to take exam, you can boost your academic performance while focusing on other things and your career. ",
     features: [
       {
-        title: "High-Rated Tutors",
-        text: "Our tutors are rated highly. Our team of experts has years of experience, extensive subject knowledge and a proven track record of helping students achieve their goals. Every tutor is committed to helping you with all your online classes for A and A+ grades. "
+        title: "Meeting of Guidelines",
+        text: "Our tutors are very observant of your instructions and academic requirements, which are in terms of formatting, style of citation and time management, which makes every session meet your exam requirements. "
       },
       {
-        title: "500+ Happy Customers",
-        text: "Be among the 500 students across the USA who have relied on us for hassle-free online class help. Our clients achieve excellent outcomes and do so without the time constraints or stress of impending deadlines."
+        title: "Confidentiality & Security",
+        text: "Your privacy is our number one priority. All of your communications, login credentials and payment details are all treated in a safe and confidential manner, thereby providing you with peace of mind during online exams."
       },
       {
-        title: "Complete Privacy",
-        text: "We keep your identity, chats and personal info safe with us. All our services are private and remain confidential till the time of delivery of your academic work. We never disclose your private information."
+        title: "Open and Clear Communication",
+        text: "We communicate with you at all stages. Our communication channels are clear and open, which guarantees a stress-free and easy tutoring experience through the scheduling of the sessions to the tracking of progress."
       },
       {
-        title: "100% Plagiarism Free Work",
-        text: "All assignments, projects, and class discussions are done from scratch with originality as well as accuracy. Our work is original and at the same time free from plagiarism with your degree-level quality, which maintains your class integrity."
+        title: "Quality and Affordable tutoring",
+        text: "Have the best tutoring without straining your pockets. Our prices are fair. We offer early bird discounts and various payment methods to provide the students with the best bargains in studying."
       }
     ]
   };

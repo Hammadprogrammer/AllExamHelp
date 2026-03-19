@@ -6,8 +6,8 @@ const CallActionSection = () => {
   return (
     <div>
           <CallAction 
-      heading={<>Limited-Time Deal - Get Your First Assignment Done <span>FREE for Online Class Help</span> Services!</>}
-      description="Join over 5,000 students who have trusted us to get online class help services and achieve top grades. Grab our special offers today and experience stress-free online learning with proven success!"
+      heading={<>95% Students Witnessed Grade Boost with Us. Take My Online Exam with Us Today!</>}
+      description="Sign up with us today and ace your online exam performance. Our tutors are live now! Call us today and book your slot. Register with us today and enjoy 50% OFF."
       btnText=""
       btnLink=""
     />

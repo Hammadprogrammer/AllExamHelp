@@ -5,8 +5,8 @@ const Stats_section = () => {
   return (
     <div>
       <StatsSection 
-      heading={<>Running Out of Time? Ask for Do <span> My Class </span>for Me Now! We are Live</>}
-      description="Running out of time? We are active round the clock, all set to help you in each and every step so that you can make it in time. Relieve yourself from stress and get success by successfully hitting A grades!"
+      heading={<>Stuck with Your Online Exams? Hire Someone to Take My Exam by Live Chat</>}
+      description="Pinned down on your online exams? Not sure where to go? Our qualified tutors are on the ground and they are there to mentor you. Get instant assistance, clarifications and the backup you require to keep up."
     />
     </div>
   )
