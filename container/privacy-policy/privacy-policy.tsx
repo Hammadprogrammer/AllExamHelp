@@ -1,17 +1,11 @@
 "use client"
 import React from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
 import styles from './privacy-policy.module.scss';
 
 const PrivacyPolicy = () => {
   return (
     <>
-      <Head>
-        <title>Privacy Policy – Hire Class Buddy</title>
-        <meta name="description" content="Feeling overwhelmed by upcoming exams? Hire Class Buddy offers professional exam tutors for hire to boost your confidence and help you excel in your exams." />
-      </Head>
-
       <div className={styles.mainWrapper}>
         <main className={styles.container}>
           <div className={styles.card}>
