@@ -1,12 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { Metadata } from 'next';
+import AboutUs from '@/container/about-us/about-us';
+
+export const metadata: Metadata = {
+  title: 'Hire Class Buddy – Online Class Help and Exam Help USA',
+  description: 'Get expert online class help, exam help, assignments, quizzes and proctored exam support in the USA. Hire Class Buddy helps students succeed with trusted academic assistance.',
+};
 
 const page = () => {
   return (
     <div>
-      <h1>About Us</h1>
-      <p>Welcome to our About Us page.</p>
+      <AboutUs />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
