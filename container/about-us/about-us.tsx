@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './about-us.module.scss';
+import Link from 'next/link';
 
 const AboutUs: React.FC = () => {
   const services = [
@@ -12,7 +13,7 @@ const AboutUs: React.FC = () => {
   ];
 
   const whyChoose = [
-    { title: "Expert Academic Writers", desc: "Well, we have a team of qualified experts in multiple subjects and disciplines, so every task assigned to us will be done on the topic by someone who actually knows it." },
+    { title: "Expert Academic Writers:", desc: "Well, we have a team of qualified experts in multiple subjects and disciplines, so every task assigned to us will be done on the topic by someone who actually knows it." },
     { title: "Written by a Human:", desc: "All content is written by real human experts. Everything in the course, question papers and endeavors are composed by an expert author." },
     { title: "Secure and Confidential: ", desc: "We are dedicated to your privacy and the security of your information. It is important to know that your communications and your submissions, as well as payment systems, are secure and encrypted." },
     { title: "15000+ Students Trust Us:", desc: "We help students in the USA with improved grades. They say that we are dependable and professional." },
@@ -72,7 +73,7 @@ const AboutUs: React.FC = () => {
           <div className={styles.whyGrid}>
             {whyChoose.map((item, idx) => (
               <div key={idx} className={styles.whyCard}>
-                <h4>{item.title}</h4>
+                <h4><strong>{item.title}</strong></h4>
                 <p>{item.desc}</p>
               </div>
             ))}
@@ -83,9 +84,9 @@ const AboutUs: React.FC = () => {
         <footer className={styles.ctaBox}>
           <h2 className={styles.sectionHeading}>Our Promise to You!</h2>
           <p>At Hire Class Buddy, we are providing a partnership to the students to ensure their success rather than just providing our services. We are not only getting work done, but we are instilling confidence, expanding knowledge and supporting students in reaching their potential. Whether you are having difficulty in a challenging class, a speedy due date or an intense exam, we have all your academic roadblocks covered for success.</p>
-          <h3>Get Started Today</h3>
-          <p>Join thousands of satisfied students who trust Hire Class Buddy who entrusted Hire Class Buddy with their academic needs. We are here to be your fruitful partner who ensures nothing stops you from succeeding.</p>
-          <button className={styles.ctaBtn}>Contact Our Experts Now</button>
+        <br />
+          <p>Get Started Today Join thousands of satisfied students who trust Hire Class Buddy who entrusted Hire Class Buddy with their academic needs. We are here to be your fruitful partner who ensures nothing stops you from succeeding.</p>
+          <Link href="/contact-us"><button className={styles.ctaBtn}>Contact Our Experts Now</button></Link>
         </footer>
       </div>
     </div>
