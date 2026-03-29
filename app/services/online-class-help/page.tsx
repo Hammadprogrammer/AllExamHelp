@@ -1,6 +1,7 @@
 import React from 'react'
 import type { Metadata } from 'next'
 import OnlineClassHero from '@/container/services/online-class/hero_section/page'
+import UniSection from '@/container/home/uni_section/uni_section'
 import Features from '@/container/services/online-class/feature_section/feature_section'
 import ContentSectionOne from '@/container/services/online-class/Content_section_one/Content_section_one'
 import CallActionSection from '@/container/services/online-class/call_action/call_acition'
@@ -21,6 +22,7 @@ const page = () => {
   return (
     <>
       <OnlineClassHero />
+      <UniSection/>
       <Features />
       <ContentSectionOne />
       <CallActionSection/>
