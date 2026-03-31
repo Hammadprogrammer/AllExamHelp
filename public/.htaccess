@@ -1,15 +1,29 @@
 RewriteEngine On
 
-# 1. Force HTTPS and Remove WWW (Final Version: https://hireclassbuddy.com)
+# 1. Force HTTPS and Remove WWW (Sahi Hai)
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\.hireclassbuddy\.com [NC]
 RewriteRule ^(.*)$ https://hireclassbuddy.com/$1 [L,R=301]
 
-# 2. Redirect index.php or default.php to Home Page
-RewriteCond %{THE_REQUEST} ^.*/(index|default)\.php [NC]
-RewriteRule ^(.*)(index|default)\.php$ https://hireclassbuddy.com/ [R=301,L]
+# 2. Redirect index.php to Home Page
+# WordPress ki purani entry ko khatam karne ke liye
+RewriteCond %{THE_REQUEST} ^.*/index\.php [NC]
+RewriteRule ^(.*)index\.php$ / [R=301,L]
 
-# 3. Clean HTML extensions (Optional but good for SEO)
+# 3. Next.js Static Pages Fix (Bina .html ke pages kholne ke liye)
+# Agar aapne about.html upload ki hai, to ye use hireclassbuddy.com/about par chalayega
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
+
+# 4. SMART CATCH-ALL (SEO Safe)
+# Purane PHP pages ko home page par bhej raha hai
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\.php$ / [R=301,L]
+
+# 5. SPA / Client-Side Routing Fix
+# Agar koi page nahi milta (404), toh index.html load karega takay Next.js khud handle kare
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
