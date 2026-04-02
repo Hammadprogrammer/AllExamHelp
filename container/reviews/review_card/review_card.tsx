@@ -14,73 +14,129 @@ interface Review {
 const reviews: Review[] = [
   { 
     id: 1, 
-    name: "Dr. Aliza Beth", 
-    sub: "Nursing & Health Sciences", 
-    text: "The expertise provided for my advanced nursing certifications was exceptional. They handled complex clinical case studies and medical terminology with 100% accuracy. If you're struggling with proctored exams, this is the place to be for guaranteed success.", 
+    name: "Jason T.", 
+    sub: "Boston University", 
+    text: "“I was juggling work and my online classes, and it quickly became overwhelming. Hire Class Buddy really helped me manage everything. Their team was professional, and all my coursework was completed on time. My grades improved significantly.”", 
     color: "#f39c12" 
   },
   { 
     id: 2, 
-    name: "James Wilson", 
-    sub: "Advanced Mathematics", 
-    text: "Managing MyMathLab and Pearson portals while working a full-time job was impossible until I found ClassBuddy. They don't just provide answers; they ensure the entire portal is managed professionally with guaranteed A grades throughout the semester.", 
+    name: "Ethan L.", 
+    sub: "New York University", 
+    text: "“The team helped me catch up when I fell behind in my online class. They completed my assignments on time, attended lectures, and participated in discussions. I was able to finish the course stress-free. Highly recommended!”", 
     color: "#3498db" 
   },
   { 
     id: 3, 
-    name: "Rohit Kumar", 
-    sub: "MBA Executive", 
-    text: "Their 24/7 availability is a lifesaver for working professionals. I had a last-minute finance submission at midnight, and their subject specialist handled it flawlessly. Highly encrypted and private service that respects student confidentiality.", 
+    name: "Mia K.", 
+    sub: "University of Texas at Austin", 
+    text: "“Amazing support! The entire process became much easier, and the quality of work was excellent. I was worried about missing deadlines, but they handled everything professionally and helped me achieve one of my highest grades.”", 
     color: "#e74c3c" 
   },
   { 
     id: 4, 
-    name: "Sarah Khan", 
-    sub: "Biological Sciences", 
-    text: "I was worried about my Biology lab reports and final quizzes. The team was extremely polite and professional, guiding me through the process while ensuring my portal credentials remained completely secure. Their lab analysis is simply top-notch.", 
+    name: "Ava P.", 
+    sub: "Ohio State University", 
+    text: "“Professional and reliable service. I was extremely nervous about my online exam, so I reached out for help. Their expert guidance made a big difference, and I ended up performing much better than I expected.”", 
     color: "#2ecc71" 
   },
   { 
     id: 5, 
-    name: "Kevin V.", 
-    sub: "Computer Science", 
-    text: "The coding assignments and web development projects were delivered way before the deadline. Their technical depth in React and Node.js is impressive for anyone taking CS online classes. They even helped me debug complex logic in my final project.", 
+    name: "Lucas H.", 
+    sub: "University of Southern California", 
+    text: "“Excellent service! The expert was knowledgeable and helped me with my online exam. I was worried because the exam counted heavily toward my final grade, but their support made all the difference. I ended up getting an A.”", 
     color: "#9b59b6" 
   },
   { 
     id: 6, 
-    name: "Maria Garcia", 
-    sub: "World History & Arts", 
-    text: "Writing long essays was always my weakness. They provided well-researched, plagiarism-free content for my history portal. The communication was seamless throughout the semester, and the depth of research was truly academic-grade.", 
+    name: "Emma C.", 
+    sub: "UIUC", 
+    text: "“It was great to have an expert guide me through my online exam preparation. The service was reliable and professional. My exam was completed on time, and the results were better than I expected.”", 
     color: "#f1c40f" 
   },
   { 
     id: 7, 
-    name: "Dr. Robert S.", 
-    sub: "Organic Chemistry", 
-    text: "Chemistry equations and reaction mechanisms can be a nightmare online. ClassBuddy specialists are clearly subject experts. They managed my entire Chem portal with such precision that I didn't have to worry about a single quiz.", 
+    name: "Isabella M.", 
+    sub: "University of North Carolina", 
+    text: "“Amazing experience! I was struggling to manage discussions and projects in my online course. Their expert kept me updated on my progress and helped me complete the course successfully.”", 
     color: "#e67e22" 
   },
   { 
     id: 8, 
-    name: "Emily Davis", 
-    sub: "Psychology & Ethics", 
-    text: "I was struggling with the volume of discussion posts and weekly reflections. The team captured my voice perfectly and delivered thoughtful, high-quality responses that my professor loved. Highly recommended for Social Science majors.", 
+    name: "Alex D.", 
+    sub: "University of Miami", 
+    text: "“Balancing work and studies was not easy, but their team was incredibly supportive. They helped me complete my online course on time, and I performed very well. Very professional and reliable service.”", 
     color: "#1abc9c" 
   },
   { 
     id: 9, 
-    name: "Michael Chen", 
-    sub: "Accounting & Audit", 
-    text: "The balance sheets and auditing tasks were perfectly executed. Accounting portals are tricky because one wrong entry ruins everything, but their experts were meticulous. Got an A in one of the toughest courses of my degree.", 
+    name: "Mathew D. K.", 
+    sub: "UC Berkeley", 
+    text: "“High-quality support! I had trouble keeping track of deadlines and reports in my online coursework. Their team handled everything professionally and ensured every task was submitted on time.”", 
     color: "#2980b9" 
   },
   { 
     id: 10, 
-    name: "Sophia Rose", 
-    sub: "Pharmacology", 
-    text: "Pharmacology requires memorizing thousands of drug interactions. Their assistance with my online exams was a game-changer. They are fast, reliable, and most importantly, they know the subject inside out. Truly a premium service.", 
+    name: "Mason T.", 
+    sub: "University of California", 
+    text: "“I had several projects due in the same week, and it was overwhelming. Thanks to this team, everything was completed on time and perfectly formatted. The expert followed all my instructions and delivered excellent work.”", 
     color: "#d35400" 
+  },
+  { 
+    id: 11, 
+    name: "Ethan R.", 
+    sub: "The Ohio State University", 
+    text: "“I found it difficult to keep up with my assignments. Their team handled everything carefully, and I received above-average grades on all submissions. This assignment writer saved me a lot of stress.”", 
+    color: "#c0392b" 
+  },
+  { 
+    id: 12, 
+    name: "Olivia M.", 
+    sub: "University of Michigan", 
+    text: "“Excellent experience! Each assignment was well researched and delivered before the deadline. Communication was quick and clear throughout the process. I could focus on studying without worrying about my coursework.”", 
+    color: "#8e44ad" 
+  },
+  { 
+    id: 13, 
+    name: "Ava P.", 
+    sub: "University of Southern California", 
+    text: "“At first, I was skeptical, but the quality of work really impressed me. I was struggling with weekly online quizzes, and their help significantly improved my scores. Highly recommended if you want to boost your grades.”", 
+    color: "#27ae60" 
+  },
+  { 
+    id: 14, 
+    name: "Noah S.", 
+    sub: "University of Texas", 
+    text: "“I was nervous about my quizzes because they counted for a large portion of my grade. The team was very professional and helped me complete several assessments before the deadlines. I felt supported throughout the process.”", 
+    color: "#2980b9" 
+  },
+  { 
+    id: 15, 
+    name: "Lucas M.", 
+    sub: "University of Illinois Urbana", 
+    text: "“Great service! I was overwhelmed with multiple exams and didn’t have enough time to prepare. With their help, I scored higher than I expected. The tutors were very helpful and professional.”", 
+    color: "#e67e22" 
+  },
+  { 
+    id: 16, 
+    name: "James D.", 
+    sub: "Penn State University", 
+    text: "“I was very nervous about my proctored exam, but their guidance helped me stay calm and focused. Everything was handled professionally and on time. I ended up doing much better than I expected.”", 
+    color: "#3498db" 
+  },
+  { 
+    id: 17, 
+    name: "Charlotte H.", 
+    sub: "UCLA", 
+    text: "“This service was extremely reliable. The team handled my proctored exam professionally, and the results were excellent. The entire process was smooth and stress-free.”", 
+    color: "#f39c12" 
+  },
+  { 
+    id: 18, 
+    name: "Mia S.", 
+    sub: "University of Washington", 
+    text: "“Very professional and trustworthy service. I felt overwhelmed before my proctored exam, but their expert guidance made everything manageable. I’m very happy with the outcome.”", 
+    color: "#2ecc71" 
   }
 ];
 
@@ -88,7 +144,7 @@ const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.15 }
+    transition: { staggerChildren: 0.1 }
   }
 };
 
@@ -105,8 +161,7 @@ const cardVariants: Variants = {
 const Reviewscard = () => {
   const [showAll, setShowAll] = useState(false);
   
-  // Pehle 4 reviews dikhane ke liye logic
-  const displayedReviews = showAll ? reviews : reviews.slice(0, 4);
+  const displayedReviews = showAll ? reviews : reviews.slice(0, 6);
 
   return (
     <section className={styles.wrapper}>
@@ -114,17 +169,10 @@ const Reviewscard = () => {
       <div className={styles.blob2}></div>
       
       <div className={styles.header}>
-        <motion.span 
-          initial={{ opacity: 0, y: -20 }} 
-          whileInView={{ opacity: 1, y: 0 }} 
-          className={styles.tag}
-        >
-          Success Stories
-        </motion.span>
         <h2 className={styles.title}>
-          Trusted by <span className={styles.gold}>10,000+</span> Students
+          Customer <span className={styles.gold}> Reviews</span>
         </h2>
-        <p className={styles.subtitle}>Our results speak louder than words. Join the elite group of top achievers.</p>
+        <p className={styles.subtitle}>At Hire Class Buddy, we take pride in helping students succeed in their online classes, exams, assignments, and quizzes. Here are some real experiences shared by students who trusted our academic assistance services.</p>
       </div>
 
       <motion.div 
