@@ -13,7 +13,7 @@ import {
   Functions, HistoryEdu, Gavel, Psychology, People, BarChart, 
   LocalHospital, Biotech, PsychologyAlt, MenuBook, Home as HomeIcon,
   Star as StarIcon, Info as InfoIcon, Close as CloseIcon, ContactSupport,
-  AutoStories // Added for a general subject icon
+  AutoStories 
 } from '@mui/icons-material';
 import styles from './navbar.module.scss';
 
@@ -49,6 +49,15 @@ const Navbar = () => {
     { name: "Statistics Class", icon: <BarChart /> }
   ];
 
+  // Helper function to create safe URLs
+  const createSlug = (text: string) => {
+    return text
+      .toLowerCase()
+      .replace(/&/g, 'and')
+      .replace(/\s+/g, '-')
+      .replace(/[^\w-]+/g, '');
+  };
+
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
     setOpenDropdown(null); 
@@ -75,20 +84,18 @@ const Navbar = () => {
         <Container maxWidth="lg">
           <Toolbar disableGutters className={styles.toolbar}>
             
-            {/* LEFT: LOGO */}
             <Box className={styles.logoArea}>
-              <Link href="/">
+              <Link href="/" prefetch={false}>
                 <Image src="/logo1.png" alt="Logo" width={100} height={45} priority />
               </Link>
             </Box>
 
-            {/* CENTER: NAV LINKS (Desktop) */}
             <Box className={styles.centerNav}>
-              <Link href="/" className={`${styles.navLink} ${isActive('/') ? styles.active : ''}`}>
+              <Link href="/" prefetch={false} className={`${styles.navLink} ${isActive('/') ? styles.active : ''}`}>
                 Home
               </Link>
               
-              <Link href="/about-us" className={`${styles.navLink} ${isActive('/about-us/') ? styles.active : ''}`}>
+              <Link href="/about-us/" prefetch={false} className={`${styles.navLink} ${isActive('/about-us/') ? styles.active : ''}`}>
                 About Us
               </Link>
 
@@ -99,10 +106,10 @@ const Navbar = () => {
                 </span>
                 <ul className={`${styles.dropdownMenu} ${openDropdown === 'ser' ? styles.show : ''}`}>
                   {services.map((item) => {
-                    const href = `/services/${item.name.toLowerCase().replace(/ /g, '-')}`;
+                    const href = `/services/${createSlug(item.name)}/`;
                     return (
                       <li key={item.name}>
-                        <Link href={href} className={isActive(href) ? styles.dropdownActive : ''}>
+                        <Link href={href} prefetch={false} className={isActive(href) ? styles.dropdownActive : ''}>
                           {item.icon} {item.name}
                         </Link>
                       </li>
@@ -119,9 +126,9 @@ const Navbar = () => {
                 <Box className={`${styles.megaMenu} ${openDropdown === 'sub' ? styles.show : ''}`}>
                   <div className={styles.flexGrid}>
                     {subjects.map((sub) => {
-                       const href = `/subjects/${sub.name.toLowerCase().replace(/ /g, '-')}`;
+                       const href = `/subjects/${createSlug(sub.name)}/`;
                        return (
-                        <Link key={sub.name} href={href} className={`${styles.flexItem} ${isActive(href) ? styles.dropdownActive : ''}`}>
+                        <Link key={sub.name} href={href} prefetch={false} className={`${styles.flexItem} ${isActive(href) ? styles.dropdownActive : ''}`}>
                           {sub.icon} {sub.name}
                         </Link>
                       );
@@ -130,14 +137,13 @@ const Navbar = () => {
                 </Box>
               </Box>
 
-              <Link href="/reviews" className={`${styles.navLink} ${isActive('/reviews/') ? styles.active : ''}`}>
+              <Link href="/reviews/" prefetch={false} className={`${styles.navLink} ${isActive('/reviews/') ? styles.active : ''}`}>
                 Reviews
               </Link>
             </Box>
 
-            {/* RIGHT: CTA & HAMBURGER */}
             <Box className={styles.rightNav}>
-              <Link href="/contact-us" className={`${styles.ctaBtn} ${isActive('/contact-us') ? styles.ctaActive : ''}`}>
+              <Link href="/contact-us/" prefetch={false} className={`${styles.ctaBtn} ${isActive('/contact-us/') ? styles.ctaActive : ''}`}>
                 Contact Us
               </Link>
               
@@ -166,17 +172,14 @@ const Navbar = () => {
           <Divider />
           
           <List className={styles.mobileList}>
-            {/* Home Link */}
             <ListItem className={`${styles.mobileListItem} ${isActive('/') ? styles.mobActive : ''}`}>
-              <Link href="/" onClick={handleDrawerToggle}><HomeIcon /> Home</Link>
+              <Link href="/" prefetch={false} onClick={handleDrawerToggle}><HomeIcon /> Home</Link>
             </ListItem>
 
-            {/* About Link */}
-            <ListItem className={`${styles.mobileListItem} ${isActive('/about-us') ? styles.mobActive : ''}`}>
-              <Link href="/about-us" onClick={handleDrawerToggle}><InfoIcon /> About Us</Link>
+            <ListItem className={`${styles.mobileListItem} ${isActive('/about-us/') ? styles.mobActive : ''}`}>
+              <Link href="/about-us/" prefetch={false} onClick={handleDrawerToggle}><InfoIcon /> About Us</Link>
             </ListItem>
 
-            {/* Services Dropdown (Mobile) */}
             <ListItem 
               className={`${styles.mobileListItem} ${isCategoryActive('/services') ? styles.mobActive : ''}`} 
               onClick={() => handleDropdown('ser')}
@@ -187,9 +190,9 @@ const Navbar = () => {
             <Collapse in={openDropdown === 'ser'} timeout="auto" unmountOnExit>
               <div className={styles.mobileSubList}>
                 {services.map(s => {
-                  const href = `/services/${s.name.toLowerCase().replace(/ /g, '-')}`;
+                  const href = `/services/${createSlug(s.name)}/`;
                   return (
-                    <Link key={s.name} href={href} onClick={handleDrawerToggle} className={isActive(href) ? styles.mobSubActive : ''}>
+                    <Link key={s.name} href={href} prefetch={false} onClick={handleDrawerToggle} className={isActive(href) ? styles.mobSubActive : ''}>
                       {s.icon} {s.name}
                     </Link>
                   );
@@ -197,7 +200,6 @@ const Navbar = () => {
               </div>
             </Collapse>
 
-            {/* --- SUBJECTS DROPDOWN (NEW IN MOBILE) --- */}
             <ListItem 
               className={`${styles.mobileListItem} ${isCategoryActive('/subjects') ? styles.mobActive : ''}`} 
               onClick={() => handleDropdown('sub')}
@@ -208,9 +210,9 @@ const Navbar = () => {
             <Collapse in={openDropdown === 'sub'} timeout="auto" unmountOnExit>
               <div className={styles.mobileSubList}>
                 {subjects.map(sub => {
-                  const href = `/subjects/${sub.name.toLowerCase().replace(/ /g, '-')}`;
+                  const href = `/subjects/${createSlug(sub.name)}/`;
                   return (
-                    <Link key={sub.name} href={href} onClick={handleDrawerToggle} className={isActive(href) ? styles.mobSubActive : ''}>
+                    <Link key={sub.name} href={href} prefetch={false} onClick={handleDrawerToggle} className={isActive(href) ? styles.mobSubActive : ''}>
                       {sub.icon} {sub.name}
                     </Link>
                   );
@@ -218,14 +220,12 @@ const Navbar = () => {
               </div>
             </Collapse>
 
-            {/* Reviews Link */}
-            <ListItem className={`${styles.mobileListItem} ${isActive('/reviews') ? styles.mobActive : ''}`}>
-              <Link href="/reviews" onClick={handleDrawerToggle}><StarIcon /> Reviews</Link>
+            <ListItem className={`${styles.mobileListItem} ${isActive('/reviews/') ? styles.mobActive : ''}`}>
+              <Link href="/reviews/" prefetch={false} onClick={handleDrawerToggle}><StarIcon /> Reviews</Link>
             </ListItem>
 
-            {/* Mobile Contact Button */}
             <Box sx={{ p: 2, mt: 2 }}>
-              <Link href="/contact-us" className={styles.ctaBtnMob} onClick={handleDrawerToggle}>
+              <Link href="/contact-us/" prefetch={false} className={styles.ctaBtnMob} onClick={handleDrawerToggle}>
                 <ContactSupport /> Contact Us
               </Link>
             </Box>

@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 // Client ki requirement ke mutabiq Metadata update karein
 export const metadata: Metadata = {
-  title: "nextjs",
+  title: "Hire Class Buddy",
   description: "Get expert assistance for your classes and assignments with Hire Class Buddy.",
   alternates: {
     canonical: "https://hireclassbuddy.com", // Sabse important line Google ke liye
