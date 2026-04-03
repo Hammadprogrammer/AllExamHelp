@@ -9,11 +9,9 @@ import Stats_section from '@/container/services/online-quiz-test/stats_section/s
 import Content_section_two from '@/container/services/online-quiz-test/content_section_two/content_section_two'
 import ProcessSection from '@/container/home/process_section/process_section'
 import ServicesSection from '@/container/home/service_section/service_section'
-
 import ContentSectionThree from '@/container/services/online-quiz-test/content_section_three/content_section_three'
 import TestimonialSection from '@/container/services/online-quiz-test/testimonial/testimonial'
 
-// Meta Data Configuration
 export const metadata: Metadata = {
   title: "Pay Someone to Take My Online Test, Do My Test for Me",
   description: "Looking for an affordable do my test for me service? Pay Someone to Take My Online Test now and skyrocket your grades. Get 50% Discount by signing up today for all your tests and quizzes.",
