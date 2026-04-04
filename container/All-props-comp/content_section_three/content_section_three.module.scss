@@ -23,18 +23,33 @@ background-color: white;
       text-align: center;
     }
 
-    .imageContent {
-      flex: 1;
-      width: 100%;
-      
-      .responsiveImg {
-        width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 10px;
-        object-fit: cover;
-      }
-    }
+.imageContent {
+  flex: 1;
+  width: 100%;
+}
+
+.imageContent .responsiveImg {
+  width: 100%;
+  height: 550px;        /* important for responsiveness */
+  max-height: 450px;   /* desktop ke liye limit */
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .imageContent .responsiveImg {
+    max-height: 350px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .imageContent .responsiveImg {
+    max-height: 250px;
+  }
+}
 
     .textContent {
       flex: 1;
