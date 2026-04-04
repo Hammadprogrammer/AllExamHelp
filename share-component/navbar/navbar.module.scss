@@ -2,10 +2,11 @@
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 1000; // zaroor lagana warna overlap issue hoga
+  z-index: 1000;
+  
 }
 .topBar {
-  background: #0d1b2a; color: #e0e1dd; padding: 8px 0; font-size: 13px;
+  background: #000000; color: #e0e1dd; padding: 8px 0; font-size: 13px;
   .topContainer { display: flex; justify-content: space-between; align-items: center; }
 }
 
