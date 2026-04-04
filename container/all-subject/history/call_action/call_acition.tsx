@@ -6,9 +6,9 @@ const CallActionSection = () => {
   return (
     <div>
           <CallAction 
-      heading={<>Join Thousands of Successful Students Across the USA who Trust Our Professional History Class Takers for Hire – Book Your Slot Now!
+      heading={<>Need Fast Answers? Chat With Our Tutors Anytime and Get 50% Off Your Initial Booking. Offer Valid for New Students Only!
 </>}
-      description="Get help in your online class now and increase your grades! Join now to receive 50% Off your first order. Don’t wait — This limited-time offer ensures top-quality, plagiarism-free work delivered on time, helping you achieve the grades you deserve!"
+      description="Get instant solutions for homework, quizzes, and presentations with our responsive tutors. Whether it’s a tricky problem or a last-minute assignment, we’ve got you covered. New students enjoy 25% off their first booking - grab this limited offer now!"
       btnText="Request a FREE quote today!"
       btnLink="/contact-us"
     />
