@@ -11,17 +11,17 @@ const ServicesSection = () => {
   const services = [
     {
       icon: <TimerOutlined />,
-      title: "Online Exam Help",
+      title: "Online Exam ",
       desc: "Our professionals offer reliable take my online exam assistance and ensure your privacy, and you get the highest grades possible. We follow your exam guidelines carefully and ensure accurate solutions are delivered within the exam time frame."
     },
     {
       icon: <SchoolOutlined />,
-      title: "Online Class Help",
+      title: "Online Class ",
       desc: "Unable to cope with your online classes? Our skilled tutors can take care of complete online class activities such as classwork, discussions, and weekly tasks to ensure you stay on track throughout the semester."
     },
     {
       icon: <HistoryEduOutlined />,
-      title: "Online Assignment Help",
+      title: "Online Assignment ",
       desc: "We offer customized, well-researched assignments tailored to your requirements and timelines, prepared by subject specialists. We provide plagiarism-free, formatting and timely delivery to get you better grades."
     }
   ];

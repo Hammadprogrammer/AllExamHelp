@@ -18,7 +18,7 @@ const HeroSection = () => {
         }
         subText={
           <p>
-            Struggling alone with your poor class grades? Fret not, <strong>Hire Class Buddy</strong> 
+            Struggling alone with your poor class grades? Fret not, <strong>Hire Class Buddy </strong>
             is your one-stop shop for all your online class struggles. All you 
             have to do is request <strong>“do my online class for me”</strong>.
           </p>

@@ -3,7 +3,9 @@ import type { Metadata } from 'next'
 import OnlineClassHero from '@/container/services/online-quiz-test/hero_section/page'
 import UniSection from '@/container/home/uni_section/uni_section'
 import Features from '@/container/services/online-quiz-test/feature_section/feature_section'
-import ContentSectionOne from '@/container/services/online-exam/Content_section_one/Content_section_one'
+
+import ContentSectionOne from '@/container/services/online-quiz-test/Content_section_one/Content_section_one'
+
 import CallActionSection from '@/container/services/online-quiz-test/call_action/call_acition'
 import Stats_section from '@/container/services/online-quiz-test/stats_section/stats_section'
 import Content_section_two from '@/container/services/online-quiz-test/content_section_two/content_section_two'

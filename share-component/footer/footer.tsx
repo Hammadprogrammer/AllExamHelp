@@ -59,7 +59,7 @@ const Footer = () => {
           <div className={styles.footerCol}>
             <div className={styles.logoContainer}>
               <Link href="/" prefetch={false}>
-                <Image src="/logo.png" alt="Hire Class Buddy" width={160} height={50} priority />
+                <Image src="/logo1.png" alt="Hire Class Buddy" width={160} height={50} priority />
               </Link>
             </div>
             <p className={styles.description}>
