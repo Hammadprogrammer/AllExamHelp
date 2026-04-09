@@ -4,23 +4,23 @@ export default function TestimonialSection() {
   const testimonialsData = [
     {
       text: "Absolutely incredible! I was anxious for my proctored exam, but they held my hand all the way through and helped when I needed extra time to make sure everything went well. “I passed it so easily, super no stress, and I would totally recommend!",
-      author: "Order # 28383 | Editing"
+      author: "Order # 28496 | Editing"
 
     },
     {
       text: "“Amazing experience! I had an exam a few days back and barely enough time, but their team nailed it! Fast, accurate, and completely confidential. They helped me bring my grades up!”  ",
-      author: "Order # 9921 | Engineering"
+      author: "Order # 28497 | Engineering"
     },
     {
       text: "“Highly trustworthy service! They made my secured proctored exam date run very fast and communicated enough in a top-secret way. I was told that it was going to be dealt with by professionals.”  ",
-      author: "Order # 4452 | History"
+      author: "Order # 28498 | History"
     },
     {
       text: "Outstanding support! They are knowledgeable, quick to respond and consistent. This means that every bit of the responses was right, their exam went accordingly on time too and additionally everything worked completely splendidly.  ",
-      author: "Order # 4452 | History"
+      author: "Order # 28499 | History"
     }, {
       text: "“It’s professional, and it’s reliable, and it’s discreet. They enabled me to finish the exam with relevant answers within my time. I am very pleased with their services and will absolutely use them again.  ",
-      author: "Order # 4452 | History"
+      author: "Order # 28500 | History"
     }
   ];
 

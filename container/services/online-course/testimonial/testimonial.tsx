@@ -4,23 +4,23 @@ export default function TestimonialSection() {
   const testimonialsData = [
     {
       text: "Phenomenal! I barely had time to handle my full semester workload, so their team took over and submitted on time. For everything from assignments to quizzes, they handled it all. I came away with A’s I didn’t think were possible!” ",
-      author: "Order # 28383 | Editing"
+      author: "Order # 28486 | Editing"
 
     },
     {
       text: "Five stars aren’t enough! The specialist they assigned to me was knowledgeable, responsive and endlessly reliable. I submitted all tasks of my course as per deadlines and never failed in a single part. This is what made my semester nonchalant.”  ",
-      author: "Order # 9921 | Engineering"
+      author: "Order # 28487 | Engineering"
     },
     {
       text: "Such a lifesaver! I had classes one after another, and I could not track the course, but their online course help not only helped me stay on track but also increased my amplitude. Fantastic work, real understanding and brilliant support all the way through — will hire them again without a doubt!” ",
-      author: "Order # 4452 | History"
+      author: "Order # 28488 | History"
     },
     {
       text: "Highly recommend! All the tutors are professional and are always available whenever I ask for an update. They didn’t just do things — they explained parts I hadn’t understood, which, to be perfectly honest, boosted my performance like a breeze.”  ",
-      author: "Order # 4452 | History"
+      author: "Order # 28489 | History"
     }, {
       text: "Incredible experience! I got help halfway through the semester and saw a huge difference in my performance. Instant responses, accurate solutions, personal attention and total confidentiality — just what every busy student needs!  ",
-      author: "Order # 4452 | History"
+      author: "Order # 28490 | History"
     }
   ];
 

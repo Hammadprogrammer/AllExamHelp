@@ -4,23 +4,23 @@ export default function TestimonialSection() {
   const testimonialsData = [
     {
       text: "Absolutely amazing service! My assignments are completed on time, thanks to the professional tutors. Their assistance helped me ace a difficult class, and I ultimately got an A in my online class. I couldn’t be happier! ",
-      author: "Order # 28383 | Editing"
+      author: "Order # 28481 | Editing"
 
     },
     {
       text: "I was under a lot of pressure at that time and felt overwhelmed because I didn't have much time to devote to my pending class. The team was well-communicated and submitted all classwork on time, ensuring that I received the grades I wanted. Highly reliable and stress-free! ",
-      author: "Order # 9921 | Engineering"
+      author: "Order # 28482 | Engineering"
     },
     {
       text: "Top-notch online class help! There wasn't a single task, from quizzes to projects, that the pros couldn't handle. There, I could follow along and even receive updates on tricky topics. Thanks to their support, I gained confidence, and my grades jumped up unbelievably! ",
-      author: "Order # 4452 | History"
+      author: "Order # 28483 | History"
     },
     {
       text: "Affordable, fast, and professional! The team values privacy, ensures 100% unique pieces and gives 24/7 support whenever required. I have recommended them to all my classmates and they haven’t disappointed any of them! ",
-      author: "Order # 4452 | History"
+      author: "Order # 28484 | History"
     }, {
       text: "I couldn’t imagine how stress-free my semester would feel after hiring them. Thank you so much for your assistance with my completed assignments. Truly a godsend for any student who suffers with online classes! ",
-      author: "Order # 4452 | History"
+      author: "Order # 28485 | History"
     }
   ];
 

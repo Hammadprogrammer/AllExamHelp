@@ -4,23 +4,23 @@ export default function TestimonialSection() {
   const testimonialsData = [
     {
       text: "Their online exam help was actually effective in making me grasp difficult concepts that I was having difficulty with. The tutors made it very explanatory and I felt much more confident when I was having my exams! ",
-      author: "Order # 28383 | Editing"
+      author: "Order # 28491 | Editing"
 
     },
     {
       text: "I had difficulties with time management of my study when I had numerous subjects. Reliable take my online exam solutions kept me on schedule and made my scores improve a great deal. ",
-      author: "Order # 9921 | Engineering"
+      author: "Order # 28492 | Engineering"
     },
     {
       text: "The 24/7 doubt service was a lifesaver. My tutor was always available to explain my questions whenever I had one. It also made my exam success much less stressful. ",
-      author: "Order # 4452 | History"
+      author: "Order # 28493 | History"
     },
     {
       text: "I liked the flexible working hours. The tutors fitted perfectly into my schedule, which implies that I was able to secure good grades without compromising other activities.",
-      author: "Order # 4452 | History"
+      author: "Order # 28494 | History"
     }, {
       text: "The practice exams and feedback enabled me to understand my areas of weakness and work on them. With the help of their exam takers, my examinations were just a breeze. ",
-      author: "Order # 4452 | History"
+      author: "Order # 28495 | History"
     }
   ];
 
