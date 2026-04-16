@@ -53,7 +53,7 @@ const Hero: React.FC<HeroProps> = ({ heading, subText, bullets = [] }) => {
             <Link href="/contact-us" className={styles.btnPrimary}>
               Contact Us
             </Link>
-            <Link href="https://wa.me/yournumber" className={styles.btnSecondary}>
+            <Link href="https://wa.me/12292028857"  className={styles.btnSecondary}>
               Chat With Us
             </Link>
           </div>

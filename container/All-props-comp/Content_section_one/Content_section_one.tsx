@@ -36,14 +36,14 @@ const ContentOne: React.FC<ContentSectionProps> = ({ mainHeading, description })
               <Link href="/contact-us" className={styles.primaryBtn}>
                 Contact Us
               </Link>
-              <Link 
-                href="https://wa.me/yournumber" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className={styles.secondaryBtn}
-              >
-                Chat With Us
-              </Link>
+            <Link 
+              href="https://wa.me/12292028857" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={styles.secondaryBtn}
+            >
+              Chat With Us
+            </Link>
             </div>
           </div>
 
