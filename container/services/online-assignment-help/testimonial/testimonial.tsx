@@ -4,23 +4,23 @@ export default function TestimonialSection() {
   const testimonialsData = [
     {
       text: "This service is amazing! I had issues with assignment deadlines, but they made sure to deliver it all, accurately & on time. My grades greatly improved, and I couldn’t be happier!” ",
-      author: "Order # 28476 | Editing"
+      author: "Order # 34304"
 
     },
     {
       text: "Highly recommend! The writers are professional, knowledgeable and super responsive. “They took care of all my assignments, clarifying tricky parts if necessary, and made sure everything was 100% original.” ",
-      author: "Order # 28477 | Engineering"
+      author: "Order # 93285"
     },
     {
       text: "Excellent experience! They professionally do my homework, reports, and project papers absolutely and on time. Their advice really helped make my semester much less stressful.” ",
-      author: "Order # 28478 | History"
+      author: "Order # 17416"
     },
     {
       text: "Top-notch assignment help! The entire team is professional, polite and thorough. “Everything was done perfectly and the updates on progress have made me feel safe.”",
-      author: "Order # 28479 | History"
+      author: "Order # 66575"
     }, {
       text: "I’m impressed with their service! Affordable, high-quality, and completely confidential. They helped me achieve the grades I wanted and saved so much time and stress.”  ",
-      author: "Order # 28480 | History"
+      author: "Order # 36508"
     }
   ];
 

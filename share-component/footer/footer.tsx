@@ -59,7 +59,7 @@ const Footer = () => {
           <div className={styles.footerCol}>
             <div className={styles.logoContainer}>
               <Link href="/" prefetch={false}>
-                <Image src="/logo1.png" alt="Hire Class Buddy" width={160} height={50} priority />
+                <Image src="/logo.png" alt="Hire Class Buddy" width={160} height={50} priority />
               </Link>
             </div>
             <p className={styles.description}>
@@ -69,7 +69,7 @@ const Footer = () => {
               <Link href="#" className={styles.fb} prefetch={false}><Facebook /></Link>
               <Link href="#" className={styles.insta} prefetch={false}><Instagram /></Link>
               <Link href="#" className={styles.tw} prefetch={false}><X /></Link>
-              <Link href="https://wa.me/447400465932" className={styles.wa} prefetch={false}><WhatsApp /></Link>
+              <Link href="https://wa.me/12292028857" className={styles.wa} prefetch={false}><WhatsApp /></Link>
             </div>
           </div>
 

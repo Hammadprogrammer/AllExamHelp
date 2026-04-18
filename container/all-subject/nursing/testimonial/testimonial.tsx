@@ -4,23 +4,23 @@ export default function TestimonialSection() {
   const testimonialsData = [
     {
       text: "Absolutely lifesaving! The team helped me complete an online quiz in record time by providing correct answers and fast delivery. This service helped me so much, I ended up getting a score I never thought possible.” ",
-      author: "Order # 28422 | Editing"
+      author: "Order # 33969"
 
     },
     {
       text: "“I was freaking out about some upcoming tests, and these experts managed it all professionally. They provided quick responses, correct answers and crystal-clear directions. They allowed me to perform well in other classes, and I aced my tests. Totally worth every penny! ",
-      author: "Order # 28423 | Engineering"
+      author: "Order # 62173"
     },
     {
       text: "“The best quiz help service I have ever used. All my test answers were sent on time and everything was 100 per cent accurate. “I went from failing across all subjects to getting straight A’s. ",
-      author: "Order # 28424 | History"
+      author: "Order # 92656"
     },
     {
       text: "Top quality and completely reliable! They completed my online tests early and communicated with me throughout the process to confirm everything would meet test requirements. I was very impressed by their professionalism.”",
-      author: "Order # 28425 | History"
+      author: "Order # 97897"
     }, {
       text: "Amazing experience! Reply time was lightning fast, solutions correct and communication excellent. Which is I used this service to help me get ahead in my courses, with far less stress and anxiety. They handle the test so that I can focus on learning!” ",
-      author: "Order # 28426 | History"
+      author: "Order # 40067"
     }
   ];
 

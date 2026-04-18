@@ -75,7 +75,7 @@ const Navbar = () => {
         <Container maxWidth="lg" className={styles.topContainer}>
           <Box className={styles.contactItem}><PhoneInTalk /> +44 7400 465932</Box>
           <Box className={styles.contactItem}><Email /> info@hireclassbuddy.com</Box>
-          <Box className={`${styles.contactItem} ${styles.hideMobile}`}><LocationOn /> 124 City Road, London, United Kingdom, EC1V2NX</Box>
+          <Box className={`${styles.contactItem} ${styles.hideMobile}`}><LocationOn />450 Lexington Ave, New York, NY 10017, United States</Box>
         </Container>
       </Box>
 
