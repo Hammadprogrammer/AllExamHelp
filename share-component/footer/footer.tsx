@@ -2,141 +2,147 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Container, Divider } from '@mui/material';
-import { 
-  Email, Phone, Facebook, Instagram, X, 
-  ChevronRight, LocationOn, WhatsApp
-} from '@mui/icons-material';
-import styles from './footer.module.scss';
+import { Facebook, YouTube, Pinterest, Instagram } from '@mui/icons-material';
 
 const Footer = () => {
-  // SSG safe way for dynamic year
   const currentYear = new Date().getFullYear();
 
-  const services = [
-    { name: "Online Class Help", url: "/services/online-class-help/" },
-    { name: "Online Exam Help", url: "/services/online-exam-help/" },
-    { name: "Online Course Help", url: "/services/online-course-help/" },
-    { name: "Online Assignment Help", url: "/services/online-assignment-help/" },
-    { name: "Online Test & Quizzes", url: "/services/online-test-and-quizzes/" },
-    { name: "Online Proctored Exam", url: "/services/online-proctored-exam/" }
-  ];
-
   const subjects = [
-    { name: "Biology Class", url: "/subjects/biology-class/" },
-    { name: "Business Class", url: "/subjects/business-class/" },
-    { name: "Chemistry Class", url: "/subjects/chemistry-class/" },
-    { name: "Computer Class", url: "/subjects/computer-class/" },
-    { name: "Economics Class", url: "/subjects/economics-class/" },
-    { name: "Finance Class", url: "/subjects/finance-class/" },
-    { name: "History Class", url: "/subjects/history-class/" },
-    { name: "Law Class", url: "/subjects/law-class/" },
-    { name: "Math Class", url: "/subjects/math-class/" },
-    { name: "Nursing Class", url: "/subjects/nursing-class/" },
-    { name: "Philosophy Class", url: "/subjects/philosophy-class/" },
-    { name: "Physics Class", url: "/subjects/physics-class/" },
-    { name: "Psychology Class", url: "/subjects/psychology-class/" },
-    { name: "Sociology Class", url: "/subjects/sociology-class/" },
-    { name: "Statistics Class", url: "/subjects/statistics-class/" }
+    { name: "Biology Exam", url: "/subjects/biology-exam/" },
+    { name: "Business Exam", url: "/subjects/business-exam/" },
+    { name: "Chemistry Exam", url: "/subjects/chemistry-exam/" },
+    { name: "Computer Exam", url: "/subjects/computer-exam/" },
+    { name: "Economics Exam", url: "/subjects/economics-exam/" },
+    { name: "Finance Exam", url: "/subjects/finance-exam/" },
+    { name: "History Exam", url: "/subjects/history-exam/" },
+    { name: "Law Exam", url: "/subjects/law-exam/" },
+    { name: "Math Exam", url: "/subjects/math-exam/" },
+    { name: "Nursing Exam", url: "/subjects/nursing-exam/" },
+    { name: "Philosophy Exam", url: "/subjects/philosophy-exam/" },
+    { name: "Physics Exam", url: "/subjects/physics-exam/" },
+    { name: "Psychology Exam", url: "/subjects/psychology-exam/" },
+    { name: "Sociology Exam", url: "/subjects/sociology-exam/" },
+    { name: "Statistics Exam", url: "/subjects/statistics-exam/" }
   ];
 
-  const companyLinks = [
-    { name: "Home", url: "/" },
-    { name: "About Us", url: "/about-us/" },
-    { name: "Reviews", url: "/reviews/" },
-    { name: "Contact Us", url: "/contact-us/" },
+  const services = [
+    { name: "Online Exam Help", url: "/services/online-exam-help/" },
+    { name: "Online GED Test", url: "/services/online-ged-test/" },
+    { name: "Online GMAT Exam", url: "/services/online-gmat-exam/" },
+    { name: "Online GRE Test", url: "/services/online-gre-test/" },
+    { name: "Online HESI Exam", url: "/services/online-hesi-exam/" },
+    { name: "Online PMP Exam", url: "/services/online-pmp-exam/" },
+    { name: "Online PSI Exam", url: "/services/online-psi-exam/" },
+    { name: "Online TEAS Test", url: "/services/online-teas-test/" },
+    { name: "Online Tests & Quizzes", url: "/services/online-tests-quizzes/" },
+    { name: "Proctored Exam Help", url: "/services/proctored-exam-help/" },
+    { name: "Assignment Help", url: "/services/assignment-help/" },
+    { name: "Real Estate Exam", url: "/services/real-estate-exam/" },
+    { name: "Online Class Help", url: "/services/online-class-help/" },
+    { name: "Insurance Exam", url: "/services/insurance-exam/" },
+    { name: "Online Course Help", url: "/services/online-course-help/" },
+    { name: "CompTIA Exams", url: "/services/comptia-exams/" }
+  ];
+
+  const resources = [
+    { name: "About", url: "/about-us/" },
+    { name: "Our Experts", url: "/our-experts/" },
+    { name: "Contact Us", url: "/contact-us/" }
+  ];
+
+  const terms = [
     { name: "Privacy Policy", url: "/privacy-policy/" },
-    { name: "Terms & Conditions", url: "/terms-and-conditions/" },
-    { name: "Refund Policy", url: "/refund-Policy/" }
+    { name: "Refund Policy", url: "/refund-policy/" },
+    { name: "Terms and Conditions", url: "/terms-and-conditions/" }
   ];
 
   return (
-    <footer className={styles.footerWrapper}>
-      <Container maxWidth="lg">
-        <div className={styles.footerGrid}>
+    <footer className="bg-[#1c202e] text-white py-16">
+      <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-x-4 gap-y-10 lg:gap-8 mb-16">
           
-          {/* Logo & Intro */}
-          <div className={styles.footerCol}>
-            <div className={styles.logoContainer}>
-              <Link href="/" prefetch={false}>
-                <Image src="/logo.png" alt="Hire Class Buddy" width={160} height={50} priority />
-              </Link>
-            </div>
-            <p className={styles.description}>
-              Expert academic assistance at your fingertips. We help you navigate online classes and exams with ease.
-            </p>
-            <div className={styles.socialBox}>
-              <Link href="#" className={styles.fb} prefetch={false}><Facebook /></Link>
-              <Link href="#" className={styles.insta} prefetch={false}><Instagram /></Link>
-              <Link href="#" className={styles.tw} prefetch={false}><X /></Link>
-              <Link href="https://wa.me/12292028857" className={styles.wa} prefetch={false}><WhatsApp /></Link>
-            </div>
+          <div className="lg:col-span-1">
+            <h4 className="text-[17px] font-bold mb-6">Subjects</h4>
+            <ul className="space-y-4">
+              {subjects.map((item) => (
+                <li key={item.name}>
+                  <Link href={item.url} className="text-[#a0abc0] hover:text-white transition-colors text-[14px]">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          {/* Services */}
-          <div className={styles.footerCol}>
-            <h4 className={styles.colTitle}>Services</h4>
-            <ul className={`${styles.linkList} ${styles.mobileTwoCol}`}>
+          <div className="lg:col-span-1">
+            <h4 className="text-[17px] font-bold mb-6">Services</h4>
+            <ul className="space-y-4">
               {services.map((item) => (
                 <li key={item.name}>
-                  <Link href={item.url} prefetch={false} className={styles.footerLink}>
-                    <ChevronRight className={styles.arrow} /> {item.name}
+                  <Link href={item.url} className="text-[#a0abc0] hover:text-white transition-colors text-[14px]">
+                    {item.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Subjects */}
-          <div className={styles.footerCol}>
-            <h4 className={styles.colTitle}>Subjects</h4>
-            <ul className={`${styles.linkList} ${styles.subjectGrid}`}>
-              {subjects.map((sub) => (
-                <li key={sub.name}>
-                  <Link href={sub.url} prefetch={false} className={styles.footerLink}>
-                    <ChevronRight className={styles.arrow} /> {sub.name}
+          <div className="lg:col-span-1">
+            <h4 className="text-[17px] font-bold mb-6">Resources</h4>
+            <ul className="space-y-4">
+              {resources.map((item) => (
+                <li key={item.name}>
+                  <Link href={item.url} className="text-[#a0abc0] hover:text-white transition-colors text-[14px]">
+                    {item.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Contact Details */}
-          <div className={styles.footerCol}>
-            <h4 className={styles.colTitle}>Connect With Us</h4>
-            <div className={styles.contactDetails}>
-              <a href="mailto:info@hireclassbuddy.com" className={styles.contactItem}>
-                <Email className={styles.icon} /> <span>info@hireclassbuddy.com</span>
-              </a>
-              <a href="tel:+447400465932" className={styles.contactItem}>
-                <Phone className={styles.icon} /> <span>+44 7400 465932</span>
-              </a>
-              <div className={styles.contactItem}>
-                <LocationOn className={styles.icon} /> <span>124 City Road, London, EC1V2NX</span>
-              </div>
-            </div>
-            <div className={styles.paymentSection}>
-              <p>We Accept Major Cards</p>
-              <Image src="/paymenticon.png" alt="Accepted Payments" width={200} height={35} />
-            </div>
+          <div className="lg:col-span-1">
+            <h4 className="text-[17px] font-bold mb-6">Terms</h4>
+            <ul className="space-y-4">
+              {terms.map((item) => (
+                <li key={item.name}>
+                  <Link href={item.url} className="text-[#a0abc0] hover:text-white transition-colors text-[14px]">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
-        </div>
-
-        <Divider className={styles.divider} />
-
-        {/* Bottom Bar */}
-        <div className={styles.bottomBar}>
-          <div className={styles.legalLinks}>
-            {companyLinks.map((link) => (
-              <Link key={link.name} href={link.url} prefetch={false}>{link.name}</Link>
-            ))}
+          <div className="col-span-2 md:col-span-4 lg:col-span-2">
+            <h4 className="text-2xl font-bold mb-6 tracking-wide">We Accept</h4>
+            <div className="inline-block mt-2">
+               <Image src="/paymenticon.png" alt="Accepted Payments" width={300} height={90} className="w-full max-w-[280px]" />
+            </div>
           </div>
-          <p className={styles.copyright} suppressHydrationWarning>
-              Copyright © {currentYear} Hire Class Buddy. All Rights Reserved.
-          </p>
         </div>
-      </Container>
+
+        <div className="border-t border-[#313a4e] pt-10 mt-10 flex flex-col lg:flex-row justify-between gap-10">
+          <div className="lg:w-3/5">
+            <h4 className="text-[#8494b3] font-bold mb-4 tracking-wide text-sm">Disclaimer</h4>
+            <p className="text-[#8494b3] text-[13px] leading-relaxed mb-10">
+              All Exam Help supports the learning process that online education should offer. We are not here to share or support cheating of any kind. Services are to be used for study help and tutoring purposes only. Our users are the ones who are meant to obey the policy of their institution and use our resources in an ethical (and legal) manner.
+            </p>
+            <p className="text-[#8494b3] text-[13px]">
+              © {currentYear} AllExamHelp. All Rights Reserved.
+            </p>
+          </div>
+          
+          <div className="lg:w-1/4">
+            <h4 className="text-white font-bold mb-5 text-xl tracking-wide">Follow Us</h4>
+            <div className="flex gap-4">
+              <Link href="#" className="text-white hover:text-[#a0abc0] transition-colors"><Facebook fontSize="medium" /></Link>
+              <Link href="#" className="text-white hover:text-[#a0abc0] transition-colors"><YouTube fontSize="medium" /></Link>
+              <Link href="#" className="text-white hover:text-[#a0abc0] transition-colors"><Pinterest fontSize="medium" /></Link>
+              <Link href="#" className="text-white hover:text-[#a0abc0] transition-colors"><Instagram fontSize="medium" /></Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 };

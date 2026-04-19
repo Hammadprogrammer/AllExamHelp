@@ -10,7 +10,7 @@
   .topContainer { display: flex; justify-content: space-between; align-items: center; }
 }
 
-.contactItem { display: flex; align-items: center; gap: 8px; svg { color: #f9a825; font-size: 16px; } }
+.contactItem { display: flex; align-items: center; gap: 8px; svg { color: #6EC1E4; font-size: 16px; } }
 .appBar { background: #fff !important; border-bottom: 1px solid #f0f0f0; }
 
 .toolbar { 
@@ -35,34 +35,34 @@
 .navLink {
   text-decoration: none; color: #1b263b; font-weight: 600; font-size: 14px;
   padding: 10px 0; position: relative; transition: 0.3s;
-  &:hover { color: #f9a825; }
+  &:hover { color: #6EC1E4; }
   
   // Active state for normal links
   &.active {
-    color: #f9a825;
+    color: #6EC1E4;
     &::after {
-      content: ''; position: absolute; bottom: -5px; left: 0; width: 100%; height: 3px; background: #f9a825; border-radius: 10px;
+      content: ''; position: absolute; bottom: -5px; left: 0; width: 100%; height: 3px; background: #6EC1E4; border-radius: 10px;
     }
   }
 }
 
 .dropdownLabel {
   color: #1b263b; font-weight: 600; font-size: 14px; cursor: pointer; display: flex; align-items: center; gap: 4px;
-  &.activeText { color: #f9a825; } // Yellow color if category active
+  &.activeText { color: #6EC1E4; } // Yellow color if category active
 }
 
 .dropdownActive {
-  color: #f9a825 !important;
+  color: #6EC1E4 !important;
   background: #fff8eb !important;
 }
 
 .navItem { position: relative; padding: 25px 0; }
 .arrowIcon { font-size: 18px; transition: 0.3s; }
-.navItem:hover .arrowIcon { transform: rotate(180deg); color: #f9a825; }
+.navItem:hover .arrowIcon { transform: rotate(180deg); color: #6EC1E4; }
 
 .dropdownMenu, .megaMenu {
   position: absolute; top: 100%; left: 50%; background: #fff; padding: 15px 0;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.1); border-top: 4px solid #f9a825; border-radius: 0 0 8px 8px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1); border-top: 4px solid #6EC1E4; border-radius: 0 0 8px 8px;
   opacity: 0; visibility: hidden; transform: translateX(-50%) translateY(20px); transition: 0.4s;
   z-index: 1000;
   &.show { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
@@ -72,8 +72,8 @@
     min-width: 250px; 
     li a { 
         padding: 12px 20px; display: flex; align-items: center; gap: 12px; text-decoration: none; color: #444; 
-        svg { color: #f9a825; font-size: 20px; } 
-        &:hover { background: #fff8eb; color: #f9a825; padding-left: 25px; } 
+        svg { color: #6EC1E4; font-size: 20px; } 
+        &:hover { background: #fff8eb; color: #6EC1E4; padding-left: 25px; } 
     } 
 }
 
@@ -81,12 +81,12 @@
 .flexGrid { display: flex; flex-wrap: wrap; gap: 15px; }
 .flexItem { 
     flex: 0 0 31%; display: flex; align-items: center; gap: 12px; text-decoration: none; color: #444; font-size: 13px; padding: 10px; border-radius: 5px; transition: 0.2s; 
-    svg { color: #f9a825; font-size: 20px; } 
-    &:hover { background: #f8f9fa; color: #f9a825; padding-left: 15px; } 
+    svg { color: #6EC1E4; font-size: 20px; } 
+    &:hover { background: #f8f9fa; color: #6EC1E4; padding-left: 15px; } 
 }
 
 .ctaBtn {
-  background: #f9a825; color: #fff !important; padding: 10px 20px; border-radius: 6px; text-decoration: none;
+  background: #6EC1E4; color: #fff !important; padding: 10px 20px; border-radius: 6px; text-decoration: none;
   font-weight: 700; display: none; align-items: center; transition: 0.3s;
   @media (min-width: 1024px) { display: flex; }
   &:hover { background: #1b263b; }
@@ -95,7 +95,7 @@
 .ctaActive { background: #1b263b !important; }
 
 .ctaBtnMob {
-  background: #f9a825; color: #fff !important; padding: 15px; border-radius: 6px; text-decoration: none;
+  background: #6EC1E4; color: #fff !important; padding: 15px; border-radius: 6px; text-decoration: none;
   font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%;
 }
 
@@ -111,17 +111,18 @@
   padding: 0; 
   .mobileListItem { 
     padding: 18px 20px; border-bottom: 1px solid #f5f5f5; cursor: pointer; 
-    a { text-decoration: none; color: #1b263b; font-weight: 600; display: flex; align-items: center; gap: 15px; width: 100%; svg { color: #f9a825; font-size: 24px; } } 
-    .labelWithIcon { display: flex; align-items: center; gap: 15px; font-weight: 600; color: #1b263b; svg { color: #f9a825; font-size: 24px; } } 
+    display: flex; justify-content: space-between; align-items: center;
+    a { text-decoration: none; color: #1b263b; font-weight: 600; display: flex; align-items: center; gap: 15px; width: 100%; svg { color: #6EC1E4; font-size: 24px; } } 
+    .labelWithIcon { display: flex; align-items: center; gap: 15px; font-weight: 600; color: #1b263b; svg { color: #6EC1E4; font-size: 24px; } } 
   } 
   .mobActive { 
-    background: #fff8eb; border-left: 5px solid #f9a825; 
-    a, .labelWithIcon { color: #f9a825 !important; } 
+    background: #fff8eb; border-left: 5px solid #6EC1E4; 
+    a, .labelWithIcon { color: #6EC1E4 !important; } 
   } 
 }
 .mobileSubList { 
     background: #fafafa; padding: 15px 20px 15px 55px; display: flex; flex-direction: column; gap: 18px; 
-    a { text-decoration: none; color: #555; font-size: 14px; display: flex; align-items: center; gap: 12px; svg { font-size: 18px; color: #f9a825; } }
-    .mobSubActive { color: #f9a825; font-weight: bold; }
+    a { text-decoration: none; color: #555; font-size: 14px; display: flex; align-items: center; gap: 12px; svg { font-size: 18px; color: #6EC1E4; } }
+    .mobSubActive { color: #6EC1E4; font-weight: bold; }
 }
 .hideMobile { @media (max-width: 600px) { display: none; } }

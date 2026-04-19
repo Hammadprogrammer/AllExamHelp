@@ -4,16 +4,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { 
-  AppBar, Toolbar, IconButton, Drawer, List, ListItem, 
-  Collapse, Box, Container, Divider
-} from '@mui/material';
-import { 
-  Menu as MenuIcon, PhoneInTalk, Email, LocationOn, KeyboardArrowDown,
+  PhoneInTalk, Chat, ArrowForward, KeyboardArrowDown,
   School, Assignment, Quiz, Computer, Science, BusinessCenter, 
   Functions, HistoryEdu, Gavel, Psychology, People, BarChart, 
   LocalHospital, Biotech, PsychologyAlt, MenuBook, Home as HomeIcon,
-  Star as StarIcon, Info as InfoIcon, Close as CloseIcon, ContactSupport,
-  AutoStories 
+  Info as InfoIcon, Close as CloseIcon, Menu as MenuIcon, AutoStories,
+  Shield as ShieldIcon, Description
 } from '@mui/icons-material';
 import styles from './navbar.module.scss';
 
@@ -22,41 +18,44 @@ const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const pathname = usePathname();
 
+  // Footer Services with added Icons to match the "old design" look
   const services = [
-    { name: "Online Class Help", icon: <School /> },
-    { name: "Online Exam Help", icon: <Assignment /> },
-    { name: "Online Course Help", icon: <MenuBook /> },
-    { name: "Online Assignment Help", icon: <HistoryEdu /> },
-    { name: "Online Test & Quizzes", icon: <Quiz /> },
-    { name: "Online Proctored Exam", icon: <Computer /> }
+    { name: "Online Exam Help", url: "/services/online-exam-help/", icon: <Assignment /> },
+    { name: "Online GED Test", url: "/services/online-ged-test/", icon: <Quiz /> },
+    { name: "Online GMAT Exam", url: "/services/online-gmat-exam/", icon: <Computer /> },
+    { name: "Online GRE Test", url: "/services/online-gre-test/", icon: <MenuBook /> },
+    { name: "Online HESI Exam", url: "/services/online-hesi-exam/", icon: <LocalHospital /> },
+    { name: "Online PMP Exam", url: "/services/online-pmp-exam/", icon: <BusinessCenter /> },
+    { name: "Online PSI Exam", url: "/services/online-psi-exam/", icon: <Description /> },
+    { name: "Online TEAS Test", url: "/services/online-teas-test/", icon: <Biotech /> },
+    { name: "Online Tests & Quizzes", url: "/services/online-tests-quizzes/", icon: <Quiz /> },
+    { name: "Proctored Exam Help", url: "/services/proctored-exam-help/", icon: <Computer /> },
+    { name: "Assignment Help", url: "/services/assignment-help/", icon: <HistoryEdu /> },
+    { name: "Real Estate Exam", url: "/services/real-estate-exam/", icon: <HomeIcon /> },
+    { name: "Online Class Help", url: "/services/online-class-help/", icon: <School /> },
+    { name: "Insurance Exam", url: "/services/insurance-exam/", icon: <ShieldIcon /> },
+    { name: "Online Course Help", url: "/services/online-course-help/", icon: <AutoStories /> },
+    { name: "CompTIA Exams", url: "/services/comptia-exams/", icon: <Computer /> }
   ];
 
+  // Footer Subjects with added Icons to match the "old design" look
   const subjects = [
-    { name: "Biology Class", icon: <Biotech /> },
-    { name: "Business Class", icon: <BusinessCenter /> },
-    { name: "Chemistry Class", icon: <Science /> },
-    { name: "Computer Class", icon: <Computer /> },
-    { name: "Economics Class", icon: <BarChart /> },
-    { name: "Finance Class", icon: <Functions /> },
-    { name: "History Class", icon: <HistoryEdu /> },
-    { name: "Law Class", icon: <Gavel /> },
-    { name: "Math Class", icon: <Functions /> },
-    { name: "Nursing Class", icon: <LocalHospital /> },
-    { name: "Philosophy Class", icon: <PsychologyAlt /> },
-    { name: "Physics Class", icon: <Science /> },
-    { name: "Psychology Class", icon: <Psychology /> },
-    { name: "Sociology Class", icon: <People /> },
-    { name: "Statistics Class", icon: <BarChart /> }
+    { name: "Biology Exam", url: "/subjects/biology-exam/", icon: <Biotech /> },
+    { name: "Business Exam", url: "/subjects/business-exam/", icon: <BusinessCenter /> },
+    { name: "Chemistry Exam", url: "/subjects/chemistry-exam/", icon: <Science /> },
+    { name: "Computer Exam", url: "/subjects/computer-exam/", icon: <Computer /> },
+    { name: "Economics Exam", url: "/subjects/economics-exam/", icon: <BarChart /> },
+    { name: "Finance Exam", url: "/subjects/finance-exam/", icon: <Functions /> },
+    { name: "History Exam", url: "/subjects/history-exam/", icon: <HistoryEdu /> },
+    { name: "Law Exam", url: "/subjects/law-exam/", icon: <Gavel /> },
+    { name: "Math Exam", url: "/subjects/math-exam/", icon: <Functions /> },
+    { name: "Nursing Exam", url: "/subjects/nursing-exam/", icon: <LocalHospital /> },
+    { name: "Philosophy Exam", url: "/subjects/philosophy-exam/", icon: <PsychologyAlt /> },
+    { name: "Physics Exam", url: "/subjects/physics-exam/", icon: <Science /> },
+    { name: "Psychology Exam", url: "/subjects/psychology-exam/", icon: <Psychology /> },
+    { name: "Sociology Exam", url: "/subjects/sociology-exam/", icon: <People /> },
+    { name: "Statistics Exam", url: "/subjects/statistics-exam/", icon: <BarChart /> }
   ];
-
-  // Helper function to create safe URLs
-  const createSlug = (text: string) => {
-    return text
-      .toLowerCase()
-      .replace(/&/g, 'and')
-      .replace(/\s+/g, '-')
-      .replace(/[^\w-]+/g, '');
-  };
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -69,170 +68,163 @@ const Navbar = () => {
   const isCategoryActive = (basePath: string) => pathname.startsWith(basePath);
 
   return (
-    <Box className={styles.navbarWrapper}>
-      {/* --- TOP BAR --- */}
-      <Box className={styles.topBar}>
-        <Container maxWidth="lg" className={styles.topContainer}>
-          <Box className={styles.contactItem}><PhoneInTalk /> +44 7400 465932</Box>
-          <Box className={styles.contactItem}><Email /> info@hireclassbuddy.com</Box>
-          <Box className={`${styles.contactItem} ${styles.hideMobile}`}><LocationOn />450 Lexington Ave, New York, NY 10017, United States</Box>
-        </Container>
-      </Box>
-
-      {/* --- MAIN NAVIGATION --- */}
-      <AppBar position="sticky" color="inherit" elevation={1} className={styles.appBar}>
-        <Container maxWidth="lg">
-          <Toolbar disableGutters className={styles.toolbar}>
-            
-            <Box className={styles.logoArea}>
+    <div className={styles.navbarWrapper}>
+      <nav className="w-full bg-white border-b border-gray-100 shadow-sm relative z-50">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+          <div className="flex justify-between items-center h-[80px]">
+            {/* Logo */}
+            <div className="flex-shrink-0 flex items-center">
               <Link href="/" prefetch={false}>
-                <Image src="/logo1.png" alt="Logo" width={100} height={45} priority />
+                <Image src="/logo1.png" alt="Logo" width={220} height={50} priority className="w-auto h-12 lg:h-14" />
               </Link>
-            </Box>
+            </div>
 
-            <Box className={styles.centerNav}>
+            {/* Desktop Navigation - using OLD design classes */}
+            <div className={styles.centerNav}>
               <Link href="/" prefetch={false} className={`${styles.navLink} ${isActive('/') ? styles.active : ''}`}>
                 Home
               </Link>
-              
-              <Link href="/about-us/" prefetch={false} className={`${styles.navLink} ${isActive('/about-us/') ? styles.active : ''}`}>
-                About Us
-              </Link>
 
-              {/* Services Dropdown */}
-              <Box className={styles.navItem} onMouseEnter={() => setOpenDropdown('ser')} onMouseLeave={() => setOpenDropdown(null)}>
+              {/* Services Mega Menu */}
+              <div className={styles.navItem} onMouseEnter={() => setOpenDropdown('ser')} onMouseLeave={() => setOpenDropdown(null)}>
                 <span className={`${styles.dropdownLabel} ${isCategoryActive('/services') ? styles.activeText : ''}`}>
                   Services <KeyboardArrowDown className={styles.arrowIcon} />
                 </span>
-                <ul className={`${styles.dropdownMenu} ${openDropdown === 'ser' ? styles.show : ''}`}>
-                  {services.map((item) => {
-                    const href = `/services/${createSlug(item.name)}/`;
-                    return (
-                      <li key={item.name}>
-                        <Link href={href} prefetch={false} className={isActive(href) ? styles.dropdownActive : ''}>
+                <div className={`${styles.megaMenu} ${openDropdown === 'ser' ? styles.show : ''}`} style={{ minWidth: '980px' }}>
+                  <div className="grid grid-cols-4 gap-4">
+                    {services.map((item) => {
+                      return (
+                        <Link key={item.name} href={item.url} prefetch={false} className={`${styles.flexItem} ${isActive(item.url) ? styles.dropdownActive : ''}`} style={{ width: '100%', flex: 'none' }}>
                           {item.icon} {item.name}
                         </Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </Box>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
 
               {/* Subjects Mega Menu */}
-              <Box className={styles.navItem} onMouseEnter={() => setOpenDropdown('sub')} onMouseLeave={() => setOpenDropdown(null)}>
+              <div className={styles.navItem} onMouseEnter={() => setOpenDropdown('sub')} onMouseLeave={() => setOpenDropdown(null)}>
                 <span className={`${styles.dropdownLabel} ${isCategoryActive('/subjects') ? styles.activeText : ''}`}>
                   Subjects <KeyboardArrowDown className={styles.arrowIcon} />
                 </span>
-                <Box className={`${styles.megaMenu} ${openDropdown === 'sub' ? styles.show : ''}`}>
+                <div className={`${styles.megaMenu} ${openDropdown === 'sub' ? styles.show : ''}`}>
                   <div className={styles.flexGrid}>
                     {subjects.map((sub) => {
-                       const href = `/subjects/${createSlug(sub.name)}/`;
                        return (
-                        <Link key={sub.name} href={href} prefetch={false} className={`${styles.flexItem} ${isActive(href) ? styles.dropdownActive : ''}`}>
+                        <Link key={sub.name} href={sub.url} prefetch={false} className={`${styles.flexItem} ${isActive(sub.url) ? styles.dropdownActive : ''}`}>
                           {sub.icon} {sub.name}
                         </Link>
                       );
                     })}
                   </div>
-                </Box>
-              </Box>
+                </div>
+              </div>
 
-              <Link href="/reviews/" prefetch={false} className={`${styles.navLink} ${isActive('/reviews/') ? styles.active : ''}`}>
-                Reviews
+              <Link href="/our-experts/" prefetch={false} className={`${styles.navLink} ${isActive('/our-experts/') ? styles.active : ''}`}>
+                Our Experts
               </Link>
-            </Box>
 
-            <Box className={styles.rightNav}>
-              <Link href="/contact-us/" prefetch={false} className={`${styles.ctaBtn} ${isActive('/contact-us/') ? styles.ctaActive : ''}`}>
-                Contact Us
+              <Link href="/about-us/" prefetch={false} className={`${styles.navLink} ${isActive('/about-us/') ? styles.active : ''}`}>
+                About
               </Link>
-              
-              <IconButton 
-                className={styles.menuButton} 
-                onClick={handleDrawerToggle} 
-                sx={{ color: '#000', display: { xs: 'flex', lg: 'none' } }}
-              >
+            </div>
+
+            {/* Desktop Action Buttons */}
+            <div className="hidden lg:flex items-center space-x-3">
+              <a href="tel:+121234765533" className="flex items-center gap-1.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2.5 rounded shadow-sm font-semibold text-[14px] hover:opacity-90 transition-opacity">
+                <PhoneInTalk fontSize="small" /> Live Call
+              </a>
+              <button className="flex items-center gap-1.5 bg-[#28a745] text-white px-4 py-2.5 rounded shadow-sm font-semibold text-[14px] hover:bg-[#218838] transition-colors">
+                <Chat fontSize="small" /> Live Chat
+              </button>
+              <Link href="/get-started/" prefetch={false} className="flex items-center gap-1.5 bg-[#63a4ff] text-white px-4 py-2.5 rounded shadow-sm font-semibold text-[14px] hover:bg-[#4d94f7] transition-colors">
+                Get Started <ArrowForward fontSize="small" />
+              </Link>
+            </div>
+
+            {/* Mobile menu button */}
+            <div className="lg:hidden flex items-center">
+              <button onClick={handleDrawerToggle} className="text-gray-800 p-2">
                 <MenuIcon fontSize="large" />
-              </IconButton>
-            </Box>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-          </Toolbar>
-        </Container>
-      </AppBar>
-
-      {/* --- MOBILE DRAWER --- */}
-      <Drawer anchor="right" open={mobileOpen} onClose={handleDrawerToggle}>
-        <Box className={styles.drawerBox}>
-          <Box className={styles.drawerHeader}>
-            <Image src="/logo.png" alt="Logo" width={120} height={40} />
-            <IconButton onClick={handleDrawerToggle} sx={{ color: '#000' }}>
-              <CloseIcon sx={{ fontSize: '30px' }} />
-            </IconButton>
-          </Box>
-          <Divider />
+      {/* Mobile Drawer */}
+      <div className={`fixed inset-0 bg-black/50 z-[1000] transition-opacity duration-300 lg:hidden ${mobileOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={handleDrawerToggle}>
+        <div className={`fixed inset-y-0 right-0 w-[300px] bg-white shadow-xl transform transition-transform duration-300 ease-in-out ${mobileOpen ? 'translate-x-0' : 'translate-x-full'}`} onClick={e => e.stopPropagation()}>
+          <div className="flex justify-between items-center p-5 border-b border-gray-100">
+            <Image src="/logo1.png" alt="Logo" width={120} height={40} className="w-auto h-8" />
+            <button onClick={handleDrawerToggle} className="text-gray-600">
+              <CloseIcon />
+            </button>
+          </div>
           
-          <List className={styles.mobileList}>
-            <ListItem className={`${styles.mobileListItem} ${isActive('/') ? styles.mobActive : ''}`}>
-              <Link href="/" prefetch={false} onClick={handleDrawerToggle}><HomeIcon /> Home</Link>
-            </ListItem>
+          <div className="overflow-y-auto h-[calc(100vh-80px)]">
+            <ul className={styles.mobileList}>
+              <li className={`${styles.mobileListItem} ${isActive('/') ? styles.mobActive : ''}`}>
+                <Link href="/" prefetch={false} onClick={handleDrawerToggle}><HomeIcon /> Home</Link>
+              </li>
 
-            <ListItem className={`${styles.mobileListItem} ${isActive('/about-us/') ? styles.mobActive : ''}`}>
-              <Link href="/about-us/" prefetch={false} onClick={handleDrawerToggle}><InfoIcon /> About Us</Link>
-            </ListItem>
-
-            <ListItem 
-              className={`${styles.mobileListItem} ${isCategoryActive('/services') ? styles.mobActive : ''}`} 
-              onClick={() => handleDropdown('ser')}
-            >
-              <Box className={styles.labelWithIcon}><School /> Services</Box>
-              <KeyboardArrowDown sx={{ transform: openDropdown === 'ser' ? 'rotate(180deg)' : 'none', transition: '0.3s' }} />
-            </ListItem>
-            <Collapse in={openDropdown === 'ser'} timeout="auto" unmountOnExit>
-              <div className={styles.mobileSubList}>
-                {services.map(s => {
-                  const href = `/services/${createSlug(s.name)}/`;
-                  return (
-                    <Link key={s.name} href={href} prefetch={false} onClick={handleDrawerToggle} className={isActive(href) ? styles.mobSubActive : ''}>
-                      {s.icon} {s.name}
-                    </Link>
-                  );
-                })}
+              <li className={`${styles.mobileListItem} ${isCategoryActive('/services') ? styles.mobActive : ''}`} onClick={() => handleDropdown('ser')}>
+                <div className={styles.labelWithIcon}><School /> Services</div>
+                <KeyboardArrowDown sx={{ color: '#000', transform: openDropdown === 'ser' ? 'rotate(180deg)' : 'none', transition: '0.3s' }} />
+              </li>
+              <div className={`overflow-hidden transition-all duration-300 ${openDropdown === 'ser' ? 'max-h-[1000px]' : 'max-h-0'}`}>
+                <div className={styles.mobileSubList}>
+                  {services.map(s => {
+                    return (
+                      <Link key={s.name} href={s.url} prefetch={false} onClick={handleDrawerToggle} className={isActive(s.url) ? styles.mobSubActive : ''}>
+                        {s.icon} {s.name}
+                      </Link>
+                    );
+                  })}
+                </div>
               </div>
-            </Collapse>
 
-            <ListItem 
-              className={`${styles.mobileListItem} ${isCategoryActive('/subjects') ? styles.mobActive : ''}`} 
-              onClick={() => handleDropdown('sub')}
-            >
-              <Box className={styles.labelWithIcon}><AutoStories /> Subjects</Box>
-              <KeyboardArrowDown sx={{ transform: openDropdown === 'sub' ? 'rotate(180deg)' : 'none', transition: '0.3s' }} />
-            </ListItem>
-            <Collapse in={openDropdown === 'sub'} timeout="auto" unmountOnExit>
-              <div className={styles.mobileSubList}>
-                {subjects.map(sub => {
-                  const href = `/subjects/${createSlug(sub.name)}/`;
-                  return (
-                    <Link key={sub.name} href={href} prefetch={false} onClick={handleDrawerToggle} className={isActive(href) ? styles.mobSubActive : ''}>
-                      {sub.icon} {sub.name}
-                    </Link>
-                  );
-                })}
+              <li className={`${styles.mobileListItem} ${isCategoryActive('/subjects') ? styles.mobActive : ''}`} onClick={() => handleDropdown('sub')}>
+                <div className={styles.labelWithIcon}><AutoStories /> Subjects</div>
+                <KeyboardArrowDown sx={{ color: '#000', transform: openDropdown === 'sub' ? 'rotate(180deg)' : 'none', transition: '0.3s' }} />
+              </li>
+              <div className={`overflow-hidden transition-all duration-300 ${openDropdown === 'sub' ? 'max-h-[1000px]' : 'max-h-0'}`}>
+                <div className={styles.mobileSubList}>
+                  {subjects.map(sub => {
+                    return (
+                      <Link key={sub.name} href={sub.url} prefetch={false} onClick={handleDrawerToggle} className={isActive(sub.url) ? styles.mobSubActive : ''}>
+                        {sub.icon} {sub.name}
+                      </Link>
+                    );
+                  })}
+                </div>
               </div>
-            </Collapse>
 
-            <ListItem className={`${styles.mobileListItem} ${isActive('/reviews/') ? styles.mobActive : ''}`}>
-              <Link href="/reviews/" prefetch={false} onClick={handleDrawerToggle}><StarIcon /> Reviews</Link>
-            </ListItem>
+              <li className={`${styles.mobileListItem} ${isActive('/our-experts/') ? styles.mobActive : ''}`}>
+                <Link href="/our-experts/" prefetch={false} onClick={handleDrawerToggle}><People /> Our Experts</Link>
+              </li>
 
-            <Box sx={{ p: 2, mt: 2 }}>
-              <Link href="/contact-us/" prefetch={false} className={styles.ctaBtnMob} onClick={handleDrawerToggle}>
-                <ContactSupport /> Contact Us
+              <li className={`${styles.mobileListItem} ${isActive('/about-us/') ? styles.mobActive : ''}`}>
+                <Link href="/about-us/" prefetch={false} onClick={handleDrawerToggle}><InfoIcon /> About</Link>
+              </li>
+            </ul>
+
+            <div className="p-5 mt-2 space-y-3">
+              <a href="+121234765533" className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-3 rounded-md font-bold w-full">
+                <PhoneInTalk /> Live Call
+              </a>
+              <button className="flex items-center justify-center gap-2 bg-[#28a745] text-white px-4 py-3 rounded-md font-bold w-full">
+                <Chat /> Live Chat
+              </button>
+              <Link href="/get-started/" onClick={handleDrawerToggle} className="flex items-center justify-center gap-2 bg-[#63a4ff] text-white px-4 py-3 rounded-md font-bold w-full">
+                Get Started <ArrowForward />
               </Link>
-            </Box>
-          </List>
-        </Box>
-      </Drawer>
-    </Box>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
