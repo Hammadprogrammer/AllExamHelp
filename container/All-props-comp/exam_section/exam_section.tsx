@@ -60,7 +60,13 @@ const ExamSection: React.FC<ExamSectionProps> = ({ subjects }) => {
 
   return (
     <div className={styles.mainWrapper}>
-      <section className={styles.main}>
+      <motion.section 
+        className={styles.main}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8 }}
+      >
         <Container maxWidth="xl">
           {/* Header section (badge, title, subtitle) yahan se hata diya gaya hai */}
           
@@ -99,8 +105,9 @@ const ExamSection: React.FC<ExamSectionProps> = ({ subjects }) => {
             </button>
           </div>
         </Container>
-      </section>
+      </motion.section>
     </div>
+
   );
 };
 

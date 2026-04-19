@@ -77,7 +77,13 @@ const OurService = ({ services, h6, h4, description }: OurServiceProps) => {
   };
 
   return (
-    <div className={styles.main}>
+    <motion.div 
+      className={styles.main}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8 }}
+    >
       <Container maxWidth="lg">
         <div className={styles.header}>
           <h6 className={styles.h6}>{h6}</h6>
@@ -145,7 +151,8 @@ const OurService = ({ services, h6, h4, description }: OurServiceProps) => {
           ))}
         </div>
       </Container>
-    </div>
+    </motion.div>
+
   );
 };
 

@@ -1,7 +1,10 @@
+"use client";
 import React from 'react';
 import { Container } from '@mui/material';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import styles from './Content_section_one.module.scss';
+
 
 // 1. Define the Interface for your props
 interface ContentSectionProps {
@@ -31,7 +34,13 @@ const ContentOne: React.FC<ContentSectionProps> = ({
   const d1 = description1 || description;
 
   return (
-    <section className={styles.contentSection}>
+    <motion.section 
+      className={styles.contentSection}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8 }}
+    >
       <Container maxWidth="lg">
         {/* Desktop: two-column flex. Mobile: stacked with image→text→image→text→btn order */}
         <div className={styles.flexContainer}>
@@ -103,8 +112,8 @@ const ContentOne: React.FC<ContentSectionProps> = ({
 
         </div>
       </Container>
-    </section>
+    </motion.section>
   );
 };
 
-export default ContentOne;
+export default ContentOne;

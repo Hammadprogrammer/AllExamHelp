@@ -7,6 +7,7 @@ import CounterSectionHome from '@/container/home/counter_section/counter_section
 import ExamSection from '@/container/home/exam_section/exam_section'
 import ContentSectionTwo from '@/container/All-props-comp/content_section_two/content_section_two'
 import AboutTeamHome from '@/container/home/about_team/about_team'
+import WhyStudentHireSection from '@/container/home/why_student_hire/why_student_hire'
 
 export const metadata: Metadata = {
   title: "Take My Online Class, Pay Someone to Take My Online Class",
@@ -23,9 +24,11 @@ const page = () => {
       <ExamSection />
       <ContentSectionTwo />
       <AboutTeamHome />
+      <WhyStudentHireSection />
     </>
   )
 }
+
 
 
 
