@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Container } from '@mui/material';
-import styles from './uni_section.module.scss';
+import styles from './our_service.module.scss';
 
 const UniSection = () => {
   const portals = [
@@ -20,10 +20,7 @@ const UniSection = () => {
     <div className={styles.main}>
     <section className={styles.portalsSection}>
       <Container maxWidth="lg">
-        {/* Requirement: Heading changed to h4 */}
-        <h4 className={styles.mainHeading}>
-          One-Stop Online Exam Solution for All Major Exam Portals
-        </h4>
+
       </Container>
       
       <div className={styles.marqueeWrapper}>

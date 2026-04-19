@@ -1,0 +1,220 @@
+.aboutTeamSection {
+  padding: 50px 0;
+  background-color: #ffffff;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+    gap: 100px; // More space for the overlapping card on mobile
+  }
+}
+
+.imageCol {
+  .imageWrapper {
+    position: relative;
+    padding-bottom: 60px; // Space for overlapping card on desktop
+
+    @media (max-width: 992px) {
+      padding-bottom: 0; // Remove extra padding on mobile
+    }
+
+    .mainImg {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.statCard {
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  width: 90%;
+  background: #76c7e4; // Light blue from prompt
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+
+  @media (max-width: 992px) {
+    right: 5%;
+    left: 5%;
+    width: 90%;
+    bottom: 5px; // 5px from bottom of image
+  }
+
+  @media (max-width: 768px) {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+    gap: 10px;
+    bottom: 5px;
+  }
+}
+
+
+.cardIcons {
+  display: flex;
+  gap: 10px;
+  .globeIcon {
+    color: #ffffff;
+    font-size: 40px;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+  }
+}
+
+.progressCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0; // Prevent squishing
+  transition: background 0.1s linear;
+
+  @media (max-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
+
+  .innerCircle {
+    width: 68px;
+    height: 68px;
+    background: #76c7e4; // Match card background
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .percentText {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 18px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.cardText {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+
+
+.contentCol {
+  .badgeWrapper {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .badge {
+    font-size: 18px;
+    font-weight: 700;
+    color: #555555;
+    margin-bottom: 2px;
+    display: block;
+  }
+
+  .wavyUnderline {
+    width: 100%;
+    height: 8px;
+  }
+
+  .heading {
+    font-size: 42px;
+    font-weight: 550;
+    color: #28a745; // Brand green
+    line-height: 1.2;
+    margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.featureItem {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+
+  .iconWrapper {
+    background: #e1f5fe;
+    color: #76c7e4;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      font-size: 32px;
+    }
+  }
+
+  .featureText {
+    .featureTitle {
+      font-size: 20px;
+      font-weight: 700;
+      color: #28a745;
+      margin-bottom: 8px;
+    }
+
+    .featureDesc {
+      font-size: 16px;
+      color: #666666;
+      line-height: 1.6;
+      margin: 0;
+    }
+  }
+}
+

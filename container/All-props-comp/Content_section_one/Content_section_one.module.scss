@@ -3,120 +3,179 @@
   background-color: #ffffff;
 
   @media (max-width: 768px) {
-    padding: 20px 0;
+    padding: 40px 0;
   }
 }
 
+// ─── Desktop: two-column flex ───────────────────────────────────────────────
 .flexContainer {
   display: flex;
-  align-items: center; 
-  background: #002147; 
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  align-items: flex-start;
+  gap: 40px;
+  background: transparent;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
 
+  // ─── Mobile: single column with CSS order control ────────────────────────
   @media (max-width: 992px) {
-    flex-direction: column-reverse; 
+    flex-direction: column;
+    gap: 24px;
   }
 }
 
+// ─── Left column (desktop) ──────────────────────────────────────────────────
 .textContent {
-  flex: 1;
-  padding: 40 ;
+  flex: 1.2;
+  padding: 0;
 
-  @media (max-width: 768px) {
-    padding: 35px 20px;
-    text-align: center;
+  // On mobile, textContent itself becomes a flat flow inside flexContainer
+  // so we display its children in the right order via their own order values
+  @media (max-width: 992px) {
+    display: contents; // Breaks out children into the flex container directly
+  }
+}
+
+.textBlock {
+  margin-bottom: 40px;
+
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+// Block 1 text → order 2 on mobile
+.textBlock1 {
+  @media (max-width: 992px) {
+    order: 2;
+    margin-bottom: 24px;
+  }
+}
+
+// Block 2 text → order 4 on mobile
+.textBlock2 {
+  @media (max-width: 992px) {
+    order: 4;
+    margin-bottom: 24px;
+  }
+}
+
+// Buttons → order 5 on mobile
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+
+  @media (max-width: 992px) {
+    order: 5;
+    margin-top: 10px;
   }
 }
 
 .mainHeading {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
-  color: #ffffff;
+  color: #28a745;
   margin-bottom: 20px;
   line-height: 1.2;
 
   @media (max-width: 768px) {
-    font-size: 18px;
+    font-size: 24px;
   }
 }
 
 .description {
   font-size: 16px;
-  line-height: 1.4;
-  color: #e2e8f0;
-  margin-bottom: 30px;
-  @media (max-width: 768px) {
-     font-size: 14px;
-  }
-
-}
-
-.buttonGroup {
-  display: flex;
-  gap: 15px;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 0;
 
   @media (max-width: 768px) {
-    justify-content: center;
-  }
-
-  @media (max-width: 480px) {
-    flex-direction: column;
+    font-size: 15px;
   }
 }
 
 .primaryBtn {
-  background-color: #ffab2e;
-  color: #1a1f2b;
-  padding: 14px 30px;
-  border-radius: 6px;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
   transition: 0.3s ease;
-  
-  &:hover { 
-    background-color: #e69a28; 
+  display: inline-block;
+
+  &:hover {
+    background-color: #218838;
     transform: translateY(-2px);
   }
 }
 
 .secondaryBtn {
-  background-color: #5b748e;
+  background-color: #007bff;
   color: #fff;
-  padding: 14px 30px;
-  border-radius: 6px;
+  padding: 12px 25px;
+  border-radius: 5px;
   font-weight: 600;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
   transition: 0.3s ease;
+  display: inline-block;
 
-  &:hover { 
-    background-color: #4a5f75;
+  &:hover {
+    background-color: #0069d9;
     transform: translateY(-2px);
   }
 }
 
+// ─── Right column (desktop) ─────────────────────────────────────────────────
 .imageWrapper {
   flex: 1;
-  display: flex;
-  align-self: stretch; // Desktop par height match karega
+  display: contents; // On mobile, break children into flex container
+
+  @media (min-width: 993px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.imageBox {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
   img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; 
+    height: 300px;
+    object-fit: cover;
     display: block;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   @media (max-width: 992px) {
-    width: 100%;
-    height: auto;
-    min-height: 250px;
-    
     img {
-        object-fit: cover; 
+      height: 250px;
     }
+  }
+}
+
+// Image 1 → order 1 on mobile
+.imageBox1 {
+  @media (max-width: 992px) {
+    order: 1;
+  }
+}
+
+// Image 2 → order 3 on mobile
+.imageBox2 {
+  @media (max-width: 992px) {
+    order: 3;
   }
 }
