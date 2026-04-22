@@ -150,7 +150,7 @@ const Hero: React.FC<HeroProps> = ({
                  </motion.div>
               )}
               
-              <motion.h1 variants={childVariants} className="text-[28px] leading-[1.2] sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-white">
+              <motion.h1 variants={childVariants} className="text-[28px] leading-[1.2] sm:text-4xl md:text-5xl lg:text-1xl font-extrabold mb-4 text-white">
                 {current.heading}
               </motion.h1>
               

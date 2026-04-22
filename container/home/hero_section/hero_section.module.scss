@@ -1,46 +1,46 @@
-.heroContainer {
-  // padding: 4rem 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  text-align: center;
-}
+// .heroContainer {
+//   // padding: 4rem 0;
+//   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+//   color: white;
+//   text-align: center;
+// }
 
-.heroHeading {
-  font-size: 36px;
-  margin-bottom: 1rem;
-}
+// .heroHeading {
+//   font-size: 36px;
+//   margin-bottom: 1rem;
+// }
 
-.heroSubText {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto 2rem;
-}
+// .heroSubText {
+//   font-size: 1.2rem;
+//   max-width: 600px;
+//   margin: 0 auto 2rem;
+// }
 
-.bulletList {
-  list-style: none;
-  padding: 0;
-  max-width: 500px;
-  margin: 0 auto;
-}
+// .bulletList {
+//   list-style: none;
+//   padding: 0;
+//   max-width: 500px;
+//   margin: 0 auto;
+// }
 
-.bulletList li {
-  font-size: 1.1rem;
-  padding: 0.5rem 0;
-  position: relative;
-  padding-left: 2rem;
-}
+// .bulletList li {
+//   font-size: 1.1rem;
+//   padding: 0.5rem 0;
+//   position: relative;
+//   padding-left: 2rem;
+// }
 
-.bulletList li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #4ade80;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
+// .bulletList li::before {
+//   content: '✓';
+//   position: absolute;
+//   left: 0;
+//   color: #4ade80;
+//   font-weight: bold;
+//   font-size: 1.2rem;
+// }
 
-@media (max-width: 768px) {
-  .heroHeading {
-    font-size: 2rem;
-  }
-}
+// @media (max-width: 768px) {
+//   .heroHeading {
+//     font-size: 2rem;
+//   }
+// }
