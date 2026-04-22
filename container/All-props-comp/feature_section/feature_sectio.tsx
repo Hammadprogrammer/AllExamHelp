@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Container } from '@mui/material';
+import { motion } from 'framer-motion';
 import styles from './feature_section.module.scss';
 
 // Interface for single Feature Card
@@ -27,22 +28,43 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({
     <section className={styles.featuresSection}>
       <Container maxWidth="lg">
         {/* Main Heading from Props */}
-        <h3 className={styles.mainHeading}>{mainHeading}</h3>
+        <motion.h2 
+          className={styles.mainHeading}
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          {mainHeading}
+        </motion.h2>
         
         {/* Sub-text from Props */}
-        <div className={styles.subText}>
+        <motion.div 
+          className={styles.subText}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           {subText}
-        </div>
+        </motion.div>
 
         <div className={styles.gridContainer}>
           {features.map((item, index) => (
-            <div key={index} className={styles.featureCard}>
+            <motion.div 
+              key={index} 
+              className={styles.featureCard}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
               <div className={styles.iconWrapper}>
                 {item.icon}
               </div>
               <h5 className={styles.cardHeading}>{item.title}</h5>
               <p className={styles.cardDescription}>{item.desc}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </Container>

@@ -1,0 +1,194 @@
+.reviewsSection {
+  padding: 80px 0;
+  background-color: #ffffff; // Background shapes removed
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  width: 100%;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+}
+
+.leftContent {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  
+  @media (max-width: 992px) {
+    align-items: center;
+    flex: 1;
+    width: 100%;
+  }
+
+  .smallHeadingWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    
+    @media (max-width: 992px) {
+      align-items: center;
+    }
+  }
+
+  .smallHeading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4b5563;
+    line-height: 1.2;
+  }
+
+  .squiggle {
+    width: 160px; // Increased width to show full line
+    height: auto;
+    margin-top: 5px;
+    display: block;
+    
+    path {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 0; // Full line visible
+    }
+  }
+
+  .mainHeading {
+    font-size: 44px;
+    font-weight: 800;
+    color: #7ED957;
+    line-height: 1.1;
+    margin: 15px 0 20px;
+
+    @media (max-width: 600px) {
+      font-size: 32px;
+    }
+  }
+
+  .description {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 400px;
+  }
+
+  .contactBtn {
+    background-color: #67C1E4 !important;
+    color: white !important;
+    text-transform: none !important;
+    padding: 12px 28px !important;
+    border-radius: 10px !important;
+    font-weight: 700 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    width: fit-content !important;
+  }
+}
+
+.sliderWrapper {
+  flex: 1;
+  width: 100%;
+  max-width: 650px;
+  position: relative;
+}
+
+.flexCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 10px 0;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.imageBox {
+  flex-shrink: 0;
+  
+  .clientImg {
+    border-radius: 15px;
+    border: 5px solid #fff;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transform: rotate(-4deg);
+    transition: transform 0.4s ease;
+    object-fit: cover;
+
+    &:hover {
+      transform: rotate(0deg) scale(1.05);
+    }
+  }
+}
+
+.contentBox {
+  flex: 1;
+  max-width: 450px;
+
+  .stars {
+    color: #fbbf24;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 3px;
+    
+    @media (max-width: 650px) {
+      justify-content: center;
+    }
+  }
+
+  .reviewText {
+    font-size: 18px;
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  .clientMeta {
+    .name {
+      font-size: 22px;
+      font-weight: 800;
+      color: #1f2937;
+      margin: 0;
+    }
+    .location {
+      color: #9ca3af;
+      font-size: 16px;
+    }
+  }
+}
+
+.customPaginationDots {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+
+  @media (max-width: 992px) {
+    justify-content: center;
+  }
+
+  :global(.swiper-pagination-bullet) {
+    width: 10px;
+    height: 10px;
+    background: #e2e8f0;
+    opacity: 1;
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    background: #67C1E4;
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,225 @@
+.quoteSection {
+  padding: 60px 0; // Padding thodi badha di hai optimized look ke liye
+  background-color: #ffffff;
+}
+
+.headerArea {
+  text-align: center;
+  margin-bottom: 50px;
+
+  .topLabel {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .waveLine {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .mainHeading {
+    font-size: 38px;
+    font-weight: 800;
+    color: #28a745;
+    margin-bottom: 15px;
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
+  }
+
+  .subText {
+    font-size: 16px;
+    color: #555;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+// Layout Wrapper
+.columnsWrapper {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+// Left Column: Contact Info
+.contactCol {
+  flex: 1;
+  background: #f8f9fa;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+  }
+
+  .contactHeading {
+    font-size: 22px;
+    font-weight: 700;
+    color: #28a745;
+    margin-bottom: 15px;
+  }
+
+  .contactDesc {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    font-style: italic;
+  }
+}
+
+.addressWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-style: normal;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  .muiIcon {
+    font-size: 26px;
+    color: #28a745;
+    flex-shrink: 0;
+  }
+
+  .contactText {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+
+    strong {
+      font-weight: 700;
+      color: #000;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #28a745;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Right Column: Form
+.formCol {
+  flex: 1;
+  background: #e9f7f3;
+  border-radius: 20px;
+  padding: 40px;
+  border: 2px solid #28a745;
+  box-shadow: 0 10px 30px rgba(40, 167, 69, 0.05);
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+  }
+
+  .formHeading {
+    font-size: 22px;
+    font-weight: 700;
+    color: #28a745;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .formDesc {
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+}
+
+.quoteForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .inputBox {
+    position: relative;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    padding: 15px 18px;
+    border: 1.5px solid #bdc3c7;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #ffffff;
+    color: #000000; // Type hone wala text bilkul BLACK hoga
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: #28a745;
+      box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.1);
+      color: #000000; 
+    }
+
+    &::placeholder {
+      color: #999; // Placeholder thoda light rakha hai contrast ke liye
+    }
+  }
+}
+
+.submitBtn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 16px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(40, 167, 69, 0.2);
+
+  &:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.3);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+} 

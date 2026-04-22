@@ -1,140 +1,119 @@
+.contentThreeSection {
+  background-color: #fff;
+  padding: 20px;
 
-.main{
-background-color: white;
-}
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
-.contentSectionThree {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  @media (max-width: 768px) {
-     padding: 30px 20px;
-    }
-
-  .topFlex {
+  .contentGrid {
     display: flex;
-    align-items: flex-start; // Text aur Image ko top se align karne ke liye
-    gap: 50px;
-    margin-bottom: 60px;
+    gap: 40px;
+    align-items: flex-start;
 
-    @media (max-width: 991px) {
+    @media (max-width: 992px) {
       flex-direction: column;
       gap: 30px;
+    }
+  }
+
+  .textColumn {
+    flex: 1;
+    
+    @media (max-width: 992px) {
+      display: contents;
       text-align: center;
     }
+    
+    .contentBlock {
+      margin-bottom: 40px;
 
-.imageContent {
-  flex: 1;
-  width: 100%;
-}
+      @media (max-width: 992px) {
+        margin-bottom: 0;
+      }
 
-.imageContent .responsiveImg {
-  width: 100%;
-  height: 550px;        /* important for responsiveness */
-  max-height: 450px;   /* desktop ke liye limit */
-  display: block;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-/* Tablets */
-@media (max-width: 992px) {
-  .imageContent .responsiveImg {
-    max-height: 350px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-  .imageContent .responsiveImg {
-    max-height: 250px;
-  }
-}
-
-    .textContent {
-      flex: 1;
-
-      h2 {
-        font-size: 36px;
-        font-weight: 800;
-        color: #1a1f2b;
-        line-height: 1.2;
-        margin-top: 0;      // Browser ki default margin khatam karne ke liye
-        margin-bottom: 25px; // 200px se kam karke sensible gap diya hai
-
-        @media (max-width: 768px) {
-          font-size: 18px;
-          text-align: left;
-          line-height: 1.6;
+      &:nth-child(1) {
+        @media (max-width: 992px) {
+          order: 2;
         }
       }
 
-      p {
-        font-size: 18px;
-        color: #4b5563;
-        line-height: 1.7;
-        margin-bottom: 25px;
-        text-align: left;
-          @media (max-width: 768px) {
-          font-size: 14px;
-          text-align: left;
-          line-height: 1.6;
+      &:nth-child(2) {
+        @media (max-width: 992px) {
+          order: 4;
         }
       }
 
-      .ctaBtn {
-        background-color: #ff7a1a;
-        color: #ffffff;
-        padding: 15px 32px;
-        border-radius: 8px;
-        border: none;
+
+      .mainHeading {
+        color: #4caf50; 
+        font-size: 28px;
+        margin-bottom: 15px;
         font-weight: 700;
-        cursor: pointer;
-        display: inline-flex;
+        @media (max-width: 992px) {
+          text-align: center;
+        }
+      }
+
+      .subHeading {
+        color: #4caf50;
+        font-size: 24px;
+        margin-bottom: 15px;
+        font-weight: 700;
+        @media (max-width: 992px) {
+          text-align: center;
+        }
+      }
+
+      .description {
+        color: #555;
+        line-height: 1.7;
         font-size: 16px;
-        transition: all 0.3s ease;
-
-        &:hover {
-          background-color: #e66a15;
-          transform: translateY(-3px);
-          box-shadow: 0 10px 20px rgba(255, 122, 26, 0.2);
+        @media (max-width: 992px) {
+          text-align: center;
         }
       }
     }
   }
 
-  .bottomGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+  .imageColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 
-    @media (max-width: 850px) {
-      grid-template-columns: 1fr;
+    @media (max-width: 992px) {
+      display: contents;
     }
 
-    .featureItem {
-      h4 {
-        font-size: 26px;
-        font-weight: 700;
-        color: #1a1f2b;
-        margin-bottom: 12px;
-        border-left: 4px solid #ff7a1a;
-        padding-left: 15px;
+    .imageWrapper {
+      width: 80%;
+      border-radius: 4px;
+      overflow: hidden;
 
-        @media (max-width: 768px) {
-          font-size: 18px;
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+
+      &:nth-child(1) {
+        @media (max-width: 992px) {
+          order: 1;
         }
       }
 
-      p {
-        font-size: 18px;
-        color: #4b5563;
-        line-height: 1.7;
-        padding-left: 19px;
-
-        @media (max-width: 768px) {
-          font-size: 14px;
+      &:nth-child(2) {
+        @media (max-width: 992px) {
+          order: 3;
         }
+      }
+
+      img {
+        width: 100%;
+        height: 350px;
+        display: block;
+        object-fit: cover;
       }
     }
   }
