@@ -1,0 +1,115 @@
+.faqWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  // Layout shift rokne ke liye min-height
+  min-height: 400px; 
+  font-family: 'Arial', sans-serif;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    min-height: auto;
+  }
+}
+
+.leftCard {
+  flex: 1;
+  background-color: #f3f3f3;
+  padding: 60px 40px;
+  border-radius: 20px;
+  text-align: center;
+  // Normal behavior (No sticky/fixed)
+  position: relative; 
+
+  .title {
+    color: #61bb74;
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+  }
+
+  .btn {
+    background-color: #72c2e0;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #5ab0cf;
+    }
+  }
+}
+
+.accordionContainer {
+  flex: 1.3;
+}
+
+.item {
+  margin-bottom: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #f0f0f0;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &.active {
+    background-color: #cccccc; 
+  }
+
+  .qText {
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+  }
+
+  .icon {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000; // Pure Black Icons
+    line-height: 1;
+  }
+}
+
+.body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #ffffff;
+}
+
+.itemOpen .body {
+  max-height: 400px; 
+  border-top: 1px solid #e0e0e0;
+}
+
+.aText {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 20px;
+  margin: 0;
+}

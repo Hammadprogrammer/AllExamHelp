@@ -15,6 +15,7 @@ import GetQuoteHome from '@/container/home/get_quote/get_quote'
 import ContentSectionFour from '@/container/home/content_section_four/content_section_four'
 import ContentSectionFive from '@/container/home/content_section_five/content_section_five'
 import ClientReviewsHome from '@/container/home/client_reviews/client_reviews'
+import FAQSectionData from '@/container/home/fqa/faq'
 
 export const metadata: Metadata = {
   title: "Take My Online Class, Pay Someone to Take My Online Class",
@@ -40,6 +41,7 @@ const page = () => {
       <GetQuoteHome />
       <ContentSectionFive />
       <ClientReviewsHome />
+      <FAQSectionData />
     </>
   )
 }
