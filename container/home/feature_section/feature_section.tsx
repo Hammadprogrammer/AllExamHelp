@@ -1,3 +1,4 @@
+"use client";
 import FeaturesSection from "@/container/All-props-comp/feature_section/feature_sectio";
 import CheckBoxOutlinedIcon from '@mui/icons-material/CheckBoxOutlined';
 import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';

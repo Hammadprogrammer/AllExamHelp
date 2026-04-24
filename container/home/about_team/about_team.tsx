@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import AboutTeam from '@/container/All-props-comp/about_team/about_team';
 

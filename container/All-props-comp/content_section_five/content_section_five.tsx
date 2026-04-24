@@ -1,4 +1,6 @@
+"use client";
 import React from 'react';
+import { motion } from 'framer-motion';
 import styles from './content_section_five.module.scss';
 
 interface ContentFiveProps {
@@ -24,24 +26,48 @@ const ContentFive: React.FC<ContentFiveProps> = ({
         
         {/* Top Block: Text Left, Image Right */}
         <div className={styles.contentRow}>
-          <div className={styles.textCol}>
+          <motion.div 
+            className={styles.textCol}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8 }}
+          >
             <h2 className={styles.mainHeading}>{heading}</h2>
             <p className={styles.description}>{description}</p>
-          </div>
-          <div className={`${styles.imageCol} ${styles.imgTop}`}>
+          </motion.div>
+          <motion.div 
+            className={`${styles.imageCol} ${styles.imgTop}`}
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8 }}
+          >
             <img src={image1} alt="Professional Exam Taker" />
-          </div>
+          </motion.div>
         </div>
 
         {/* Bottom Block: Text Left, Image Full Width/Offset */}
         <div className={`${styles.contentRow} ${styles.bottomRow}`}>
-          <div className={styles.textCol}>
+          <motion.div 
+            className={styles.textCol}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <h3 className={styles.subHeading}>{subHeading}</h3>
             <p className={styles.description}>{subDescription}</p>
-          </div>
-          <div className={`${styles.imageCol} ${styles.imgBottom}`}>
+          </motion.div>
+          <motion.div 
+            className={`${styles.imageCol} ${styles.imgBottom}`}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <img src={image2} alt="Student Studying" />
-          </div>
+          </motion.div>
         </div>
 
       </div>

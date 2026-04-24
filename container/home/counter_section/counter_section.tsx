@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import CounterSection from '@/container/All-props-comp/counter_section/counter_section';
 

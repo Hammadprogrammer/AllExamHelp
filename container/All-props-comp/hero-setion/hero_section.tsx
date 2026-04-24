@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 
 export interface SlideData {
   topText?: string;
@@ -28,7 +28,7 @@ const defaultBgImages = [
   "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop"
 ];
 
-const slideVariants = {
+const slideVariants: Variants = {
   enter: (direction: number) => ({
     x: direction > 0 ? '100%' : '-100%',
     opacity: 0.5
@@ -55,7 +55,7 @@ const slideVariants = {
   })
 };
 
-const childVariants = {
+const childVariants: Variants = {
   enter: { opacity: 0, y: 20 },
   center: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
   exit: { opacity: 0, y: -20, transition: { duration: 0.3 } }
@@ -160,7 +160,7 @@ const Hero: React.FC<HeroProps> = ({
 
                 <motion.div variants={childVariants} className="mb-8 flex flex-col items-start">
                   <ul className="space-y-3 text-left">
-                    {current.bullets.map((point, index) => (
+                    {current.bullets && current.bullets.map((point, index) => (
                       <li key={index} className="text-sm sm:text-base md:text-lg font-medium text-white tracking-wide flex items-start">
                         <span className="shrink-0 w-2 h-2 bg-[#10b981] rounded-full mt-1.5 mr-3"></span>
                         <span>{point}</span>

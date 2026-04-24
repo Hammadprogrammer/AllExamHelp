@@ -75,6 +75,31 @@
           text-align: center;
         }
       }
+
+      .featuresGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 30px;
+
+        @media (max-width: 600px) {
+          grid-template-columns: 1fr;
+        }
+
+        .featureItem {
+          .featureTitle {
+            color: #4caf50;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+          }
+          .featureText {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+          }
+        }
+      }
     }
   }
 

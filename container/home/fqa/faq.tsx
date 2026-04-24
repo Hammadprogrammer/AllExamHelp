@@ -1,3 +1,4 @@
+"use client";
 import FAQSection from '@/container/All-props-comp/fqa-read/fqa'
 
 const FAQSectionData = () => {

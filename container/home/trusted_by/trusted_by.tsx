@@ -1,3 +1,4 @@
+"use client";
 import TrustedBy from "@/container/All-props-comp/trusted_by/trusted_by";
 
 const TrustedByHome = () => {

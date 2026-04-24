@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import OurService from '@/container/All-props-comp/our_service/our_service';
 

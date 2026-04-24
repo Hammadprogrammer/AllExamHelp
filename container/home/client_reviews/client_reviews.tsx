@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import ClientReviews from '@/container/All-props-comp/client_reviews/client_reviews';
 

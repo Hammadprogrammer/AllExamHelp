@@ -1,3 +1,4 @@
+"use client";
 import GetQuote from "@/container/All-props-comp/get_quote/get_quote";
 
 const GetQuoteHome = () => {

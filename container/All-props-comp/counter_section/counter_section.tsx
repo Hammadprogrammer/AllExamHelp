@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import { Container } from '@mui/material';
+import { motion } from 'framer-motion';
 import styles from './counter_section.module.scss';
 
 // ── Types ────────────────────────────────────────────────────────────────────
@@ -85,7 +86,14 @@ const CounterSection: React.FC<CounterSectionProps> = ({
   }, []);
 
   return (
-    <section className={styles.counterSection} ref={sectionRef}>
+    <motion.section 
+      className={styles.counterSection} 
+      ref={sectionRef}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8 }}
+    >
       <Container maxWidth="lg">
         <div className={styles.flexContainer}>
           {/* Left Column: Badge and Heading */}
@@ -104,7 +112,7 @@ const CounterSection: React.FC<CounterSectionProps> = ({
           </div>
         </div>
       </Container>
-    </section>
+    </motion.section>
   );
 };
 

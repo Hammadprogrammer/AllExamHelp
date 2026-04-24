@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import Hero from '@/container/All-props-comp/hero-setion/hero_section';
 

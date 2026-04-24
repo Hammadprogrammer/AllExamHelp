@@ -3,6 +3,7 @@ import React from 'react';
 import { Container } from '@mui/material';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+import { motion } from 'framer-motion';
 import 'swiper/css';
 import styles from './trusted_by.module.scss';
 
@@ -21,7 +22,13 @@ const TrustedBy: React.FC<TrustedByProps> = ({
   logos = [],
 }) => {
   return (
-    <section className={styles.trustedSection}>
+    <motion.section 
+      className={styles.trustedSection}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8 }}
+    >
       <Container maxWidth="lg">
         <div className={styles.trustedWrapper}>
           <div className={styles.headingCol}>
@@ -62,7 +69,7 @@ const TrustedBy: React.FC<TrustedByProps> = ({
           </div>
         </div>
       </Container>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import ExamSection from '@/container/All-props-comp/exam_section/exam_section';
 

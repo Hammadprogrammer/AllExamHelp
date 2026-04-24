@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { Container } from '@mui/material';
+import { motion } from 'framer-motion';
 
 // MUI Icons Import
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
@@ -71,7 +72,13 @@ const GetQuote: React.FC<GetQuoteProps> = ({
       
       <Container maxWidth="lg">
         {/* Header Section */}
-        <header className={styles.headerArea}>
+        <motion.header 
+          className={styles.headerArea}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8 }}
+        >
           <span className={styles.topLabel}>{topLabel}</span>
           <div className={styles.waveLine} aria-hidden="true">
             <svg width="80" height="10" viewBox="0 0 80 10">
@@ -80,11 +87,17 @@ const GetQuote: React.FC<GetQuoteProps> = ({
           </div>
           <h2 id="form-title" className={styles.mainHeading}>{heading}</h2>
           <p className={styles.subText}>{description}</p>
-        </header>
+        </motion.header>
 
         <div className={styles.columnsWrapper}>
           {/* Left Column - Contact Details */}
-          <aside className={styles.contactCol}>
+          <motion.aside 
+            className={styles.contactCol}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <h3 className={styles.contactHeading}>{contactHeading}</h3>
             <p className={styles.contactDesc}>{contactDescription}</p>
 
@@ -110,10 +123,16 @@ const GetQuote: React.FC<GetQuoteProps> = ({
                 </span>
               </div>
             </address>
-          </aside>
+          </motion.aside>
 
           {/* Right Column - Form */}
-          <article className={styles.formCol}>
+          <motion.article 
+            className={styles.formCol}
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             <h3 className={styles.formHeading}>{formHeading}</h3>
             <p className={styles.formDesc}>{formDescription}</p>
             
@@ -161,7 +180,7 @@ const GetQuote: React.FC<GetQuoteProps> = ({
                 {btnText}
               </button>
             </form>
-          </article>
+          </motion.article>
         </div>
       </Container>
     </section>

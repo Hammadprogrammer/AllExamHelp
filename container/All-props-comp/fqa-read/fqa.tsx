@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import styles from './fqa.module.scss';
 
 interface FAQItem {
@@ -16,28 +17,49 @@ interface FAQProps {
 }
 
 const FAQSection = ({ mainTitle, description, buttonText, faqList }: FAQProps) => {
-  // Q1 default open rakhne ke liye 0 set kiya hai
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className={styles.faqWrapper}>
-      {/* Left Content Card - Now Normal (Not Fixed) */}
-      <div className={styles.leftCard}>
+    <motion.section 
+      className={styles.faqWrapper}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8 }}
+    >
+      {/* Left Content Card */}
+      <motion.div 
+        className={styles.leftCard}
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
         <h2 className={styles.title}>{mainTitle}</h2>
         <p className={styles.text}>
           {description}
         </p>
         <button className={styles.btn}>{buttonText}</button>
-      </div>
+      </motion.div>
 
       {/* Accordion List */}
-      <div className={styles.accordionContainer}>
+      <motion.div 
+        className={styles.accordionContainer}
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+      >
         {faqList.map((faq, index) => {
           const isOpen = openIndex === index;
           return (
-            <div 
+            <motion.div 
               key={faq.id} 
               className={`${styles.item} ${isOpen ? styles.itemOpen : ''}`}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.6 + (index * 0.1) }}
             >
               <div 
                 className={`${styles.header} ${isOpen ? styles.active : ''}`}
@@ -46,20 +68,31 @@ const FAQSection = ({ mainTitle, description, buttonText, faqList }: FAQProps) =
                 <span className={styles.qText}>
                   <strong>{faq.id}:</strong> {faq.question}
                 </span>
-                {/* Black Icons */}
                 <span className={styles.icon}>
                   {isOpen ? '−' : '+'}
                 </span>
               </div>
               
-              <div className={styles.body}>
-                <p className={styles.aText}>{faq.answer}</p>
-              </div>
-            </div>
+              <AnimatePresence initial={false}>
+                {isOpen && (
+                  <motion.div 
+                    className={styles.bodyWrapper}
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+                  >
+                    <div className={styles.body}>
+                      <p className={styles.aText}>{faq.answer}</p>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
           );
         })}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

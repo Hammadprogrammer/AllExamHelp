@@ -6,6 +6,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import StarIcon from '@mui/icons-material/Star';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -20,16 +21,38 @@ interface Review {
   reviewText: string;
 }
 
-const ClientReviews = ({ reviews }: { reviews: Review[] }) => {
+interface ClientReviewsProps {
+  reviews: Review[];
+  badgeTitle?: string;
+  mainTitle?: string;
+  description?: string;
+  buttonText?: string;
+  buttonLink?: string;
+}
+
+const ClientReviews = ({ 
+  reviews,
+  badgeTitle = "Client Reviews",
+  mainTitle = "Hear from Our Happy Clients",
+  description = "Awesome quality and service! The exam help was accurate, private, and helped my self-confidence. Would recommend to anyone wanting great results.",
+  buttonText = "Contact Us",
+  buttonLink = "/contact-us"
+}: ClientReviewsProps) => {
   return (
     <section className={styles.reviewsSection}>
       <Container maxWidth="lg">
         <div className={styles.flexContainer}>
           
           {/* Static Content Side */}
-          <div className={styles.leftContent}>
+          <motion.div 
+            className={styles.leftContent}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8 }}
+          >
             <div className={styles.smallHeadingWrapper}>
-              <span className={styles.smallHeading}>Client Reviews</span>
+              <span className={styles.smallHeading}>{badgeTitle}</span>
               <svg className={styles.squiggle} viewBox="0 0 160 15" fill="none">
                 <path 
                   d="M2 10c15-10 30-10 45 0s30 10 45 0 30-10 45 0" 
@@ -39,19 +62,25 @@ const ClientReviews = ({ reviews }: { reviews: Review[] }) => {
                 />
               </svg>
             </div>
-            <h2 className={styles.mainHeading}>Hear from Our Happy Clients</h2>
+            <h2 className={styles.mainHeading}>{mainTitle}</h2>
             <p className={styles.description}>
-              Awesome quality and service! The exam help was accurate, private, and helped my self-confidence. Would recommend to anyone wanting great results.
+              {description}
             </p>
-            <Link href="/contact-us">
+            <Link href={buttonLink}>
             <Button className={styles.contactBtn} variant="contained">
-              Contact Us <ArrowForwardIcon sx={{ fontSize: 18 }} />
+              {buttonText} <ArrowForwardIcon sx={{ fontSize: 18 }} />
             </Button>
             </Link>
-          </div>
+          </motion.div>
 
           {/* Slider Side */}
-          <div className={styles.sliderWrapper}>
+          <motion.div 
+            className={styles.sliderWrapper}
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <Swiper
               modules={[Autoplay, Pagination]}
               spaceBetween={30}
@@ -89,7 +118,7 @@ const ClientReviews = ({ reviews }: { reviews: Review[] }) => {
               ))}
             </Swiper>
             <div className={styles.customPaginationDots}></div>
-          </div>
+          </motion.div>
 
         </div>
       </Container>

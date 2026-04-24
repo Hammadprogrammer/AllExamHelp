@@ -1,3 +1,4 @@
+"use client";
 import ContentSectionTwo from "@/container/All-props-comp/content_section_two/content_section_two";
 
 const ContentSectionTwoHome = () => {

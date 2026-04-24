@@ -18,8 +18,8 @@ import ClientReviewsHome from '@/container/home/client_reviews/client_reviews'
 import FAQSectionData from '@/container/home/fqa/faq'
 
 export const metadata: Metadata = {
-  title: "Take My Online Class, Pay Someone to Take My Online Class",
-  description: "Stuck with Take My Online Class? Fret not, we have Got Your back. Just Request Us if You want to Pay Someone to Take My Online Class and Ace Your Online Class Grades.",
+  title: "All Exam: Take My Exam for Me, Pay Someone to Take My Exam",
+  description: "Looking to hire a professional to take my exam for me? We have got you covered. Pay someone to take my exam to ace your online grades hassle-free. Get 50% Discount Today.",
 }
 
 const page = () => {
@@ -34,7 +34,6 @@ const page = () => {
       <AboutTeamHome />
       <WhyStudentHireSection />
       <ContentSectionThree />
-    
       <FeatureSectionHome />
       <TrustedByHome />
       <ContentSectionFour />

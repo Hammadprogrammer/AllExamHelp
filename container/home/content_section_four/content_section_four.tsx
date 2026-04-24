@@ -1,3 +1,4 @@
+"use client";
 import ContentFour from "@/container/All-props-comp/content_section_four/content_section_four";
 
 const ContentSectionFour = () => {
