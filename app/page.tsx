@@ -22,6 +22,8 @@ export const metadata: Metadata = {
   description: "Looking to hire a professional to take my exam for me? We have got you covered. Pay someone to take my exam to ace your online grades hassle-free. Get 50% Discount Today.",
 }
 
+
+
 const page = () => {
   return (
     <>
