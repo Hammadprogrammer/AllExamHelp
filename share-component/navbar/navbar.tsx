@@ -21,6 +21,7 @@ const Navbar = () => {
   // Footer Services with added Icons to match the "old design" look
   const services = [
     { name: "Online Exam Help", url: "/services/online-exam-help/", icon: <Assignment /> },
+    { name: "Online Course Help", url: "/services/online-course-help/", icon: <AutoStories /> },
     { name: "Online GED Test", url: "/services/online-ged-test/", icon: <Quiz /> },
     { name: "Online GMAT Exam", url: "/services/online-gmat-exam/", icon: <Computer /> },
     { name: "Online GRE Test", url: "/services/online-gre-test/", icon: <MenuBook /> },
@@ -34,7 +35,6 @@ const Navbar = () => {
     { name: "Real Estate Exam", url: "/services/real-estate-exam/", icon: <HomeIcon /> },
     { name: "Online Class Help", url: "/services/online-class-help/", icon: <School /> },
     { name: "Insurance Exam", url: "/services/insurance-exam/", icon: <ShieldIcon /> },
-    { name: "Online Course Help", url: "/services/online-course-help/", icon: <AutoStories /> },
     { name: "CompTIA Exams", url: "/services/comptia-exams/", icon: <Computer /> }
   ];
 
