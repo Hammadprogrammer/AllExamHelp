@@ -8,25 +8,40 @@ const HeroSection = () => {
       <Hero 
         slides={[
           {
-            topText: "Study Less Score More",
-            heading: <>Do My Exam For Me<br/>Service To Boost Score,</>,
-            subText: <p>All Exam Help offers a smart way to learn with online support and guidance. We concentrate on helping you learn more, faster, and easier. No overthinking, just confidence . we&apos;re behind you all the way.</p>,
-            bullets: ["Smart Study Methods", "Expert Guidance", "Stress-Free Learning", "Proven Success"],
-            bgImage: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop"
+            topText: "Guaranteed Top Results",
+            heading: <>Best & Reliable Help With<br/>Online Exam</>,
+            subText: <p>Keep concentrating on your career, studies, or life while we take care of your exams. You’re always in safe hands with our professional advice and support.</p>,
+            bullets: [
+              "Proven online exam specialists",
+              "Round-the-clock student support",
+              "High scores assured",
+              "Cost-friendly services"
+            ],
+            bgImage: "/bg1.avif"
           },
           {
-            topText: "Expert Exam Assistance",
-            heading: <>Secure Top Grades<br/>With Our Professionals</>,
-            subText: <p>We offer unparalleled assistance for all your online exams. From timed quizzes to proctored finals, our PhD tutors are ready to ensure you achieve the academic success you deserve.</p>,
-            bullets: ["100% Confidentiality", "Subject Experts", "24/7 Support", "Guaranteed Grades"],
-            bgImage: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1949&auto=format&fit=crop"
+            topText: "Stress-Free Exam Help",
+            heading: <>Top Qualified Exam Takers<br/>For Hire</>,
+            subText: <p>Deadlines and hard questions are no longer issues. Through our safe online exam help, We are a team of trained tutors who will take you to success.</p>,
+            bullets: [
+              "Skilled exam takers online",
+              "Guaranteed score improvement",
+              "Safe and discreet process",
+              "Perfect for busy students"
+            ],
+            bgImage: "/bg2.avif"
           },
           {
-            topText: "Stress-Free Academics",
-            heading: <>Focus On What Matters<br/>Leave The Exams To Us</>,
-            subText: <p>Balance your life, work, and studies effortlessly. By letting us handle the tough exams, you can dedicate your time to practical learning and personal growth without academic anxiety.</p>,
-            bullets: ["Affordable Pricing", "Timely Delivery", "Secure Process", "Money-back Guarantee"],
-            bgImage: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop"
+            topText: "Get Full-Time Help",
+            heading: <>Trustworthy Online Exam<br/>Help Service</>,
+            subText: <p>Relax and get over the online exams. That’s why we have our professional tutors on hand to expertly guide you through each and every process, fully preparing you for anything you might face.</p>,
+            bullets: [
+              "Certified exam takers for sit for exams",
+              "100% privacy and confidentiality",
+              "24/7 live support",
+              "Affordable pricing for students"
+            ],
+            bgImage: "/bg3.avif"
           }
         ]}
       />
