@@ -10,7 +10,7 @@ const ContentSectionOne = () => {
         heading2="Stress-Free Do My Exam for Me Service – Pass without Worry"
         description2="Exams can create a lot of pressure and anxiety, but with our do my exam help, all you have to do is sit back and rely on our professionals to assist you. We have you covered from the subject by subject, everything is broken down and explained until it makes sense, even the “hard” stuff. From answering questions to time management, our experts ensure that your experience is a hassle-free one. We keep your privacy, security, and grades protected at all times. We know how annoying this is for you, and we're ready to take on the work because your privacy, security, and grades are always protected for you! With our confidence boost and 24/7 support, all of your exams will seem easy, guaranteed!
 "
-        image1="/stow.jpg"
+        image1="/c14.jpg"
         image2="/contentone.jpg"
       />
     </>

@@ -17,7 +17,7 @@ const OurServiceSection = () => {
     {
       title: "Online Test & Quizzes",
       description: "Assistance with organizing test materials, interpreting subjects, and efficiently completing test requirements.",
-      image: "/sthree.jpg"
+      image: "/s10.jpg"
     },
     {
       title: "GED Test Help",
@@ -27,12 +27,12 @@ const OurServiceSection = () => {
     {
       title: "GRE Test Help",
       description: "We are offering you the best experts for GRE test preparation for your GRE certification completion.",
-      image: "/sfive.jpg"
+      image: "/s11.jpg"
     },
     {
       title: "ATI TEASE Test Help",
       description: "Reliable assistance to complete the online ATI TEASE test accurately and on time.",
-      image: "/ssix.jpg"
+      image: "/s12.jpg"
     },
     {
       title: "PMP Exam Help",
