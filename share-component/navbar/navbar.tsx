@@ -22,6 +22,8 @@ const Navbar = () => {
   const services = [
     { name: "Online Exam Help", url: "/services/online-exam-help/", icon: <Assignment /> },
     { name: "Online Course Help", url: "/services/online-course-help/", icon: <AutoStories /> },
+    { name: "Online Class Help", url: "/services/online-class-help/", icon: <School /> },
+    { name: "Assignment Help", url: "/services/assignment-help/", icon: <HistoryEdu /> },
     { name: "Online GED Test", url: "/services/online-ged-test/", icon: <Quiz /> },
     { name: "Online GMAT Exam", url: "/services/online-gmat-exam/", icon: <Computer /> },
     { name: "Online GRE Test", url: "/services/online-gre-test/", icon: <MenuBook /> },
@@ -31,9 +33,7 @@ const Navbar = () => {
     { name: "Online TEAS Test", url: "/services/online-teas-test/", icon: <Biotech /> },
     { name: "Online Tests & Quizzes", url: "/services/online-tests-quizzes/", icon: <Quiz /> },
     { name: "Proctored Exam Help", url: "/services/proctored-exam-help/", icon: <Computer /> },
-    { name: "Assignment Help", url: "/services/assignment-help/", icon: <HistoryEdu /> },
     { name: "Real Estate Exam", url: "/services/real-estate-exam/", icon: <HomeIcon /> },
-    { name: "Online Class Help", url: "/services/online-class-help/", icon: <School /> },
     { name: "Insurance Exam", url: "/services/insurance-exam/", icon: <ShieldIcon /> },
     { name: "CompTIA Exams", url: "/services/comptia-exams/", icon: <Computer /> }
   ];
