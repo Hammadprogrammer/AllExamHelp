@@ -25,6 +25,7 @@ const Navbar = () => {
     { name: "Online Class Help", url: "/services/online-class-help/", icon: <School /> },
     { name: "Assignment Help", url: "/services/assignment-help/", icon: <HistoryEdu /> },
     { name: "CompTIA Exams", url: "/services/comptia-exams/", icon: <Computer /> },
+    { name: "Insurance Exam", url: "/services/insurance-exam/", icon: <ShieldIcon /> },
     { name: "Online GED Test", url: "/services/online-ged-test/", icon: <Quiz /> },
     { name: "Online GMAT Exam", url: "/services/online-gmat-exam/", icon: <Computer /> },
     { name: "Online GRE Test", url: "/services/online-gre-test/", icon: <MenuBook /> },
@@ -35,7 +36,6 @@ const Navbar = () => {
     { name: "Online Tests & Quizzes", url: "/services/online-tests-quizzes/", icon: <Quiz /> },
     { name: "Proctored Exam Help", url: "/services/proctored-exam-help/", icon: <Computer /> },
     { name: "Real Estate Exam", url: "/services/real-estate-exam/", icon: <HomeIcon /> },
-    { name: "Insurance Exam", url: "/services/insurance-exam/", icon: <ShieldIcon /> },
   ];
 
   // Footer Subjects with added Icons to match the "old design" look
