@@ -1,17 +1,16 @@
 import React from 'react'
 import type { Metadata } from 'next'
-import HeroSection from '@/container/subject/biology/hero_section/hero_section'
+import HeroSection from '@/container/subject/business-exam/hero_section/hero_section'
 import OurServiceSection from '@/container/services/online-exam-help/our_service/our_service'
 
-import ContentSectionOne from '@/container/subject/biology/content_section_one/Content_section_one'
+import ContentSectionOne from '@/container/subject/business-exam/content_section_one/Content_section_one'
 
 import CounterSectionHome from '@/container/services/online-exam-help/counter_section/counter_section'
 import ExamSection from '@/container/home/exam_section/exam_section'
 
-import ContentSectionTwoHome from '@/container/subject/biology/content_section_two/content_section_two'
+import ContentSectionTwoHome from '@/container/subject/business-exam/content_section_two/content_section_two'
 
 import AboutTeamHome from '@/container/services/online-exam-help/about_team/about_team'
-import ContentSectionThree from '@/container/subject/biology/content_section_three/content_section_three'
 
 import WhyStudentHireSection from '@/container/home/why_student_hire/why_student_hire'
 import FeatureSectionHome from '@/container/home/feature_section/feature_section'
@@ -20,8 +19,8 @@ import GetQuoteHome from '@/container/home/get_quote/get_quote'
 import ClientReviewsHome from '@/container/services/online-exam-help/client_reviews/client_reviews'
 
 export const metadata: Metadata = {
-  title: "Biology Exam, Affordable Online Biology Exam Help Services",
-  description: "Need Help with Your Biology Exam? Get Expert Online Biology Exam Help with Easy Tutoring, Clear Study Guides, and Reliable Support to Boost Your Grades and Feel.",
+  title: "Business Exam, Get Best Exam Helpers for Your Business Exam",
+  description: "Struggling with Your Business Exam? Get Expert Online Business Exam Help with Clear Guidance, Simple Study Tips, and Reliable Support.",
 }
 
 const page = () => {
@@ -35,7 +34,6 @@ const page = () => {
       <ContentSectionOne />
       <ExamSection />
       <WhyStudentHireSection />
-      {/* <ContentSectionThree /> */}
       <FeatureSectionHome />
       <TrustedByHome />
       <GetQuoteHome />
