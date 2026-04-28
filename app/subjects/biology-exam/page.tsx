@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Metadata } from 'next'
-import HeroSection from '@/container/services/real-estate-exam/hero_section/hero_section'
+import HeroSection from '@/container/subject/biology/hero_section/hero_section'
 import OurServiceSection from '@/container/services/online-exam-help/our_service/our_service'
 
 import ContentSectionOne from '@/container/subject/biology/content_section_one/Content_section_one'
