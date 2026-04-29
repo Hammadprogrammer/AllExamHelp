@@ -19,8 +19,8 @@ import GetQuoteHome from '@/container/home/get_quote/get_quote'
 import ClientReviewsHome from '@/container/services/online-exam-help/client_reviews/client_reviews'
 
 export const metadata: Metadata = {
-  title: "All Exam: Take My Exam for Me, Pay Someone to Take My Exam",
-  description: "Looking to hire a professional to take my exam for me? We have got you covered. Pay someone to take my exam to ace your online grades hassle-free. Get 50% Discount Today.",
+  title: "GED Test: Take Your GED Test Online, Take My GED Exam for Me",
+  description: "Struggling with GED prep? Our top take your GED test online services connect you with expert our tutors, simple lessons, and guaranteed support to help you pass with confidence.",
 }
 
 

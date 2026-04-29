@@ -19,8 +19,8 @@ import GetQuoteHome from '@/container/home/get_quote/get_quote'
 import ClientReviewsHome from '@/container/services/online-exam-help/client_reviews/client_reviews'
 
 export const metadata: Metadata = {
-  title: "All Exam: Take My Exam for Me, Pay Someone to Take My Exam",
-  description: "Looking to hire a professional to take my exam for me? We have got you covered. Pay someone to take my exam to ace your online grades hassle-free. Get 50% Discount Today.",
+  title: "Take My PMP Exam, Online PMP Exam Help Services by Experts",
+  description: "Get Secure, Private PMP Exam Help Online. Obtain Confidential Guidance with Trusted PMP Exam Help Online Today.",
 }
 
 

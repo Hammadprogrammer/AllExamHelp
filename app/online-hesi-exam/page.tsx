@@ -19,8 +19,8 @@ import GetQuoteHome from '@/container/home/get_quote/get_quote'
 import ClientReviewsHome from '@/container/services/online-exam-help/client_reviews/client_reviews'
 
 export const metadata: Metadata = {
-  title: "All Exam: Take My Exam for Me, Pay Someone to Take My Exam",
-  description: "Looking to hire a professional to take my exam for me? We have got you covered. Pay someone to take my exam to ace your online grades hassle-free. Get 50% Discount Today.",
+  title: "HESI Exam Help, Online HESI Exam Experts to Help You Pass",
+  description: "Struggling with the HESI Exam? Get Expert Online HESI Exam Help with Our Personalized Tutoring, Comprehensive Study Guides, and Realistic Practice Exams.",
 }
 
 
