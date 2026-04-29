@@ -20,7 +20,7 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 
 export const metadata: Metadata = {
   title: "Finance Exam, Best Online Finance Exam Expert Help at Cheap",
-  description: "Need Help with Tough Finance Exam Questions? Hire Experts to Take My Online Finance Exam and Achieve Success with Finance Exam Help Services.",
+  description: "Need Help with Tough Finance Exam Questions? Hire Experts to Take My Online Finance Exam and Achieve Success with Finance Exam Help Services. Get Access to the Best Online Tutors.",
 }
 
 const page = () => {

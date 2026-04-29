@@ -20,7 +20,7 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 
 export const metadata: Metadata = {
   title: "Nursing Exam, Take My Nursing Exam for Me at Cheap Prices",
-  description: "Need Nursing Exam Help? Hire Trusted Experts to Take My Nursing Exam for Me and Ensure Top Scores in Medical and Clinical Subjects. Get PhD and Masters Level.",
+  description: "Need Nursing Exam Help? Hire Trusted Experts to Take My Nursing Exam for Me and Ensure Top Scores in Medical and Clinical Subjects. Get PhD and Masters Level Tutors Online.",
 }
 
 const page = () => {

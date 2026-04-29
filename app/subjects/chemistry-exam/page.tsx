@@ -20,7 +20,7 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 
 export const metadata: Metadata = {
   title: "Chemistry Exam, Reliable and Trusted Chemistry Exam Help",
-  description: "All Exam Help Offers Various Subject Help for Online Exams. Our Chemistry Exam Experts are Very Prominent to Provide Best Services in Town. Grab Your Discount.",
+  description: "All Exam Help Offers Various Subject Help for Online Exams. Our Chemistry Exam Experts are Very Prominent to Provide Best Services in Town. Grab Your Discount and Hire Best Chemistry Expert.",
 }
 
 const page = () => {

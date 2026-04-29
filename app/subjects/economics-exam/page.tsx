@@ -20,7 +20,7 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 
 export const metadata: Metadata = {
   title: "Economics Exam, Cheap Economics Exam Help Services Online",
-  description: "Get Cheap Solution for Your Online Economics Exam by Proven Experts. We Offer Grade Guarantee with Money-Back. Direct Tutor Access for All Subject including Eco.",
+  description: "Get Cheap Solution for Your Online Economics Exam by Proven Experts. We Offer Grade Guarantee with Money-Back. Direct Tutor Access for All Subject including Economics Exam.",
 }
 
 const page = () => {

@@ -20,7 +20,7 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 
 export const metadata: Metadata = {
   title: "Philosophy Exam, Online Philosophy Exam Help at Cheap Prices",
-  description: "Struggling with Your Philosophy Exam? Get Expert Online Philosophy Exam Help Anytime with Trusted Tutors to Boost Your Grades and Confidence. Get Exclusive Discount.",
+  description: "Struggling with Your Philosophy Exam? Get Expert Online Philosophy Exam Help Anytime with Trusted Tutors to Boost Your Grades and Confidence. Get Exclusive Discount Offers Today.",
 }
 
 const page = () => {
