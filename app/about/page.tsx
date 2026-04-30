@@ -1,12 +1,11 @@
 import React from 'react';
 import { Metadata } from 'next';
-import AboutUs from '@/container/about-us/about-us';
 import Breadcrumb from '@/container/about-us/header/header';
 import FloatingHero from '@/container/about-us/welcome/welcome';
 
 export const metadata: Metadata = {
-  title: 'Hire Class Buddy – Online Class Help and Exam Help USA',
-  description: 'Get expert online class help, exam help, assignments, quizzes and proctored exam support in the USA. Hire Class Buddy helps students succeed with trusted academic assistance.',
+  title: 'About Us - All Exam Help a Reliable Support for Online Exams',
+  description: 'Looking for reliable online exam services? All Exam Help, your source for discreet online exam help. Hire our service and enjoy a client-first philosophy. Get 50% Discount Today.',
 };
 
 const page = () => {
@@ -14,7 +13,6 @@ const page = () => {
     <div>
       <Breadcrumb title="About Us" currentPage="About Us" />
       <FloatingHero/>
-      {/* <AboutUs /> */}
     </div>
   );
 };

@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 import TermsAndConditions from '@/container/term-and-condition/term-and-condition';
 
 export const metadata: Metadata = {
-  title: 'Terms and Conditions – Hire Class Buddy',
-  description: 'Please read our Terms and Conditions carefully before booking an order or any transaction with Hire Class Buddy. We have very strict policies and terms of use agreement to provide the best quality services.',
+  title: 'Terms & Conditions | All Exam – Service Guidelines & User Agreement',
+  description: 'Explore All Exam’s Terms & Conditions to understand our service rules, user responsibilities, and policies before using our platform.',
 };
 
 const Page = () => {

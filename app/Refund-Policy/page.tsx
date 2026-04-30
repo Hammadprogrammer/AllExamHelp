@@ -2,8 +2,8 @@ import React from 'react'
 import RefundPolicy from '@/container/Refund-Policy/Refund-Policy'
 
 export const metadata = {
-  title: "Refund Policy – Hire Class Buddy",
-  description: "Struggling with online exams? Hire professional online exam help, personalized tutoring, and 24/7 support to boost your confidence and improve your scores.",
+  title: "Refund Policy | All Exam – Money Back Guarantee",
+  description: "Review All Exam’s Refund Policy to learn about eligibility, terms, and conditions for refunds. We ensure fair policies and customer satisfaction for our services.",
 };
 
 const page = () => {
