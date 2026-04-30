@@ -19,8 +19,8 @@ import GetQuoteHome from '@/container/home/get_quote/get_quote'
 import ClientReviewsHome from '@/container/services/online-exam-help/client_reviews/client_reviews'
 
 export const metadata: Metadata = {
-  title: "All Exam: Take My Exam for Me, Pay Someone to Take My Exam",
-  description: "Looking to hire a professional to take my exam for me? We have got you covered. Pay someone to take my exam to ace your online grades hassle-free. Get 50% Discount Today.",
+  title: "Online CompTIA Exam Help, Take My CompTIA Exam for Me",
+  description: "Are you having trouble with the CompTIA exam? Hire an expert to take your CompTIA A+ Certification exam for you. The process is simple, safe, and affordable with guaranteed results.",
 }
 
 
