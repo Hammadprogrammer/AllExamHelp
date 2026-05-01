@@ -1,0 +1,95 @@
+.termsSection {
+  padding: 40px 0;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .mainTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4CAF50;
+    margin-bottom: 30px;
+  }
+
+  .introText {
+    font-size: 1.1rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+
+  .policyContent {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .section {
+      h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #1e293b;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 1.05rem;
+        color: #64748b;
+        line-height: 1.6;
+        margin-bottom: 15px;
+
+        strong {
+          color: #1e293b;
+        }
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 15px;
+
+        li {
+          position: relative;
+          padding-left: 20px;
+          color: #64748b;
+          line-height: 1.6;
+          font-size: 1rem;
+
+          &::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #1e293b;
+            font-weight: bold;
+          }
+
+          strong {
+            color: #1e293b;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .termsSection {
+    padding: 60px 0;
+
+    .mainTitle {
+      font-size: 2rem;
+    }
+
+    .section h2 {
+      font-size: 1.2rem;
+    }
+  }
+}

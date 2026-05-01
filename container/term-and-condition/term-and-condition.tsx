@@ -1,149 +1,130 @@
-"use client"
+"use client";
 import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import styles from '../privacy-policy/privacy-policy.module.scss'
+import styles from './term-and-condition.module.scss';
+import { motion } from 'framer-motion';
 
 const TermsAndConditions = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5 }
+    }
+  };
+
   return (
-    <>
-      <Head>
-        <title>Terms and Conditions – Hire Class Buddy</title>
-        <meta name="description" content="Please read our Terms and Conditions carefully before booking an order or any transaction with Hire Class Buddy. We have very strict policies and terms of use agreement to provide the best quality services." />
-      </Head>
+    <section className={styles.termsSection}>
+      <motion.div 
+        className={styles.container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={containerVariants}
+      >
+        <motion.h1 className={styles.mainTitle} variants={itemVariants}>Terms and Conditions</motion.h1>
+        
+        <motion.p className={styles.introText} variants={itemVariants}>
+          Welcome to All Exam Help. In using and gaining access to our services, you sign and agree to the terms and conditions listed below. Please read them carefully.
+        </motion.p>
 
-      <div className={styles.mainWrapper}>
-        <main className={styles.container}>
-          <div className={styles.card}>
-            
-            <header className={styles.headerSection}>
-              <h1 className={styles.title}>Terms and Conditions</h1>
-            </header>
+        <div className={styles.policyContent}>
+          
+          {/* Section 1 */}
+          <motion.div className={styles.section} variants={itemVariants}>
+            <h2>1. Service Description</h2>
+            <p>
+              All Exam Help offers professional, confidential aid to busy students in need of online test, exam, and certification help. Online exam-taking, test preparation, and other related academic support are some of our services.
+            </p>
+          </motion.div>
 
-            <div className={styles.section}>
-              <h2 className={styles.subHeading}>Disclaimer</h2>
-              <p className={styles.text}>
-                Welcome to <strong>Hire Class Buddy</strong>. By accessing or using our services, you agree to abide in full by these Terms and Conditions. These rules govern your use of our platform and your relationship with us. They should be read carefully before utilizing any services of the website.
-              </p>
-            </div>
+          {/* Section 2 */}
+          <motion.div className={styles.section} variants={itemVariants}>
+            <h2>2. User Obligations</h2>
+            <p>Through our services, you are agreeing to:</p>
+            <ul>
+              <li><strong>Give correct information:</strong> It is your duty to give all the required and proper information about your exam that includes logins, exam schedules, and other details.</li>
+              <li><strong>Know academic policies:</strong> You know and are obliged to comply with academic integrity policies at your educational institution. All Exam Help is a service with no attachment to any institution, and we have no responsibility towards the disciplinary measures of your institution that may be imposed on you.</li>
+              <li><strong>Make sure it is compatible with the platform:</strong> You should make sure that your computer and internet connection fit the technical specs of your exam platform. Any problems caused by a bad network or hardware problems cannot be blamed on us.</li>
+            </ul>
+          </motion.div>
 
-            <div className={styles.section}>
-              <h2 className={styles.subHeading}>1. Service Overview</h2>
-              <p className={styles.text}>
-                Hire Class Buddy is an academic support platform that helps students manage online classes with ease. We offer assistance with homework, quizzes, tests, classes and proctored exam service. Our goal is to ensure that students get the help they need in a high-quality, timely and reliable manner while still upholding our traditions of originality and integrity.
-              </p>
-            </div>
+          {/* Section 3 */}
+          <motion.div className={styles.section} variants={itemVariants}>
+            <h2>3. Anonymity and security.</h2>
+            <p>
+              It has been our priority to respect your privacy. Your personal data and academic information that you provide to us is to be kept in strict confidence. Your identity will never be revealed, and your information will never be used in any other way except to provide the service you have requested. Communication and data transfers are all secured to ensure your privacy.
+            </p>
+          </motion.div>
 
-            <div className={styles.section}>
-              <h2 className={styles.subHeading}>2. Eligibility</h2>
-              <p className={styles.text}>
-                Hire Class Buddy is not directed towards any person under the age of 18. You must have a legal 18+ to use our services in terms in your state or country. Our writing services are designed for students of academic programs in the USA and should be used in accordance with all relevant laws and university guidelines.
-              </p>
-            </div>
+          {/* Section 4 */}
+          <motion.div className={styles.section} variants={itemVariants}>
+            <h2>4. Payments and Refunds</h2>
+            <ul>
+              <li><strong>Payment:</strong> The service should be rendered only when all the payments are made. We allow different payment methods, which are listed on our site.</li>
+              <li><strong>Refunds:</strong> In case we fail to provide a passing mark, we will provide a refund or reservice as stipulated in the original service contract between us. Your service agreement specifies certain refund policies. Failure due to technical problems on your behalf (i.e., poor internet connection, system failure) will not be refunded.</li>
+            </ul>
+          </motion.div>
 
-            <div className={styles.section}>
-              <h2 className={styles.subHeading}>3. User Account and Responsibilities</h2>
-              <p className={styles.text}>
-                Users agree to provide true, accurate, current, and complete information when registering or ordering. You will keep your account login details confidential and ensure only you make use of your account. You are responsible for all activity conducted (including orders, communications and submissions) under your account. You undertake to inform us immediately if you suspect any unauthorized use of your account.
-              </p>
-            </div>
+          {/* Section 5 */}
+          <motion.div className={styles.section} variants={itemVariants}>
+            <h2>5. Warranty and Liability Disclosure.</h2>
+            <p>
+              All Exam Help does not guarantee any particular score and only offers its services as is, unless there is an agreement between the service and the customer. We have a history of success due to experience and expertise. We do not cause any technical problems, system malfunctions, or unexpected events that could happen during the exam, such as platform crashes or server errors, etc.
+            </p>
+          </motion.div>
 
-            <div className={styles.section}>
-              <h2 className={styles.subHeading}>4. Payment and Refunds</h2>
-              <p className={styles.text}>
-                Payments for our services must be made through our secure payment channels. All prices are in USD and may be changed without notice. Refunds are allowed only under certain conditions specified in our refund policy, which include incomplete work and errors in service. All refund requests must be made in accordance with the relevant procedures and utilizing all necessary information to qualify for any refund.
-              </p>
-            </div>
+          {/* Section 6 */}
+          <motion.div className={styles.section} variants={itemVariants}>
+            <h2>6. Governing Law</h2>
+            <p>
+              Such terms and conditions will be subject to and interpreted by the jurisdiction in which All Exam Help is registered without reference to its conflict of law regulations.
+            </p>
+          </motion.div>
 
-            <div className={styles.section}>
-              <h2 className={styles.subHeading}>5. Privacy and Confidentiality</h2>
-              <p className={styles.text}>
-                We are committed to respecting your privacy. We will never share personal information, course details, login credentials, or communications with our team. We neither sell your data to third parties nor share it without receiving your express consent. Your information will be safe in our hands, and we adhere to strict protocols to preserve your privacy.
-              </p>
-            </div>
+          {/* Section 7 */}
+          <motion.div className={styles.section} variants={itemVariants}>
+            <h2>7. Changes to Terms</h2>
+            <p>
+              All Exam Help may at any time alter these terms and conditions. Any changes will be communicated to you by placing the new terms on this page. The fact that you still use the service after such modifications means that you have accepted the new terms.
+            </p>
+          </motion.div>
 
-            <div className={styles.section}>
-              <h2 className={styles.subHeading}>6. Original Work and Academic Integrity</h2>
-              <p className={styles.text}>
-                We ensure that all the assignments, quizzes, tests or any other course material is done from scratch, which guarantees quality and academic integrity. But students are still responsible for knowing and following their institution’s academic-integrity policies. However, we cannot take any responsibility for students violating academic integrity policies.
-              </p>
-            </div>
+          {/* Headingless sections from screenshot */}
+          <motion.div className={styles.section} variants={itemVariants}>
+            <h2>How Our Service Works</h2>
+            <p>
+              Our service is easy and simple to get started with. The first step is to contact us with the information about your online test, the subject, the date, and the time of the test. Then we will offer you a specific quote, a clear service agreement, and a clear description of the terms and guarantees. After the contract is signed and payment is made, we will send a qualified professional on our team specialized in the field you need. Our professional will arrange with you the access to the exam platform at the appointed time to provide a pleasant and stress-free process in all aspects.
+            </p>
+          </motion.div>
 
-            <div className={styles.section}>
-              <h2 className={styles.subHeading}>7. Prohibited Activities</h2>
-              <p className={styles.text}>
-                This includes academic fraud or misconduct. Users MAY NOT use our services for any illegal purpose. It is against the rules to share, resell or disseminate the content provided by Hire Class Buddy. Our services, servers or other users' access, you shall not attempt to interrupt in any size! Crucially, those identified as engaging in prohibited activities may have their accounts terminated and be liable for further action.
-              </p>
-            </div>
+          <motion.div className={styles.section} variants={itemVariants}>
+            <h2>We are committed to quality and to success.</h2>
+            <p>
+              We care about your success at All Exam Help. We have a team of extremely experienced professionals, experts in their own fields. They are not merely test-takers, but they are experts in their subject matter who have profound knowledge of the question formats and types of questions on exams. This knowledge enables us to produce quality results without any doubt. We are confident in our work, to the extent that we promise you passing grades, and therefore, you can be fully confident that your academic ambitions are in good hands. Our most important goal is to assist you in passing the certification exam in order to progress with your career or education without cramming and test anxiety.
+            </p>
+          </motion.div>
 
-            <div className={styles.section}>
-              <h2 className={styles.subHeading}>8. Limitation of Liability</h2>
-              <p className={styles.text}>
-                We shall not be responsible for any direct, indirect, incidental or consequential losses that may arise out of using our services. We endeavor to deliver accurate, timely, and higher-quality work, but we do not make any guarantees for specific grades, outcomes or academic results. It is an admission that institutions have their own criteria for evaluation and a set of policies in place that are beyond our control.
-              </p>
-            </div>
+          <motion.div className={styles.section} variants={itemVariants}>
+            <h2>Unmatched Customer Support</h2>
+            <p>
+              We are of the opinion that great service does not begin and end with the exam. This is why we provide our customers with unparalleled customer service during the entire process. We also have a support team ready to answer your questions and to discuss your concerns with you before, during, and after the exam. We stay in touch to update you on the progress, so you are fully informed, and you experience no worries whatsoever. We strive to develop a working relationship with trust and reliability so that we become your partner whenever you have any future academic requirements. You are not a client with All Exam Help; you are a partner in success.
+            </p>
+          </motion.div>
 
-            <div className={styles.section}>
-              <h2 className={styles.subHeading}>9. Changes to Terms</h2>
-              <p className={styles.text}>
-                We may change, update or revise these terms and conditions. All changes are effective immediately when we post them on our website. Your continued use of our services following any such changes means you accept the new terms. Users are advised to check this page frequently for the latest updates.
-              </p>
-            </div>
-
-            <div className={styles.section}>
-              <h2 className={styles.subHeading}>10. Governing Law</h2>
-              <p className={styles.text}>
-                Here, the laws of the United States of America shall govern and construe these terms and conditions. This is the sole determination of Hire Class Buddy, and any disputes will fall strictly under USA jurisdiction.
-              </p>
-            </div>
-
-            <div className={styles.section}>
-              <h2 className={styles.subHeading}>11. Dispute Resolution and Feedback</h2>
-              <p className={styles.text}>
-                We are committed to being transparent and ensuring the best possible experience for our users. If users have any disputes or concerns with our services, they should reach out to our support team as soon as possible. Please note that we want our moderators to resolve issues neutrally and fairly. Although we strive to resolve any issues professionally, users understand that all resolutions will be in accordance with our policies.
-              </p>
-            </div>
-
-            <div className={styles.section}>
-              <h2 className={styles.subHeading}>12. User Responsibilities and Communication</h2>
-              <p className={styles.text}>
-                Being a user of Hire Class Buddy means that you will communicate openly and effectively with members of our team. A few of these are providing accurate course directions, timelines, and any specific things anticipated from your assignments. When we request details from our users, their responsiveness helps us avoid further delays.
-              </p>
-            </div>
-
-            <div className={styles.section}>
-              <h2 className={styles.subHeading}>13. Termination of Service</h2>
-              <p className={styles.text}>
-                We may suspend or terminate any user account or service in case we believe that the Terms and Conditions have been violated. This covers the abuse of our services, fraudulent behavior or not fulfilling payment obligations. On termination, you will lose access to your orders & account information.
-              </p>
-            </div>
-
-            <section className={styles.contactBox}>
-              <h2 className={styles.subHeading}>Contact Information</h2>
-              <p className={styles.text}>
-                If you have any questions, concerns or need support regarding these Terms and Conditions, please contact our support team:
-              </p>
-              <div style={{ marginTop: '20px' }}>
-                <p className={styles.text}>
-                  <strong>Email: </strong>
-                  <Link href="mailto:info@hireclassbuddy.com" className={styles.contactLink}>
-                    info@hireclassbuddy.com
-                  </Link>
-                </p>
-                
-                <p className={styles.text} style={{ marginTop: '10px' }}>
-                  <strong>Phone: </strong> 
-                  <Link href="tel:+447400465932" className={styles.contactLink}>
-                    +44 7400 465932
-                  </Link>
-                </p>
-              </div>
-            </section>
-
-          </div>
-        </main>
-      </div>
-    </>
+        </div>
+      </motion.div>
+    </section>
   );
 };
 

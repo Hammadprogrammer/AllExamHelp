@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import TermsAndConditions from '@/container/term-and-condition/term-and-condition';
+import Breadcrumb from '@/container/about-us/header/header';
 
 export const metadata: Metadata = {
   title: 'Terms & Conditions | All Exam – Service Guidelines & User Agreement',
@@ -9,9 +10,10 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <main>
+    <div>
+      <Breadcrumb title="Terms and Conditions" currentPage="Terms and Conditions" />
       <TermsAndConditions />
-    </main>
+    </div>
   );
 }
 
