@@ -10,7 +10,7 @@ import Contentfour from '@/container/about-us/contentfour/contentfour';
 import WhyChooseUs from '@/container/about-us/WhyChooseUs/WhyChooseUs';
 import Portfolio from '@/container/about-us/Portfolio/Portfolio';
 import TrustedByHome from '@/container/home/trusted_by/trusted_by';
-
+import CallToAction from '@/container/about-us/CallToAction/CallToAction';
 
 
 export const metadata: Metadata = {
@@ -31,6 +31,7 @@ const page = () => {
       <WhyChooseUs/>
       <Portfolio/>
       <TrustedByHome/>
+      <CallToAction/>
     </div>
   );
 };

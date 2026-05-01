@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Portfolio.module.scss';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Portfolio = () => {
   const portfolioItems = [
@@ -52,12 +53,14 @@ const Portfolio = () => {
             >
               <div className={styles.cardContent}>
                 <h3 className={styles.cardTitle}>• {item.title}</h3>
-                <button 
-                  className={styles.joinBtn}
-                  style={{ backgroundColor: item.btnColor }}
-                >
-                  {item.btnText}
-                </button>
+                <Link href="/contact-us">
+                  <button 
+                    className={styles.joinBtn}
+                    style={{ backgroundColor: item.btnColor }}
+                  >
+                    {item.btnText}
+                  </button>
+                </Link>
               </div>
               <div className={styles.cardImage}>
                 <Image 
