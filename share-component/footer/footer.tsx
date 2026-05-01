@@ -45,9 +45,9 @@ const Footer = () => {
   ];
 
   const resources = [
-    { name: "About", url: "/about-us/" },
+    { name: "About", url: "/about/" },
     { name: "Our Experts", url: "/our-experts/" },
-    { name: "Contact Us", url: "/contact-us/" }
+    { name: "Contact", url: "/contact/" }
   ];
 
   const terms = [

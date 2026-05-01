@@ -64,8 +64,19 @@ const Navbar = () => {
 
   const handleDropdown = (name: string) => setOpenDropdown(openDropdown === name ? null : name);
 
-  const isActive = (path: string) => pathname === path;
-  const isCategoryActive = (basePath: string) => pathname.startsWith(basePath);
+  const isActive = (path: string) => {
+    if (!path) return false;
+    const normalizedPath = path.replace(/\/+$/, "") || "/";
+    const normalizedPathname = pathname.replace(/\/+$/, "") || "/";
+    return normalizedPathname === normalizedPath;
+  };
+
+  const isCategoryActive = (basePath: string) => {
+    if (!basePath) return false;
+    const normalizedPathname = pathname.replace(/\/+$/, "") || "/";
+    const normalizedBasePath = basePath.replace(/\/+$/, "");
+    return normalizedPathname.startsWith(normalizedBasePath);
+  };
 
   return (
     <div className={styles.navbarWrapper}>
@@ -87,7 +98,7 @@ const Navbar = () => {
 
               {/* Services Mega Menu */}
               <div className={styles.navItem} onMouseEnter={() => setOpenDropdown('ser')} onMouseLeave={() => setOpenDropdown(null)}>
-                <span className={`${styles.dropdownLabel} ${isCategoryActive('/services') ? styles.activeText : ''}`}>
+                <span className={`${styles.dropdownLabel} ${(isCategoryActive('/services') || services.some(s => isActive(s.url))) ? styles.activeText : ''}`}>
                   Services <KeyboardArrowDown className={styles.arrowIcon} />
                 </span>
                 <div className={`${styles.megaMenu} ${openDropdown === 'ser' ? styles.show : ''}`} style={{ minWidth: '980px' }}>
@@ -105,7 +116,7 @@ const Navbar = () => {
 
               {/* Subjects Mega Menu */}
               <div className={styles.navItem} onMouseEnter={() => setOpenDropdown('sub')} onMouseLeave={() => setOpenDropdown(null)}>
-                <span className={`${styles.dropdownLabel} ${isCategoryActive('/subjects') ? styles.activeText : ''}`}>
+                <span className={`${styles.dropdownLabel} ${(isCategoryActive('/subjects') || subjects.some(s => isActive(s.url))) ? styles.activeText : ''}`}>
                   Subjects <KeyboardArrowDown className={styles.arrowIcon} />
                 </span>
                 <div className={`${styles.megaMenu} ${openDropdown === 'sub' ? styles.show : ''}`}>
@@ -169,7 +180,7 @@ const Navbar = () => {
                 <Link href="/" prefetch={false} onClick={handleDrawerToggle}><HomeIcon /> Home</Link>
               </li>
 
-              <li className={`${styles.mobileListItem} ${isCategoryActive('/services') ? styles.mobActive : ''}`} onClick={() => handleDropdown('ser')}>
+              <li className={`${styles.mobileListItem} ${(isCategoryActive('/services') || services.some(s => isActive(s.url))) ? styles.mobActive : ''}`} onClick={() => handleDropdown('ser')}>
                 <div className={styles.labelWithIcon}><School /> Services</div>
                 <KeyboardArrowDown sx={{ color: '#000', transform: openDropdown === 'ser' ? 'rotate(180deg)' : 'none', transition: '0.3s' }} />
               </li>
@@ -185,7 +196,7 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <li className={`${styles.mobileListItem} ${isCategoryActive('/subjects') ? styles.mobActive : ''}`} onClick={() => handleDropdown('sub')}>
+              <li className={`${styles.mobileListItem} ${(isCategoryActive('/subjects') || subjects.some(s => isActive(s.url))) ? styles.mobActive : ''}`} onClick={() => handleDropdown('sub')}>
                 <div className={styles.labelWithIcon}><AutoStories /> Subjects</div>
                 <KeyboardArrowDown sx={{ color: '#000', transform: openDropdown === 'sub' ? 'rotate(180deg)' : 'none', transition: '0.3s' }} />
               </li>

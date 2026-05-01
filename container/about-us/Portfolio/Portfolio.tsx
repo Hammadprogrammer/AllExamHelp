@@ -12,28 +12,32 @@ const Portfolio = () => {
       bgColor: "#e8f7f2", // Light green
       btnColor: "#4a4a4a", // Dark grey
       image: "/p1.png", 
-      btnText: "Join With Us →"
+      btnText: "Join With Us →",
+      url: "/online-exam-help"
     },
     {
       title: "Online PMP Exam",
-      bgColor: "#edf2ff", // Light blue/purple
+      bgColor: "#edf2ff", 
       btnColor: "#5cb2e4", // Blue
       image: "/p2.png",
-      btnText: "Join With Us →"
+      btnText: "Join With Us →",
+      url: "/online-pmp-exam"
     },
     {
       title: "GED Exams",
       bgColor: "#edf2ff", // Light blue
       btnColor: "#5cb2e4", // Blue
       image: "/p2.png",
-      btnText: "Join With Us →"
+      btnText: "Join With Us →",
+      url: "/online-ged-test"
     },
     {
       title: "Proctored Exam Help",
       bgColor: "#e8f7f2", // Light green
       btnColor: "#4a4a4a", // Dark grey
       image: "/p1.png",
-      btnText: "Join With Us →"
+      btnText: "Join With Us →",
+      url: "/proctored-exam-help"
     }
   ];
 
@@ -82,7 +86,7 @@ const Portfolio = () => {
             >
               <div className={styles.cardContent}>
                 <h3 className={styles.cardTitle}>• {item.title}</h3>
-                <Link href="/contact-us">
+                <Link href={item.url}>
                   <button 
                     className={styles.joinBtn}
                     style={{ backgroundColor: item.btnColor }}

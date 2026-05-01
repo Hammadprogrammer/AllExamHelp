@@ -1,6 +1,6 @@
 .whyChooseSection {
   padding: 40px 0;
-  background-color: #bce9ff; // Light blue background from image
+  background-color: #ffffff;
   font-family: 'Inter', sans-serif;
 
   .container {
@@ -17,7 +17,7 @@
       display: block;
       font-size: 2.2rem;
       font-weight: 600;
-      color: #666;
+      color: #4CAF50;
       margin-bottom: 0px;
       position: relative;
       display: inline-block;
@@ -38,9 +38,8 @@
     .mainTitle {
       font-size: 3.5rem;
       font-weight: 800;
-      color: #ffffff;
+      color: #1e2139;
       margin-top: 10px;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
       
       @media (max-width: 768px) {
         font-size: 2.5rem;
@@ -49,7 +48,7 @@
 
     .subSubtitle {
       font-size: 1.1rem;
-      color: #333;
+      color: #64748b;
       margin-top: 20px;
       font-weight: 500;
     }
@@ -82,7 +81,7 @@
     max-width: 260px;
     padding: 30px 15px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,7 +124,7 @@
     max-width: 1100px;
     margin: 0 auto;
     font-size: 1.05rem;
-    color: #333;
+    color: #64748b;
     line-height: 1.7;
     font-weight: 500;
     
