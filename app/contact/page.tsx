@@ -1,15 +1,14 @@
 import React from 'react'
-// import ContactSection from '@/container/contact/contact_heroSection/contact'
+import Breadcrumb from '@/container/about-us/header/header'
+import ContactInformation from '@/container/contact/contactinformation/contactinformation'
 import ContactForm from '@/container/contact/contact_from/contact_from'
-// import Hero from '@/container/home/hero_section/hero_section'
 
 const page = () => {
   return (
     <div>
-      {/* <ContactSection /> */}
+      <Breadcrumb title="Contact Us" currentPage="Contact Us" />
+      <ContactInformation />
       <ContactForm />
-      {/* <Hero /> */}
-      
     </div>
   )
 }
