@@ -1,5 +1,6 @@
 import React from 'react'
 import type { Metadata } from 'next'
+import Breadcrumb from '@/container/about-us/header/header'
 
 import PrivacyPolicy from '@/container/privacy-policy/privacy-policy'
 
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
+      <Breadcrumb title="Privacy Policy" currentPage="Privacy Policy" />
       <PrivacyPolicy/>
     </div>
   )
