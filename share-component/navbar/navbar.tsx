@@ -125,7 +125,7 @@ const Navbar = () => {
                 Our Experts
               </Link>
 
-              <Link href="/about-us/" prefetch={false} className={`${styles.navLink} ${isActive('/about-us/') ? styles.active : ''}`}>
+              <Link href="/about/" prefetch={false} className={`${styles.navLink} ${isActive('/about-us/') ? styles.active : ''}`}>
                 About
               </Link>
             </div>
