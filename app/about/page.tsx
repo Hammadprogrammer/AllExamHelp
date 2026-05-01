@@ -5,6 +5,8 @@ import FloatingHero from '@/container/about-us/welcome/welcome';
 import ContentOne from '@/container/about-us/contentone/contentone';
 import Contenttwo from '@/container/about-us/contenttwo/contenttwo';
 import Contentthree from '@/container/about-us/contentthree/contentthree';
+import Commitment from '@/container/about-us/Commitment/Commitment';
+import Contentfour from '@/container/about-us/contentfour/contentfour';
 
 
 export const metadata: Metadata = {
@@ -20,6 +22,8 @@ const page = () => {
       <ContentOne/>
       <Contenttwo/>
       <Contentthree/>
+      <Commitment/>
+      <Contentfour/>
     </div>
   );
 };
