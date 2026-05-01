@@ -1,7 +1,9 @@
+"use client";
 import React from 'react';
 import styles from './Portfolio.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const Portfolio = () => {
   const portfolioItems = [
@@ -35,21 +37,48 @@ const Portfolio = () => {
     }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6 }
+    }
+  };
+
   return (
     <section className={styles.portfolioSection}>
-      <div className={styles.container}>
-        <div className={styles.header}>
+      <motion.div 
+        className={styles.container}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <motion.div className={styles.header} variants={itemVariants}>
           <span className={styles.topTitle}>Our</span>
           <h2 className={styles.mainTitle}>Portfolio</h2>
           <p className={styles.subtitle}>For years, we have been helping thousands of students and professionals with:</p>
-        </div>
+        </motion.div>
 
         <div className={styles.grid}>
           {portfolioItems.map((item, index) => (
-            <div 
+            <motion.div 
               key={index} 
               className={styles.card} 
               style={{ backgroundColor: item.bgColor }}
+              variants={itemVariants}
+              whileHover={{ y: -10, transition: { duration: 0.3 } }}
             >
               <div className={styles.cardContent}>
                 <h3 className={styles.cardTitle}>• {item.title}</h3>
@@ -71,14 +100,14 @@ const Portfolio = () => {
                   className={styles.img}
                 />
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        <p className={styles.footerText}>
+        <motion.p className={styles.footerText} variants={itemVariants}>
           Our portfolio speaks for itself, with clients from varying academic disciplines who can attest to our ability to excel in even the most challenging of subjects. We have been the game changer for several academic and career stories, right from college freshmen to working professionals.
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
     </section>
   );
 };

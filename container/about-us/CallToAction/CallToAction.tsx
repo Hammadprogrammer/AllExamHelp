@@ -1,17 +1,31 @@
+"use client";
 import React from 'react';
 import styles from './CallToAction.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import { motion } from 'framer-motion';
 
 const CallToAction = () => {
   return (
     <section className={styles.ctaSection}>
-      <div className={styles.container}>
+      <motion.div 
+        className={styles.container}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8 }}
+      >
         <div className={styles.contentWrapper}>
           
           {/* Left Column: Image */}
-          <div className={styles.imageColumn}>
+          <motion.div 
+            className={styles.imageColumn}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <div className={styles.imageBox}>
               <Image 
                 src="/cta1.jpg" 
@@ -21,10 +35,16 @@ const CallToAction = () => {
                 className={styles.mainImg}
               />
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column: Content */}
-          <div className={styles.textColumn}>
+          <motion.div 
+            className={styles.textColumn}
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             <div className={styles.bgCircle}></div>
             <div className={styles.content}>
               <h2 className={styles.title}>Call-to-Action</h2>
@@ -51,10 +71,10 @@ const CallToAction = () => {
                 Get in touch now for trusted, confidential exam help!
               </p>
             </div>
-          </div>
+          </motion.div>
 
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

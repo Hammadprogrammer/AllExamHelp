@@ -125,7 +125,7 @@ const Navbar = () => {
                 Our Experts
               </Link>
 
-              <Link href="/about/" prefetch={false} className={`${styles.navLink} ${isActive('/about-us/') ? styles.active : ''}`}>
+              <Link href="/about" prefetch={false} className={`${styles.navLink} ${isActive('/about') ? styles.active : ''}`}>
                 About
               </Link>
             </div>
@@ -205,8 +205,8 @@ const Navbar = () => {
                 <Link href="/our-experts/" prefetch={false} onClick={handleDrawerToggle}><People /> Our Experts</Link>
               </li>
 
-              <li className={`${styles.mobileListItem} ${isActive('/about-us/') ? styles.mobActive : ''}`}>
-                <Link href="/about-us/" prefetch={false} onClick={handleDrawerToggle}><InfoIcon /> About</Link>
+              <li className={`${styles.mobileListItem} ${isActive('/about') ? styles.mobActive : ''}`}>
+                <Link href="/about" prefetch={false} onClick={handleDrawerToggle}><InfoIcon /> About</Link>
               </li>
             </ul>
 
