@@ -23,7 +23,7 @@ const ExpertsList = () => {
             transition={{ duration: 0.8 }}
           >
             <div className={styles.imageWrapper}>
-              <Image src="/about2.jpg" alt="Experts team" width={600} height={500} />
+              <Image src="/expert1.jpg" alt="Experts team" width={600} height={500} />
             </div>
           </motion.div>
 
