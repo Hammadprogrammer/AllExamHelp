@@ -7,6 +7,7 @@ import Contenttwo from '@/container/about-us/contenttwo/contenttwo';
 import Contentthree from '@/container/about-us/contentthree/contentthree';
 import Commitment from '@/container/about-us/Commitment/Commitment';
 import Contentfour from '@/container/about-us/contentfour/contentfour';
+import WhyChooseUs from '@/container/about-us/WhyChooseUs/WhyChooseUs';
 
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ const page = () => {
       <Contentthree/>
       <Commitment/>
       <Contentfour/>
+      <WhyChooseUs/>
     </div>
   );
 };
