@@ -8,6 +8,9 @@ import Contentthree from '@/container/about-us/contentthree/contentthree';
 import Commitment from '@/container/about-us/Commitment/Commitment';
 import Contentfour from '@/container/about-us/contentfour/contentfour';
 import WhyChooseUs from '@/container/about-us/WhyChooseUs/WhyChooseUs';
+import Portfolio from '@/container/about-us/Portfolio/Portfolio';
+import TrustedByHome from '@/container/home/trusted_by/trusted_by';
+
 
 
 export const metadata: Metadata = {
@@ -26,6 +29,8 @@ const page = () => {
       <Commitment/>
       <Contentfour/>
       <WhyChooseUs/>
+      <Portfolio/>
+      <TrustedByHome/>
     </div>
   );
 };
