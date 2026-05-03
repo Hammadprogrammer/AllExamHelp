@@ -8,6 +8,7 @@ import Contentthree from '@/container/about-us/contentthree/contentthree';
 import Commitment from '@/container/about-us/Commitment/Commitment';
 import Contentfour from '@/container/about-us/contentfour/contentfour';
 import WhyChooseUs from '@/container/about-us/WhyChooseUs/WhyChooseUs';
+import Services from '@/container/about-us/service/service';
 import Portfolio from '@/container/about-us/Portfolio/Portfolio';
 import TrustedByHome from '@/container/home/trusted_by/trusted_by';
 import CallToAction from '@/container/about-us/CallToAction/CallToAction';
@@ -28,6 +29,7 @@ const page = () => {
       <Contentthree/>
       <Commitment/>
       <Contentfour/>
+      <Services/>
       <WhyChooseUs/>
       <Portfolio/>
       <TrustedByHome/>
