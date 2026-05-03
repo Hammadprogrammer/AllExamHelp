@@ -6,12 +6,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Link from 'next/link';
 import styles from './our_service.module.scss';
 
 interface ServiceItem {
   title: string;
   description: string;
   image: string;
+  link: string;
 }
 
 interface OurServiceProps {
@@ -126,9 +128,9 @@ const OurService = ({ services, h6, h4, description }: OurServiceProps) => {
                     <div className={styles.cardContent}>
                       <h3 className={styles.cardTitle}>{service.title}</h3>
                       <p className={styles.cardDescription}>{service.description}</p>
-                      <button className={styles.learnMoreBtn}>
+                      <Link href={service.link || '#'} className={styles.learnMoreBtn}>
                         Learn More <ArrowForwardIcon className={styles.arrowIcon} />
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

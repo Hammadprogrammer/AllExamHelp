@@ -69,21 +69,7 @@ const ContentOne: React.FC<ContentSectionProps> = ({
                 )}
               </div>
             )}
-
-            {/* Buttons – order 5 on mobile */}
-            <div className={styles.buttonGroup}>
-              <Link href="/contact-us" className={styles.primaryBtn}>
-                Contact Us
-              </Link>
-              <Link
-                href="https://wa.me/12292028857"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.secondaryBtn}
-              >
-                Chat With Us
-              </Link>
-            </div>
+   
           </div>
 
           {/* ── RIGHT COLUMN (desktop) ── */}
@@ -116,4 +102,4 @@ const ContentOne: React.FC<ContentSectionProps> = ({
   );
 };
 
-export default ContentOne;
+export default ContentOne;
