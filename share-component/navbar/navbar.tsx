@@ -143,13 +143,13 @@ const Navbar = () => {
 
             {/* Desktop Action Buttons */}
             <div className="hidden lg:flex items-center space-x-3">
-              <a href="tel:+121234765533" className="flex items-center gap-1.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2.5 rounded shadow-sm font-semibold text-[14px] hover:opacity-90 transition-opacity">
+              <a href="tel:+12123476533" className="flex items-center gap-1.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2.5 rounded shadow-sm font-semibold text-[14px] hover:opacity-90 transition-opacity">
                 <PhoneInTalk fontSize="small" /> Live Call
               </a>
               <button className="flex items-center gap-1.5 bg-[#28a745] text-white px-4 py-2.5 rounded shadow-sm font-semibold text-[14px] hover:bg-[#218838] transition-colors">
                 <Chat fontSize="small" /> Live Chat
               </button>
-              <Link href="/get-started/" prefetch={false} className="flex items-center gap-1.5 bg-[#63a4ff] text-white px-4 py-2.5 rounded shadow-sm font-semibold text-[14px] hover:bg-[#4d94f7] transition-colors">
+              <Link href="/contact/" prefetch={false} className="flex items-center gap-1.5 bg-[#63a4ff] text-white px-4 py-2.5 rounded shadow-sm font-semibold text-[14px] hover:bg-[#4d94f7] transition-colors">
                 Get Started <ArrowForward fontSize="small" />
               </Link>
             </div>
@@ -222,7 +222,7 @@ const Navbar = () => {
             </ul>
 
             <div className="p-5 mt-2 space-y-3">
-              <a href="+121234765533" className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-3 rounded-md font-bold w-full">
+              <a href="+12123476533" className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-3 rounded-md font-bold w-full">
                 <PhoneInTalk /> Live Call
               </a>
               <button className="flex items-center justify-center gap-2 bg-[#28a745] text-white px-4 py-3 rounded-md font-bold w-full">

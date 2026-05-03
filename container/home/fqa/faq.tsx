@@ -11,7 +11,7 @@ const FAQSectionData = () => {
     {
       id: "Q2",
       question: "Is it safe and confidential to hire an online exam expert?",
-      answer: "Yes, providing you 100% confidentiality and the exam materials will be safe & sound. Qualified experts help you maintain privacy while receiving assistance that is precise, safe, and always secure: with provided help."
+      answer: "Yes, providing you 100% confidentiality, and the exam materials will be safe & sound. Qualified experts help you maintain privacy while receiving assistance that is precise, safe, and always secure."
     },
     {
       id: "Q3",
