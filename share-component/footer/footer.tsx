@@ -135,10 +135,10 @@ const Footer = () => {
           <div className="lg:w-1/4">
             <h4 className="text-white font-bold mb-5 text-xl tracking-wide">Follow Us</h4>
             <div className="flex gap-4">
-              <Link href="#" className="text-white hover:text-[#a0abc0] transition-colors"><Facebook fontSize="medium" /></Link>
-              <Link href="#" className="text-white hover:text-[#a0abc0] transition-colors"><YouTube fontSize="medium" /></Link>
-              <Link href="#" className="text-white hover:text-[#a0abc0] transition-colors"><Pinterest fontSize="medium" /></Link>
-              <Link href="#" className="text-white hover:text-[#a0abc0] transition-colors"><Instagram fontSize="medium" /></Link>
+              <Link href="https://www.facebook.com/p/All-Exam-Help-61565603774858/?_rdc=2&_rdr#" className="text-white hover:text-[#a0abc0] transition-colors"><Facebook fontSize="medium" /></Link>
+              <Link href="https://www.youtube.com/channel/UCl374uHuik09T7e5Uw_N64Q" className="text-white hover:text-[#a0abc0] transition-colors"><YouTube fontSize="medium" /></Link>
+              <Link href="https://www.pinterest.com/allexamhelp0/" className="text-white hover:text-[#a0abc0] transition-colors"><Pinterest fontSize="medium" /></Link>
+              <Link href="https://www.instagram.com/all_exam_help/" className="text-white hover:text-[#a0abc0] transition-colors"><Instagram fontSize="medium" /></Link>
             </div>
           </div>
         </div>
