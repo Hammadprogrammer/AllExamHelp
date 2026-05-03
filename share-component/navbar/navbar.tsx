@@ -40,20 +40,20 @@ const Navbar = () => {
 
   // Footer Subjects with added Icons to match the "old design" look
   const subjects = [
-    { name: "Biology Exam", url: "/subjects/biology-exam/", icon: <Biotech /> },
-    { name: "Business Exam", url: "/subjects/business-exam/", icon: <BusinessCenter /> },
-    { name: "Chemistry Exam", url: "/subjects/chemistry-exam/", icon: <Science /> },
-    { name: "Computer Exam", url: "/subjects/computer-exam/", icon: <Computer /> },
-    { name: "Economics Exam", url: "/subjects/economics-exam/", icon: <BarChart /> },
-    { name: "Finance Exam", url: "/subjects/finance-exam/", icon: <Functions /> },
-    { name: "History Exam", url: "/subjects/history-exam/", icon: <HistoryEdu /> },
-    { name: "Law Exam", url: "/subjects/law-exam/", icon: <Gavel /> },
-    { name: "Math Exam", url: "/subjects/math-exam/", icon: <Functions /> },
-    { name: "Nursing Exam", url: "/subjects/nursing-exam/", icon: <LocalHospital /> },
-    { name: "Philosophy Exam", url: "/subjects/philosophy-exam/", icon: <PsychologyAlt /> },
-    { name: "Physics Exam", url: "/subjects/physics-exam/", icon: <Science /> },
-    { name: "Psychology Exam", url: "/subjects/psychology-exam/", icon: <Psychology /> },
-    { name: "Sociology Exam", url: "/subjects/sociology-exam/", icon: <People /> },
+    { name: "Biology Exam", url: "/biology-exam/", icon: <Biotech /> },
+    { name: "Business Exam", url: "/business-exam/", icon: <BusinessCenter /> },
+    { name: "Chemistry Exam", url: "/chemistry-exam/", icon: <Science /> },
+    { name: "Computer Exam", url: "/computer-exam/", icon: <Computer /> },
+    { name: "Economics Exam", url: "/economics-exam/", icon: <BarChart /> },
+    { name: "Finance Exam", url: "/finance-exam/", icon: <Functions /> },
+    { name: "History Exam", url: "/history-exam/", icon: <HistoryEdu /> },
+    { name: "Law Exam", url: "/law-exam/", icon: <Gavel /> },
+    { name: "Math Exam", url: "/math-exam/", icon: <Functions /> },
+    { name: "Nursing Exam", url: "/nursing-exam/", icon: <LocalHospital /> },
+    { name: "Philosophy Exam", url: "/philosophy-exam/", icon: <PsychologyAlt /> },
+    { name: "Physics Exam", url: "/physics-exam/", icon: <Science /> },
+    { name: "Psychology Exam", url: "/psychology-exam/", icon: <Psychology /> },
+    { name: "Sociology Exam", url: "/sociology-exam/", icon: <People /> },
     { name: "Statistics Exam", url: "/subjects/statistics-exam/", icon: <BarChart /> }
   ];
 
