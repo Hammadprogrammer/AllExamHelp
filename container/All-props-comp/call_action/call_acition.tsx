@@ -15,7 +15,7 @@ const CallAction: React.FC<CallActionProps> = ({
   heading, 
   description, 
   btnText, 
-  btnLink = "/contact-us" 
+  btnLink = "/contact/" 
 }) => {
   return (
     <section className={styles.ctaSection}>

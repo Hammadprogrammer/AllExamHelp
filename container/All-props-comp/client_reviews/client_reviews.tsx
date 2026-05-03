@@ -36,7 +36,7 @@ const ClientReviews = ({
   mainTitle = "Hear from Our Happy Clients",
   description = "Awesome quality and service! The exam help was accurate, private, and helped my self-confidence. Would recommend to anyone wanting great results.",
   buttonText = "Contact Us",
-  buttonLink = "/contact-us"
+  buttonLink = "/contact/"
 }: ClientReviewsProps) => {
   return (
     <section className={styles.reviewsSection}>

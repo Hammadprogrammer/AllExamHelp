@@ -19,8 +19,8 @@ import GetQuoteHome from '@/container/home/get_quote/get_quote'
 import ClientReviewsHome from '@/container/services/online-exam-help/client_reviews/client_reviews'
 
 export const metadata: Metadata = {
-  title: "Computer Exam, Online Computer Science Exam Experts Help",
-  description: "Find One of Our Best Computer Science Exam Expert to Get Guaranteed Grades. We Offer Money-Back Guarantee and 247 Customer Support with Exclusive Discount.",
+  title: "Hire Computer Science Exam Tutors Online - All Exam Help",
+  description: "Contact secure online exam help from professionals that ensure accuracy, confidentiality and submission. Our PhD specialists provide trusted computer science exam help with guaranteed top results.",
 }
 
 const page = () => {

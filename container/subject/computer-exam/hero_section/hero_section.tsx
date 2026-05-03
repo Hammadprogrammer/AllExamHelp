@@ -8,14 +8,14 @@ const HeroSection = () => {
       <Hero 
         slides={[
           {
-            topText: "Computer Science Exam Help",
-            heading: <>Excellent Computer Science Exam Helpers For Hire</>,
-            subText: <p>We are pleased to offer secure online exam help to students. With our Computer science exam takers for hire, the confidentiality and timely submission of your work is guaranteed.</p>,
+            topText: "Computer Science Exam",
+            heading: <>Hire Computer Science Exam Tutors Online</>,
+            subText: <p>Contact secure online exam help from professionals that ensure accuracy, confidentiality and submission. Our PhD specialists provide trusted computer science exam help with guaranteed top results.</p>,
             bullets: [
-              "Secure online exam help",
-              "Computer science exam takers for hire",
-              "Guaranteed confidentiality",
-              "Timely submission guaranteed"
+              "Timely Completion",
+              "All Topics Covered",
+              "Stress-Free",
+              "Affordable Rates"
             ],
             bgImage: "/bg1.avif"
           }

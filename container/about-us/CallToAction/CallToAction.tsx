@@ -63,7 +63,7 @@ const CallToAction = () => {
                 </div>
               </div>
 
-              <Link href="/contact-us" className={styles.getStartedBtn}>
+              <Link href="/contact/" className={styles.getStartedBtn}>
                 Get Started →
               </Link>
               

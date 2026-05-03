@@ -27,7 +27,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ heading, description }) => 
             </p>
 
             <div className={styles.btnGroup}>
-              <Link href="/contact-us" className={styles.contactBtn}>
+              <Link href="/contact/" className={styles.contactBtn}>
                 Contact Us
               </Link>
               <Link href="https://wa.me/12292028857"  className={styles.secondaryBtn}>        

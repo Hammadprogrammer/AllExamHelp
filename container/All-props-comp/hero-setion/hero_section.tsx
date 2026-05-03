@@ -171,7 +171,7 @@ const Hero: React.FC<HeroProps> = ({
 
               <motion.div variants={childVariants}>
                 <Link 
-                  href="/contact-us" 
+                  href="/contact/" 
                   className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-[#10b981] rounded-lg hover:bg-[#059669] transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
                 >
                   Get Started ➜
