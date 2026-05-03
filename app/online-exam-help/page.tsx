@@ -12,8 +12,8 @@ import WhyStudentHireSection from '@/container/home/why_student_hire/why_student
 import FeatureSectionHome from '@/container/home/feature_section/feature_section'
 import TrustedByHome from '@/container/home/trusted_by/trusted_by'
 import GetQuoteHome from '@/container/home/get_quote/get_quote'
-import ContentSectionFour from '@/container/home/content_section_four/content_section_four'
-import ContentSectionFive from '@/container/home/content_section_five/content_section_five'
+import ContentSectionFour from '@/container/services/online-exam-help/content_section_four/content_section_four'
+import ContentSectionFive from '@/container/services/online-exam-help/content_section_five/content_section_five'
 import ClientReviewsHome from '@/container/services/online-exam-help/client_reviews/client_reviews'
 import FAQSectionData from '@/container/services/online-exam-help/fqa/faq'
 
