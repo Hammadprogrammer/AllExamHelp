@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import styles from './refund-Policy.module.scss';
+import styles from './refund_policy.module.scss';
 import { motion } from 'framer-motion';
 
 const Refund = () => {
