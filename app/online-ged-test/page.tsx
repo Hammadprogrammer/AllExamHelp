@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import HeroSection from '@/container/services/online-ged-test/hero_section/hero_section'
 import OurServiceSection from '@/container/services/online-exam-help/our_service/our_service'
 
-import ContentSectionOne from '@/container/services/online-ged-test/content_section_two/content_section_two'
+import ContentSectionOne from '@/container/services/online-ged-test/content_section_one/Content_section_one'  
 import CounterSectionHome from '@/container/services/online-exam-help/counter_section/counter_section'
 import ExamSection from '@/container/home/exam_section/exam_section'
 

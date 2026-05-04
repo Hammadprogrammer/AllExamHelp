@@ -7,7 +7,7 @@ import CounterSectionHome from '@/container/services/online-exam-help/counter_se
 import ExamSection from '@/container/home/exam_section/exam_section'
 import ContentSectionTwoHome from '@/container/services/assignment-help/content_section_two/content_section_two'
 import AboutTeamHome from '@/container/services/online-exam-help/about_team/about_team'
-import ContentSectionThree from '@/container/services/online-class-help/content_section_three/content_section_three'
+import ContentSectionThree from '@/container/services/assignment-help/content_section_three/content_section_three'
 import WhyStudentHireSection from '@/container/home/why_student_hire/why_student_hire'
 import FeatureSectionHome from '@/container/home/feature_section/feature_section'
 import TrustedByHome from '@/container/home/trusted_by/trusted_by'

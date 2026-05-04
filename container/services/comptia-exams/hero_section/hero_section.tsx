@@ -9,7 +9,7 @@ const HeroSection = () => {
         slides={[
           {
             topText: "Trusted Exam Professionals",
-            heading: <>Professional CompTIA<br/>Exam Help</>,
+            heading: <>Professional CompTIA Exam Help</>,
             subText: <p>Our technical professionals have in-depth subject-matter expertise, ensuring top-notch performance so you can achieve maximum results without the hassle of paper preparation.</p>,
             bullets: [
               "Guaranteed to get a top grade",
@@ -21,7 +21,7 @@ const HeroSection = () => {
           },
           {
             topText: "Premium CompTIA Exam Help Online",
-            heading: <>Reliable CompTIA Exam<br/>Assistance</>,
+            heading: <>Reliable CompTIA Exam Assistance</>,
             subText: <p>Our CompTIA exam takers for hire consistently provide accurate, timely, and secure assistance. We guarantee confidentiality, while our exam takers are professionals who assist students to achieve high grades with professional exam help.</p>,
             bullets: [
               "Full Confidentiality",
@@ -33,7 +33,7 @@ const HeroSection = () => {
           },
           {
             topText: "Timely Submission",
-            heading: <>Affordable Take My Online<br/>CompTIA Exam Help</>,
+            heading: <>Affordable Take My Online CompTIA Exam Help</>,
             subText: <p>With our CompTIA exam help, you will be able to relax while certified exam takers take your exam. Our affordable pricing plans will never break your bank and fulfill all your specific requirements.</p>,
             bullets: [
               "On time submission",
