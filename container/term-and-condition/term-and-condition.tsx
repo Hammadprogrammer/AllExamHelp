@@ -80,7 +80,7 @@ const TermsAndConditions = () => {
           <motion.div className={styles.section} variants={itemVariants}>
             <h2>5. Warranty and Liability Disclosure.</h2>
             <p>
-              All Exam Help does not guarantee any particular score and only offers its services as is, unless there is an agreement between the service and the customer. We have a history of success due to experience and expertise. We do not cause any technical problems, system malfunctions, or unexpected events that could happen during the exam, such as platform crashes or server errors, etc.
+              All Exam Help does not guarantee any particular score and only offers its services as is, unless there is an agreement between the service and the customer. We have a history of success due to experience and expertise.  We do not cause any technical problems, system malfunctions, or unexpected events that could happen during the exam, such as platform crashes or server errors, etc.
             </p>
           </motion.div>
 
@@ -104,7 +104,7 @@ const TermsAndConditions = () => {
           <motion.div className={styles.section} variants={itemVariants}>
             <h2>How Our Service Works</h2>
             <p>
-              Our service is easy and simple to get started with. The first step is to contact us with the information about your online test, the subject, the date, and the time of the test. Then we will offer you a specific quote, a clear service agreement, and a clear description of the terms and guarantees. After the contract is signed and payment is made, we will send a qualified professional on our team specialized in the field you need. Our professional will arrange with you the access to the exam platform at the appointed time to provide a pleasant and stress-free process in all aspects.
+              Our service is easy and simple to get started with. The first step is to contact us with the information about your online test, the subject, the date, and the time of the test. Then we will offer you a specific quote, a clear service agreement, and a clear description of the terms and guarantees. After the contract is signed and payment is made, we will send you a qualified professional on our team specialized in the field you need. Our professional will arrange with you the access to the exam platform at the appointed time to provide a pleasant and stress-free process in all aspects.
             </p>
           </motion.div>
 
