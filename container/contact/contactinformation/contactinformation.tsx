@@ -44,9 +44,8 @@ const ContactInformation = () => {
               <span className={styles.subtitle}>Need Any Helps ?</span>
               <h2 className={styles.title}>Contact for Information</h2>
               <p className={styles.description}>
-                Need expert help with your online exams or tests? 
-                Contact our support team anytime — We're here 24/7 to guide you toward 
-                stress-free, guaranteed exam success!
+Need expert help with your online exams or tests? 
+Contact our support team anytime — We’re here 24/7 to guide you toward stress-free, guaranteed exam success!
               </p>
             </motion.div>
 
