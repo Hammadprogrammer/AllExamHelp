@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './refund-Policy.module.scss';
 import { motion } from 'framer-motion';
 
-const RefundPolicy = () => {
+const Refund = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -83,4 +83,4 @@ const RefundPolicy = () => {
   );
 };
 
-export default RefundPolicy;
+export default Refund;
