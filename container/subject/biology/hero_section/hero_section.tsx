@@ -9,7 +9,7 @@ const HeroSection = () => {
         slides={[
           {
             topText: "Fast & Reliable Support",
-            heading: <>Hire Someone To Take My Biology Exam For Me Better Grades</>,
+            heading: <>Hire Someone To Take Your Biology Exam For You Better Grades</>,
             subText: <p>Our top biology tutor will help you through all chapters and topics of your exam! With friendly and bespoke service, we remain with you throughout the whole process.</p>,
             bullets: [
               "Clear Step-by-Step Concepts",
