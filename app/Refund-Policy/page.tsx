@@ -1,5 +1,5 @@
 import React from 'react'
-import RefundPolicy from '@/container/Refund-Policy/Refund-Policy'
+import RefundPolicy from '@/container/refund-Policy/Refund-Policy';
 import Breadcrumb from '@/container/about-us/header/header'
 
 export const metadata = {
