@@ -32,6 +32,7 @@ const RefundPolicy = () => {
         viewport={{ once: true, amount: 0.1 }}
         variants={containerVariants}
       >
+        
         <motion.h1 className={styles.mainTitle} variants={itemVariants}>Refund Policy</motion.h1>
         
         <motion.p className={styles.introText} variants={itemVariants}>
