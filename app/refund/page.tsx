@@ -1,6 +1,6 @@
 import React from 'react'
 import Breadcrumb from '@/container/about-us/header/header'
-import RefundPolicy from '@/container/refund-Policy/refund-Policy';
+import RefundPolicy from '../../container/refund-Policy/refund-Policy';
 import type { Metadata } from 'next'
 
 
