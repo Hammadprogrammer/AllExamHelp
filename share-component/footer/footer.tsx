@@ -26,22 +26,22 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: "Online Exam Help", url: "/services/online-exam-help/" },
-    { name: "Online GED Test", url: "/services/online-ged-test/" },
-    { name: "Online GMAT Exam", url: "/services/online-gmat-exam/" },
-    { name: "Online GRE Test", url: "/services/online-gre-test/" },
-    { name: "Online HESI Exam", url: "/services/online-hesi-exam/" },
-    { name: "Online PMP Exam", url: "/services/online-pmp-exam/" },
-    { name: "Online PSI Exam", url: "/services/online-psi-exam/" },
-    { name: "Online TEAS Test", url: "/services/online-teas-test/" },
-    { name: "Online Tests & Quizzes", url: "/services/online-tests-quizzes/" },
-    { name: "Proctored Exam Help", url: "/services/proctored-exam-help/" },
-    { name: "Assignment Help", url: "/services/assignment-help/" },
-    { name: "Real Estate Exam", url: "/services/real-estate-exam/" },
-    { name: "Online Class Help", url: "/services/online-class-help/" },
-    { name: "Insurance Exam", url: "/services/insurance-exam/" },
-    { name: "Online Course Help", url: "/services/online-course-help/" },
-    { name: "CompTIA Exams", url: "/services/comptia-exams/" }
+    { name: "Online Exam Help", url: "/online-exam-help/" },
+    { name: "Online GED Test", url: "/online-ged-test/" },
+    { name: "Online GMAT Exam", url: "/online-gmat-exam/" },
+    { name: "Online GRE Test", url: "/online-gre-test/" },
+    { name: "Online HESI Exam", url: "/online-hesi-exam/" },
+    { name: "Online PMP Exam", url: "/online-pmp-exam/" },
+    { name: "Online PSI Exam", url: "/online-psi-exam/" },
+    { name: "Online TEAS Test", url: "/online-teas-test/" },
+    { name: "Online Tests & Quizzes", url: "/online-tests-quizzes/" },
+    { name: "Proctored Exam Help", url: "/proctored-exam-help/" },
+    { name: "Assignment Help", url: "/assignment-help/" },
+    { name: "Real Estate Exam", url: "/real-estate-exam/" },
+    { name: "Online Class Help", url: "/online-class-help/" },
+    { name: "Insurance Exam", url: "/insurance-exam/" },
+    { name: "Online Course Help", url: "/online-course-help/" },
+    { name: "CompTIA Exams", url: "/comptia-exams/" }
   ];
 
   const resources = [

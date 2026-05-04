@@ -15,8 +15,11 @@ import ContentSectionThree from '@/container/services/proctored-exam-help/conten
 import WhyStudentHireSection from '@/container/home/why_student_hire/why_student_hire'
 import FeatureSectionHome from '@/container/home/feature_section/feature_section'
 import TrustedByHome from '@/container/home/trusted_by/trusted_by'
+import ContentSectionFour from '@/container/services/proctored-exam-help/content_section_four/content_section_four'
 import GetQuoteHome from '@/container/home/get_quote/get_quote'
 import ClientReviewsHome from '@/container/services/online-exam-help/client_reviews/client_reviews'
+import ContentSectionFive from '@/container/services/proctored-exam-help/content_section_five/content_section_five'
+import FAQSectionData from '@/container/services/proctored-exam-help/fqa/faq'
 
 export const metadata: Metadata = {
   title: "Do My Proctored Exam, Take My Online Proctored Exam for Me",
@@ -39,8 +42,11 @@ const page = () => {
       <ContentSectionThree />
       <FeatureSectionHome />
       <TrustedByHome />
+      <ContentSectionFour />
       <GetQuoteHome />
+      <ContentSectionFive />
       <ClientReviewsHome />
+      <FAQSectionData/>
     </>
   )
 }
