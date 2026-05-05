@@ -64,6 +64,12 @@ const Navbar = () => {
 
   const handleDropdown = (name: string) => setOpenDropdown(openDropdown === name ? null : name);
 
+  const openTawkToChat = () => {
+    if (typeof window !== 'undefined' && (window as any).Tawk_API) {
+      (window as any).Tawk_API.maximize();
+    }
+  };
+
   const isActive = (path: string) => {
     if (!path) return false;
     const normalizedPath = path.replace(/\/+$/, "") || "/";
@@ -146,7 +152,7 @@ const Navbar = () => {
               <a href="tel:+12123476533" className="flex items-center gap-1.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2.5 rounded shadow-sm font-semibold text-[14px] hover:opacity-90 transition-opacity">
                 <PhoneInTalk fontSize="small" /> Live Call
               </a>
-              <button className="flex items-center gap-1.5 bg-[#28a745] text-white px-4 py-2.5 rounded shadow-sm font-semibold text-[14px] hover:bg-[#218838] transition-colors">
+              <button onClick={openTawkToChat} className="flex items-center gap-1.5 bg-[#28a745] text-white px-4 py-2.5 rounded shadow-sm font-semibold text-[14px] hover:bg-[#218838] transition-colors">
                 <Chat fontSize="small" /> Live Chat
               </button>
               <Link href="/contact/" prefetch={false} className="flex items-center gap-1.5 bg-[#63a4ff] text-white px-4 py-2.5 rounded shadow-sm font-semibold text-[14px] hover:bg-[#4d94f7] transition-colors">
@@ -225,7 +231,7 @@ const Navbar = () => {
               <a href="+12123476533" className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-3 rounded-md font-bold w-full">
                 <PhoneInTalk /> Live Call
               </a>
-              <button className="flex items-center justify-center gap-2 bg-[#28a745] text-white px-4 py-3 rounded-md font-bold w-full">
+              <button onClick={openTawkToChat} className="flex items-center justify-center gap-2 bg-[#28a745] text-white px-4 py-3 rounded-md font-bold w-full">
                 <Chat /> Live Chat
               </button>
               <Link href="/get-started/" onClick={handleDrawerToggle} className="flex items-center justify-center gap-2 bg-[#63a4ff] text-white px-4 py-3 rounded-md font-bold w-full">
