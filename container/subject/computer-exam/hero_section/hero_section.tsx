@@ -10,7 +10,14 @@ const HeroSection = () => {
           {
             topText: "Computer Science Exam",
             heading: <>Hire Computer Science Exam Tutors Online</>,
-            subText: <p>Contact secure online exam help from professionals that ensure accuracy, confidentiality and submission. Our PhD specialists provide trusted computer science exam help with guaranteed top results.</p>,
+            subText: (
+              <p>
+                Contact secure online exam help from professionals 
+                that ensure accuracy, confidentiality and submission. 
+                Our PhD specialists provide trusted computer science 
+                exam help with guaranteed top results.
+              </p>
+            ),
             bullets: [
               "Timely Completion",
               "All Topics Covered",

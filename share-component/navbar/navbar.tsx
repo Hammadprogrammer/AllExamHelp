@@ -54,7 +54,7 @@ const Navbar = () => {
     { name: "Physics Exam", url: "/physics-exam/", icon: <Science /> },
     { name: "Psychology Exam", url: "/psychology-exam/", icon: <Psychology /> },
     { name: "Sociology Exam", url: "/sociology-exam/", icon: <People /> },
-    { name: "Statistics Exam", url: "/subjects/statistics-exam/", icon: <BarChart /> }
+    { name: "Statistics Exam", url: "/statistics-exam/", icon: <BarChart /> }
   ];
 
   const handleDrawerToggle = () => {

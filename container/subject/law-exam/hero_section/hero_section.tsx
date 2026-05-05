@@ -12,12 +12,13 @@ const HeroSection = () => {
             heading: <>Professional Law Exam Helpers For Hire</>,
             subText: (
               <p>
-                For students struggling with law exams, they can take advantage of 
-                our professional online exam help services. We have professional 
-                exam expert for hire who take exams on a student's behalf. We 
-                maintain complete confidentiality and even guarantee the best 
-                possible results! Students can easily get help taking law exams 
-                through our secure system from experts.
+                For students struggling with law exams, they can take 
+                advantage of our professional online exam help services. 
+                We have professional exam expert for hire who take exams 
+                on a student's behalf. We maintain complete confidentiality 
+                and even guarantee the best possible results! Students can 
+                easily get help taking law exams through our secure system 
+                from experts.
               </p>
             ),
             bullets: [

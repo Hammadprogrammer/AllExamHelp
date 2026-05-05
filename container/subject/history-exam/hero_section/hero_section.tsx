@@ -10,7 +10,15 @@ const HeroSection = () => {
           {
             topText: "Secure High Grades",
             heading: <>Affordable History Exam Helpers For Hire</>,
-            subText: <p>Students needing history exam help can finally stop stressing and rely on our online exam help services. We have exam helper for hire with expertise to ensure everything is secure, accurate, and submitted on time.</p>,
+            subText: (
+              <p>
+                Students needing history exam help can finally stop 
+                stressing and rely on our online exam help services. 
+                We have exam helper for hire with expertise to 
+                ensure everything is secure, accurate, 
+                and submitted on time.
+              </p>
+            ),
             bullets: [
               "Expert Takers",
               "Guaranteed A and A Plus",

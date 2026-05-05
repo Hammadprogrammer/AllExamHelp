@@ -10,7 +10,14 @@ const HeroSection = () => {
           {
             topText: "Economics Exam Help",
             heading: <>Get Cheap Economics Exam Assistance Solutions</>,
-            subText: <p>At our reliable online exam help portal, you can trust. We facilitate and support students by connecting them to professional experts. If students are hiring an exam taker, we want students to relax.</p>,
+            subText: (
+              <p>
+                At our reliable online exam help portal, you can trust. 
+                We facilitate and support students by connecting them 
+                to professional experts. If students are hiring an exam 
+                taker, we want students to relax.
+              </p>
+            ),
             bullets: [
               "Secure Login",
               "Quick Turnaround",

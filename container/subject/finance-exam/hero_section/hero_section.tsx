@@ -10,7 +10,14 @@ const HeroSection = () => {
           {
             topText: "Finance Exam Help",
             heading: <>Hire Professional Finance Exam Help Services</>,
-            subText: <p>Students seeking finance exam help should utilize our reliable online exam assistance services. Here we offer a professional finance exam help service, so your Exam is handled with accuracy and confidentiality.</p>,
+            subText: (
+              <p>
+                Students seeking finance exam help should utilize our 
+                reliable online exam assistance services. Here we offer 
+                a professional finance exam help service, so your Exam 
+                is handled with accuracy and confidentiality.
+              </p>
+            ),
             bullets: [
               "100% Confidential",
               "PhD Experts in Finance",
