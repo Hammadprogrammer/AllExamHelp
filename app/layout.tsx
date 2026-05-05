@@ -60,7 +60,7 @@ export default function RootLayout({
         </a>
 
         {/* Tawk.to Chat Widget */}
-        {/* <Script id="tawk-to-script" strategy="lazyOnload">
+        <Script id="tawk-to-script" strategy="lazyOnload">
           {`
             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
             (function(){
@@ -72,7 +72,7 @@ export default function RootLayout({
             s0.parentNode.insertBefore(s1,s0);
             })();
           `}
-        </Script> */}
+        </Script>
       </body>
     </html>
   );
