@@ -47,7 +47,7 @@ const ExpertsList = () => {
                   <VerifiedIcon />
                 </div>
                 <div className={styles.text}>
-                  <h3>Qualified Experts</h3>
+                  <h3>Educated Experts:</h3>
                   <p>All experts have college degrees or better from a reputable university. All that we work with are academically successful in their fields of study.</p>
                 </div>
               </div>
@@ -57,7 +57,7 @@ const ExpertsList = () => {
                   <TaskAltIcon />
                 </div>
                 <div className={styles.text}>
-                  <h3>Targeted Planning</h3>
+                  <h3>Subject Coverage:</h3>
                   <p>We have you covered in over 10 0+ academic disciplines ranging from STEM to business to the arts, as well as over 1000 academic subcategories, each with a dedicated subject area expert.</p>
                 </div>
               </div>
@@ -67,7 +67,7 @@ const ExpertsList = () => {
                   <ShieldIcon />
                 </div>
                 <div className={styles.text}>
-                  <h3>Round the Clock Availability</h3>
+                  <h3>Professionalism & Confidentiality:</h3>
                   <p>We respect you and your privacy; we take confidentiality and ethics in academia seriously. Discreet and 100% confidential and for me to know your identity is secret to me.</p>
                 </div>
               </div>
