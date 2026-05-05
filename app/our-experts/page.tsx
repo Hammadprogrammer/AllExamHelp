@@ -7,7 +7,7 @@ import ExpertsExam from '@/container/our-experts/experts-exam/experts-exam';
 import IntegritySection from '@/container/our-experts/integrity_section/integrity_section';
 import TimezoneSection from '@/container/our-experts/timezone_section/timezone_section';
 import WhyChooseExperts from '@/container/our-experts/why_choose/why_choose';
-import GetStarted from '@/container/our-experts/get_started/get_started';
+import Portfolio from '@/container/our-experts/Portfolio/Portfolio';
 
 export const metadata: Metadata = {
   title: 'Our Experts – Online Exam Experts – Hire Exam Experts',
@@ -21,15 +21,10 @@ const Page = () => {
       <ServicesOne />
       <ExpertsList />
       <ExpertsExam/>
-
-
-
-
-
       <IntegritySection />
       <TimezoneSection />
-      {/* <WhyChooseExperts />
-      <GetStarted /> */}
+      <WhyChooseExperts />
+      <Portfolio/>
     </main>
   );
 };

@@ -3,19 +3,37 @@ import React from 'react';
 import styles from './why_choose.module.scss';
 import { motion } from 'framer-motion';
 import LockIcon from '@mui/icons-material/Lock';
-import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
-import ShieldIcon from '@mui/icons-material/Shield';
-import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
-import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
+import GroupIcon from '@mui/icons-material/Group';
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import TrendingUpIcon from '@mui/icons-material/TrendingUp';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 
 const points = [
-  { icon: <LockIcon />, title: "100% Privacy & Safety" },
-  { icon: <AutoFixHighIcon />, title: "Quality & Original Work" },
-  { icon: <ShieldIcon />, title: "Security for Both Parties" },
-  { icon: <WorkspacePremiumIcon />, title: "Top-notch Specialists" },
-  { icon: <AccessTimeFilledIcon />, title: "Timely Delivery Assured" },
-  { icon: <SupportAgentIcon />, title: "Real-time 24/7 Support" }
+  { 
+    icon: <LockIcon />, 
+    title: "98%+ Success Rate on All Subjects" 
+  },
+  { 
+    icon: <GroupIcon />, 
+    title: "On- Time Delivery, No More Missed Deadlines" 
+  },
+  { 
+    icon: <ThumbUpIcon />, 
+    title: "Bespoke Solutions for Each Customer" 
+  },
+  { 
+    icon: <TrendingUpIcon />, 
+    title: "Tight security and Privacy" 
+  },
+  { 
+    icon: <AccessTimeIcon />, 
+    title: "Global Access, Help Anywhere, Anytime" 
+  },
+  { 
+    icon: <SupportAgentIcon />, 
+    title: "Real Human Support, No Bots, Just People Who Know" 
+  }
 ];
 
 const WhyChooseExperts = () => {
@@ -25,7 +43,9 @@ const WhyChooseExperts = () => {
         <div className={styles.header}>
           <span className={styles.badge}>Why Choose</span>
           <h2 className={styles.title}>Our Experts?</h2>
-          <p className={styles.subtitle}>We provide a secure and efficient environment for all your academic needs.</p>
+          <p className={styles.subtitle}>
+            With our passion for quality, honesty and results, we're not like all the other online services. When you prepare with All Exam Help, you're not gambling with your future – you're cashing in on a proven success!
+          </p>
         </div>
 
         <div className={styles.grid}>

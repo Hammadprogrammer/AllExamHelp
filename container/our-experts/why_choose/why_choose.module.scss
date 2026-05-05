@@ -1,6 +1,6 @@
 .whyChooseSection {
-  padding: 100px 0;
-  background-color: #f0f9ff;
+  padding: 40px 0;
+  background-color: #ffffff;
 
   .container {
     max-width: 1200px;
@@ -13,16 +13,16 @@
     margin-bottom: 60px;
 
     .badge {
-      color: #5cb2e4;
+      color: #4CAF50;
       font-weight: 700;
       text-transform: uppercase;
-      font-size: 14px;
+      font-size: 40px;
       margin-bottom: 10px;
       display: block;
     }
 
     .title {
-      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-size: 30px;
       font-weight: 800;
       color: #1e293b;
       margin-bottom: 15px;
@@ -31,6 +31,20 @@
     .subtitle {
       color: #64748b;
       font-size: 1.1rem;
+    }
+
+    @media (max-width: 991px) {
+      .badge {
+        font-size: 20px;
+      }
+
+      .title {
+        font-size: 20px;
+      }
+
+      .subtitle {
+        font-size: 0.95rem;
+      }
     }
   }
 
@@ -56,11 +70,13 @@
     transition: all 0.3s ease;
 
     &:hover {
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
-      border-color: #5cb2e4;
+      box-shadow: 0 15px 30px rgba(76, 175, 80, 0.15);
+      border-color: #4CAF50;
+      transform: translateY(-5px);
       
       .iconWrapper {
-        color: #5cb2e4;
+        color: #4CAF50;
+        transform: scale(1.1);
       }
     }
 
