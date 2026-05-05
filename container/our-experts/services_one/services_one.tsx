@@ -18,7 +18,7 @@ const ServicesOne = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className={styles.badge}>EXPERT HELP</span>
+            <span className={styles.badge}>All Exam Help</span>
             <h2 className={styles.title}>Best Exam Help Services</h2>
             <p className={styles.description}>
               Here at All Exam Help, we understand how difficult it can be to face academic challenges, whether you are a student or an instructor, and especially when you're facing stress, tight schedules, or subjects that you just don’t get, which is why we've assembled a team of expert exam takers, academic specialists, and subject-matter professionals to help you succeed. The right way, the most efficient way, and with your personal privacy 100% guaranteed.
