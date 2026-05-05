@@ -8,21 +8,21 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const subjects = [
-    { name: "Biology Exam", url: "/subjects/biology-exam/" },
-    { name: "Business Exam", url: "/subjects/business-exam/" },
-    { name: "Chemistry Exam", url: "/subjects/chemistry-exam/" },
-    { name: "Computer Exam", url: "/subjects/computer-exam/" },
-    { name: "Economics Exam", url: "/subjects/economics-exam/" },
-    { name: "Finance Exam", url: "/subjects/finance-exam/" },
-    { name: "History Exam", url: "/subjects/history-exam/" },
-    { name: "Law Exam", url: "/subjects/law-exam/" },
-    { name: "Math Exam", url: "/subjects/math-exam/" },
-    { name: "Nursing Exam", url: "/subjects/nursing-exam/" },
-    { name: "Philosophy Exam", url: "/subjects/philosophy-exam/" },
-    { name: "Physics Exam", url: "/subjects/physics-exam/" },
-    { name: "Psychology Exam", url: "/subjects/psychology-exam/" },
-    { name: "Sociology Exam", url: "/subjects/sociology-exam/" },
-    { name: "Statistics Exam", url: "/subjects/statistics-exam/" }
+    { name: "Biology Exam", url: "/biology-exam/" },
+    { name: "Business Exam", url: "/business-exam/" },
+    { name: "Chemistry Exam", url: "/chemistry-exam/" },
+    { name: "Computer Exam", url: "/computer-exam/" },
+    { name: "Economics Exam", url: "/economics-exam/" },
+    { name: "Finance Exam", url: "/finance-exam/" },
+    { name: "History Exam", url: "/history-exam/" },
+    { name: "Law Exam", url: "/law-exam/" },
+    { name: "Math Exam", url: "/math-exam/" },
+    { name: "Nursing Exam", url: "/nursing-exam/" },
+    { name: "Philosophy Exam", url: "/philosophy-exam/" },
+    { name: "Physics Exam", url: "/physics-exam/" },
+    { name: "Psychology Exam", url: "/psychology-exam/" },
+    { name: "Sociology Exam", url: "/sociology-exam/" },
+    { name: "Statistics Exam", url: "/statistics-exam/" }
   ];
 
   const services = [

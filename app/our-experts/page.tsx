@@ -10,8 +10,8 @@ import WhyChooseExperts from '@/container/our-experts/why_choose/why_choose';
 import GetStarted from '@/container/our-experts/get_started/get_started';
 
 export const metadata: Metadata = {
-  title: 'Our Experts | All Exam – Meet Our Professional Instructors',
-  description: 'Meet our team of highly qualified and experienced experts at All Exam. We provide the best online education and academic support to help you succeed.',
+  title: 'Our Experts – Online Exam Experts – Hire Exam Experts',
+  description: 'Hire online exam experts for secure and reliable help. Our online exam experts ensure top results with a client-first approach. Get 50% off today!',
 };
 
 const Page = () => {
