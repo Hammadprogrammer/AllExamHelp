@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import ExpertHeader from '@/container/our-experts/header/header';
 import ServicesOne from '@/container/our-experts/services_one/services_one';
 import ExpertsList from '@/container/our-experts/experts_list/experts_list';
-import FeaturesGrid from '@/container/our-experts/features_grid/features_grid';
+import ExpertsExam from '@/container/our-experts/experts-exam/experts-exam';
 import IntegritySection from '@/container/our-experts/integrity_section/integrity_section';
 import TimezoneSection from '@/container/our-experts/timezone_section/timezone_section';
 import WhyChooseExperts from '@/container/our-experts/why_choose/why_choose';
@@ -20,10 +20,15 @@ const Page = () => {
       <ExpertHeader />
       <ServicesOne />
       <ExpertsList />
-      {/* <FeaturesGrid />
+      <ExpertsExam/>
+
+
+
+
+
       <IntegritySection />
       <TimezoneSection />
-      <WhyChooseExperts />
+      {/* <WhyChooseExperts />
       <GetStarted /> */}
     </main>
   );

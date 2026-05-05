@@ -19,7 +19,8 @@ const TimezoneSection = () => {
             transition={{ duration: 0.8 }}
           >
             <div className={styles.imageWrapper}>
-              <Image src="/ac4.jpg" alt="Global support" width={600} height={450} />
+              {/* Keeping your original image path */}
+              <Image src="/ac2.jpg" alt="Global support" width={600} height={450} />
             </div>
           </motion.div>
 
@@ -31,14 +32,11 @@ const TimezoneSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className={styles.badge}>24/7 Availability</span>
+            <span className={styles.badge}>Available 24/7 Around the Clock</span>
             <h2 className={styles.title}>Regardless of the Time Zone You are in</h2>
             <p className={styles.description}>
-              Our global network of experts spans multiple time zones, ensuring that there is always someone available to help you, no matter where you are in the world. Whether it's a late-night study session or an early-morning exam, we've got you covered.
-            </p>
-            <p className={styles.description}>
-              We provide continuous support and monitoring for your online courses and exams. You can reach out to us at any time, and our team will respond promptly to ensure your academic journey stays on track. Your success is our priority, around the clock.
-            </p>
+Our squad of pros is spread across countries and time zones, so we’re here 24/7, patrolling the free essay writing space. Have an early-morning exam? A weekend deadline? A pop quiz you never saw coming? We’ve got you covered. 24/7 with a flexible schedule makes sure you’re never in your career at a time when you’re really at a make-or-break place academically. No matter if you are from the USA, Australia, Canada, or any other country, All Exam Help is at your fingertips any time, anywhere.            </p>
+          
           </motion.div>
 
         </div>

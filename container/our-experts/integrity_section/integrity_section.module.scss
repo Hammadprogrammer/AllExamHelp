@@ -1,6 +1,6 @@
 .integritySection {
-  padding: 100px 0;
-  background-color: #f0f9ff;
+  padding: 40px 0;
+  background-color: #f8fafc;
   overflow: hidden;
 
   .container {
@@ -12,11 +12,14 @@
   .flexWrapper {
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 60px;
 
     @media (max-width: 991px) {
-      flex-direction: column;
+      flex-direction: column-reverse;
       text-align: center;
+      gap: 40px;
+        padding: 0px 0;
+
     }
   }
 
@@ -25,20 +28,36 @@
 
     .badge {
       display: inline-block;
-      color: #5cb2e4;
+      color: #4CAF50;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 36px;
       margin-bottom: 20px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
+      
+      @media (max-width: 576px) {
+        font-size: 18px;
+      }
     }
 
     .title {
-      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-size: 40px;
       font-weight: 800;
       color: #1e293b;
       margin-bottom: 25px;
       line-height: 1.2;
+      
+      @media (max-width: 768px) {
+        font-size: 32px;
+      }
+      
+      @media (max-width: 576px) {
+        font-size: 24px;
+      }
     }
 
     .description {
@@ -46,15 +65,25 @@
       color: #64748b;
       line-height: 1.7;
       margin-bottom: 20px;
+      
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
+      
+      @media (max-width: 576px) {
+        font-size: 0.9rem;
+      }
     }
   }
 
   .imageSide {
-    flex: 1;
+    flex: 0.8;
     .imageWrapper {
-      border-radius: 30px;
+      border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin: 0 auto;
       
       img {
         width: 100%;
