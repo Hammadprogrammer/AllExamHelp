@@ -8,14 +8,14 @@ const HeroSection = () => {
       <Hero 
         slides={[
           {
-            topText: "Help with Proctored Exam",
-            heading: <>Take My Online Proctored Exam For Me</>,
-            subText: <p>Get secure and reliable online proctored exam help from our experts. We ensure a seamless and confidential experience, so you can focus on achieving your best results.</p>,
+            topText: "Expert Proctored Help",
+            heading: <>Do My Proctored Exam</>,
+            subText: <p>Looking for “take my online proctored exam for me”? Ours allows it, with safe, discreet, effective ways to get you there.</p>,
             bullets: [
-              "Round-the-clock support",
-              "Expert tutors on demand",
-              "Help for any subject",
-              "Flawless performance guaranteed"
+              "Fast, reliable exam takers",
+              "We handle technicalities",
+              "Stress-free solutions",
+              "No questions asked"
             ],
             bgImage: "/bg1.avif"
           },
@@ -32,14 +32,14 @@ const HeroSection = () => {
             bgImage: "/bg2.avif"
           },
           {
-            topText: "Guaranteed top Results",
-            heading: <>Trusted Online Test Assistance Service</>,
-            subText: <p>Focus on your career, studies, or personal life while we manage your online test for you. With expert guidance and full support, success is just a click away.</p>,
+            topText: "Help with Proctored Exam",
+            heading: <>Take My Online Proctored Exam For Me</>,
+            subText: <p>Get secure and reliable online proctored exam help from our experts. We ensure a seamless and confidential experience, so you can focus on achieving your best results.</p>,
             bullets: [
-              "Proven online test specialists",
-              "24/7 student support",
-              "High scores assured",
-              "Affordable test-taking service"
+              "Round-the-clock support",
+              "Expert tutors on demand",
+              "Help for any subject",
+              "Flawless performance guaranteed"
             ],
             bgImage: "/bg3.avif"
           }

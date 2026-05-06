@@ -32,14 +32,14 @@ const HeroSection = () => {
             bgImage: "/bg2.avif"
           },
           {
-            topText: "Hire Online Class Taker",
-            heading: <>Expert Online Class Help<br/>Services</>,
-            subText: <p>We offer confidential assistance with online classes, trusted support, and expert guidance with class takers for hire. Our secure help with class means hassle-free assessments, the highest grades, and full student privacy with encryption.</p>,
+            topText: "Guaranteed Secure Online Help",
+            heading: <>High-Quality Assignment Solutions</>,
+            subText: <p>Our help with online assignments puts your mind at ease. We did it efficiently and securely, and note that any content we provide for your assignment will be original and free of plagiarism. You receive all of this, on time and with expert accuracy.</p>,
             bullets: [
-              "Scheduled flexibly around the globe",
-              "PhD Class Tutors",
-              "Receive Outstanding Updates",
-              "Timely Submission"
+              "Plagiarism Free Guarantee",
+              "100% Encryption",
+              "Timely and Reliable Service",
+              "Order Expert Professional."
             ],
             bgImage: "/bg3.avif"
           }
