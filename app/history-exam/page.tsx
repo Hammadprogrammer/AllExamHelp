@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "History Exam, Hire History Exam Experts for Online Exam",
   description: "Struggling with History Exam? Let Experts Take My Online History Exam and Score High with Accurate, Step-by-Step History Exam Help. Get Connected with Your History Expert Today.",
+  alternates: {
+    canonical: "/history-exam/",
+  },
 }
 
 const page = () => {

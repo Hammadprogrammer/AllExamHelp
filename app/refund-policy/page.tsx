@@ -4,9 +4,12 @@ import Refund from '@/container/refund_pollicy/refund_policy';
 import type { Metadata } from 'next'
 
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Refund Policy | All Exam – Money Back Guarantee",
   description: "Review All Exam's Refund Policy to learn about eligibility, terms, and conditions for refunds. We ensure fair policies and customer satisfaction for our services.",
+  alternates: {
+    canonical: "/refund-policy/",
+  },
 };
 
 const page = () => {

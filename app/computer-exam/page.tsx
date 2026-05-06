@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Hire Computer Science Exam Tutors Online - All Exam Help",
   description: "Contact secure online exam help from professionals that ensure accuracy, confidentiality and submission. Our PhD specialists provide trusted computer science exam help with guaranteed top results.",
+  alternates: {
+    canonical: "/computer-exam/",
+  },
 }
 
 const page = () => {

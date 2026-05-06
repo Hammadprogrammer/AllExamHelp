@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Online ATI TEAS Test, Do My ATI TEAS Test, Take My TEAS Test",
   description: "Worried about Passing Your ATI TEAS Test? Get Reliable ATI TEAS Online Test Help with Expert Tutor’s Affordable Support to Improve Your Score and Reach Your Nursing Goals.",
+  alternates: {
+    canonical: "/online-teas-test/",
+  },
 }
 
 

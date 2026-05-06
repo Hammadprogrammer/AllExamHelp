@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Online PSI Exam, Online PSI Exam Help, Hire PSI Exam Takers",
   description: "Looking PSI exam help? Get expert online PSI exam help with our personalized tutoring, complete study resources, and realistic practice exams designed to boost your confidence and scores.",
+  alternates: {
+    canonical: "/online-psi-exam/",
+  },
 }
 
 

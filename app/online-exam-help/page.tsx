@@ -20,6 +20,9 @@ import FAQSectionData from '@/container/services/online-exam-help/fqa/faq'
 export const metadata: Metadata = {
   title: "Online Exam Help, Hire Exam Takers, Help with Online Exam",
   description: "Need Quick and Reliable Online Exam Help? Our Trusted Help with Online Exam Services Connect You with Expert Exam Takers for Hire, so You can Succeed without Stress.",
+  alternates: {
+    canonical: "/online-exam-help/",
+  },
 }
 
 

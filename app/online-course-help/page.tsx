@@ -17,6 +17,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Online Course Help Service - Online Course Taker for Hire",
   description: "Top-Notch Online Course Help from Professional Experts. Enjoy Our Exclusive Plagiarism Free Online Course Help Available at the Best Prices and Round the Clock Service.",
+  alternates: {
+    canonical: "/online-course-help/",
+  },
 }
 
 

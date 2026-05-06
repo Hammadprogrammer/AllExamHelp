@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://allexamhelp.com'),
   title: "Hire Class Buddy",
   description: "Get expert assistance for your classes and assignments with Hire Class Buddy.",
   // Client ka Google Search Console verification code
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     google: "NjsN1R8i6zRwFRZ1nji4enhGyduvbPwOAWKLT7UZ6xk",
   },
   alternates: {
-    canonical: "https://hireclassbuddy.com",
+    canonical: "/",
   },
   robots: {
     index: true,
@@ -39,7 +40,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://hireclassbuddy.com" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

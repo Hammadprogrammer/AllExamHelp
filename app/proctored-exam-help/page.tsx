@@ -24,6 +24,9 @@ import FAQSectionData from '@/container/services/proctored-exam-help/fqa/faq'
 export const metadata: Metadata = {
   title: "Do My Proctored Exam, Take My Online Proctored Exam for Me",
   description: "Get Trustworthy Do My Proctored Exam Assistance. Take My Online Proctored Exam for Me and Get an A. Affordable, Safe, and Stress-Free Online Proctored Exam Solution.",
+  alternates: {
+    canonical: "/proctored-exam-help/",
+  },
 }
 
 

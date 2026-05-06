@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Statistics Exam, Online Statistic Exam Experts with Solution",
   description: "Struggling with Tough Statistics Questions? Get Trusted Online Statistics Exam Help with Clear Explanations, Step-by-Step Problem Solving, and Flexible Scheduling.",
+  alternates: {
+    canonical: "/statistics-exam/",
+  },
 }
 
 const page = () => {

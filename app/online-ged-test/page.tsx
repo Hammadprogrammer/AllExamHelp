@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "GED Test: Take Your GED Test Online, Take My GED Exam for Me",
   description: "Struggling with GED prep? Our top take your GED test online services connect you with expert our tutors, simple lessons, and guaranteed support to help you pass with confidence.",
+  alternates: {
+    canonical: "/online-ged-test/",
+  },
 }
 
 

@@ -29,7 +29,7 @@ const ReviewsPage = () => {
         </h1>
         
         <p className={styles.description}>
-          Join thousands of students who trust ClassBuddy for proctored exams, 
+          Join thousands of students who trust All Exam Help for proctored exams, 
           nursing portals, and complex subject assignments. We ensure privacy, 
           accuracy, and on-time submission.
         </p>
@@ -68,7 +68,7 @@ const ReviewsPage = () => {
           <div className={styles.imageContainer}>
             <Image 
               src="/rating.png" 
-              alt="ClassBuddy Dashboard Illustration"
+              alt="All Exam Help Dashboard Illustration"
               width={580}
               height={420}
               className={styles.mainImg}

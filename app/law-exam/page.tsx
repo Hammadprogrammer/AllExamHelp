@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Law Exam, Law Experts are Available to Take Your Law Exams",
   description: "Want to Ace Online Law Exams? Professionals can Take My Online Law Exam with Expert Law Exam Service for All Legal Topics and Cases. Get Connected with a Law Expert.",
+  alternates: {
+    canonical: "/law-exam/",
+  },
 }
 
 const page = () => {

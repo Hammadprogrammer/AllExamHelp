@@ -25,6 +25,9 @@ import FAQSectionData from '@/container/services/online-tests-quizzes/fqa/faq'
 export const metadata: Metadata = {
   title: "Take My Test for Me, Online Test Helper, Take My Online Test",
   description: "Need help with your take my test for me? Our seasonal online test helper provides easy support so you can focus on success without pressure. Special Quizzes Discount.",
+  alternates: {
+    canonical: "/online-tests-quizzes/",
+  },
 }
 
 

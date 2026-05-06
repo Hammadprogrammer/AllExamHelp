@@ -20,6 +20,9 @@ import FAQSectionData from '@/container/home/fqa/faq'
 export const metadata: Metadata = {
   title: "All Exam: Take My Exam for Me, Pay Someone to Take My Exam",
   description: "Looking to hire a professional to take my exam for me? We have got you covered. Pay someone to take my exam to ace your online grades hassle-free. Get 50% Discount Today.",
+  alternates: {
+    canonical: "/",
+  },
 }
 
 

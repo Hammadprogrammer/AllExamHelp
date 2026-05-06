@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "HESI Exam Help, Online HESI Exam Experts to Help You Pass",
   description: "Struggling with the HESI Exam? Get Expert Online HESI Exam Help with Our Personalized Tutoring, Comprehensive Study Guides, and Realistic Practice Exams.",
+  alternates: {
+    canonical: "/online-hesi-exam/",
+  },
 }
 
 

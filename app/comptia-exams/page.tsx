@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Online CompTIA Exam Help, Take My CompTIA Exam for Me",
   description: "Are you having trouble with the CompTIA exam? Hire an expert to take your CompTIA A+ Certification exam for you. The process is simple, safe, and affordable with guaranteed results.",
+  alternates: {
+    canonical: "/comptia-exams/",
+  },
 }
 
 

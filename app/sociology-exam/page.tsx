@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Sociology Exam, Affordable Online Sociology Exam Services",
   description: "Need Help with Your Sociology Exam? Get Simple and Reliable Online Sociology Exam Help with Expert Tutors. Highly Qualified, Experienced and Professional Sociology Experts are Available.",
+  alternates: {
+    canonical: "/sociology-exam/",
+  },
 }
 
 const page = () => {

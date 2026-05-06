@@ -6,6 +6,9 @@ import Breadcrumb from '@/container/about-us/header/header';
 export const metadata: Metadata = {
   title: 'Terms & Conditions | All Exam – Service Guidelines & User Agreement',
   description: 'Explore All Exam’s Terms & Conditions to understand our service rules, user responsibilities, and policies before using our platform.',
+  alternates: {
+    canonical: '/terms-and-conditions/',
+  },
 };
 
 const Page = () => {

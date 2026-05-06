@@ -12,6 +12,9 @@ import Portfolio from '@/container/our-experts/Portfolio/Portfolio';
 export const metadata: Metadata = {
   title: 'Our Experts – Online Exam Experts – Hire Exam Experts',
   description: 'Hire online exam experts for secure and reliable help. Our online exam experts ensure top results with a client-first approach. Get 50% off today!',
+  alternates: {
+    canonical: '/our-experts/',
+  },
 };
 
 const Page = () => {

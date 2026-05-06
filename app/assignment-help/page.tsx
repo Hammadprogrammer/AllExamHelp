@@ -17,6 +17,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Online Assignment Help Service – Assignment Takers for Hire",
   description: "Our online assignment help service helps connect you with qualified professionals for guaranteed accuracy, confidentiality, and timely completion for optimal results. Get exclusive discounts",
+  alternates: {
+    canonical: "/assignment-help/",
+  },
 }
 
 

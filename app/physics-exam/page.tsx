@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Physics Exam, Online Physics Exam Help Services by Experts",
   description: "Beat Physics Exam Stress Today! Get Trusted Online Physics Exam Help, Simple Explanations, and Fast Support to Raise Your Grades without Breaking Your Budge.",
+  alternates: {
+    canonical: "/physics-exam/",
+  },
 }
 
 const page = () => {

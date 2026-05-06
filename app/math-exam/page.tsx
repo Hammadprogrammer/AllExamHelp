@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Math Exam, Online Math Exam Help, Do My Math Exam for Me",
   description: "Searching for Pay Someone to Take My Math Exam? Get Accurate, Plagiarism-free Math Exam Solutions with Guaranteed Results. Get Exclusive Discount on Live Chat Today.",
+  alternates: {
+    canonical: "/math-exam/",
+  },
 }
 
 const page = () => {

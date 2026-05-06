@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Take My GRE Online Test for Me, Take Your GRE Test by Expert",
   description: "Receive expert GRE test help online with individual coaching and strategies to improve your scores. So, what are you waiting for... hire us!",
+  alternates: {
+    canonical: "/online-gre-test/",
+  },
 }
 
 

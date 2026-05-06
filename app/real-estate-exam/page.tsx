@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Hire Online Real Estate Exam Takers, Real Estate Exam Help",
   description: "Get real estate exam on your behalf and become certified without stress. Our professional team guarantees a smooth and seamless procedure and passes your certification.",
+  alternates: {
+    canonical: "/real-estate-exam/",
+  },
 }
 
 

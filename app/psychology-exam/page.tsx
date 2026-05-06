@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Psychology Exam, Online Psychology Exam at Affordable Prices",
   description: "Feeling Stuck before Your Psychology Exam? Get Expert Online Psychology Exam Help with 24/7 Guidance and Clear Answers. Get Results Guaranteed Psychology Exam Help Services.",
+  alternates: {
+    canonical: "/psychology-exam/",
+  },
 }
 
 const page = () => {

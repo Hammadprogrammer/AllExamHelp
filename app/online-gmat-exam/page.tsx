@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Online GMAT Exam Help Services, Take My GMAT Exam for Me",
   description: "Looking for Online GMAT Exam Takers? Get Online GMAT Exam Help Services from Skilled Tutors who Guide You Step by Step with Strategies, Practice, and Test-day Confidence.",
+  alternates: {
+    canonical: "/online-gmat-exam/",
+  },
 }
 
 

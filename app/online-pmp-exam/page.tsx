@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Take My PMP Exam, Online PMP Exam Help Services by Experts",
   description: "Get Secure, Private PMP Exam Help Online. Obtain Confidential Guidance with Trusted PMP Exam Help Online Today.",
+  alternates: {
+    canonical: "/online-pmp-exam/",
+  },
 }
 
 

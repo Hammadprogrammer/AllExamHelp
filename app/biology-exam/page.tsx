@@ -22,6 +22,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Biology Exam, Affordable Online Biology Exam Help Services",
   description: "Need Help with Your Biology Exam? Get Expert Online Biology Exam Help with Easy Tutoring, Clear Study Guides, and Reliable Support to Boost Your Grades and Feel Confident on Exam Day.",
+  alternates: {
+    canonical: "/biology-exam/",
+  },
 }
 
 const page = () => {

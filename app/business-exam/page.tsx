@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Business Exam, Get Best Exam Helpers for Your Business Exam",
   description: "Struggling with Your Business Exam? Get Expert Online Business Exam Help with Clear Guidance, Simple Study Tips, and Reliable Support.",
+  alternates: {
+    canonical: "/business-exam/",
+  },
 }
 
 const page = () => {

@@ -21,6 +21,9 @@ import ClientReviewsHome from '@/container/services/online-exam-help/client_revi
 export const metadata: Metadata = {
   title: "Insurance Exam Takers for Hire, Online Insurance Exam Help",
   description: "Want to start your insurance career, but are afraid of passing the insurance exam? Do not worry! Our insurance exam takers will handle the entire process and pass it with proven techniques.",
+  alternates: {
+    canonical: "/insurance-exam/",
+  },
 }
 
 
