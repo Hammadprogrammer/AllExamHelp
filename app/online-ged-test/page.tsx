@@ -17,6 +17,9 @@ import FeatureSectionHome from '@/container/home/feature_section/feature_section
 import TrustedByHome from '@/container/home/trusted_by/trusted_by'
 import GetQuoteHome from '@/container/home/get_quote/get_quote'
 import ClientReviewsHome from '@/container/services/online-exam-help/client_reviews/client_reviews'
+import ContentSectionFour from '@/container/services/online-ged-test/content_section_four/content_section_four'
+import ContentSectionFive from '@/container/services/online-ged-test/content_section_five/content_section_five'
+import FAQSectionData from '@/container/services/online-ged-test/fqa/faq'
 
 export const metadata: Metadata = {
   title: "GED Test: Take Your GED Test Online, Take My GED Exam for Me",
@@ -42,8 +45,11 @@ const page = () => {
       <ContentSectionThree />
       <FeatureSectionHome />
       <TrustedByHome />
+      <ContentSectionFour />
       <GetQuoteHome />
+      <ContentSectionFive />
       <ClientReviewsHome />
+      <FAQSectionData/>
     </>
   )
 }

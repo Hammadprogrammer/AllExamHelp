@@ -35,7 +35,7 @@ const ExpertsList = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className={styles.subtitle}>Our Quality</span>
+            <span className={styles.subtitle}>Who Are Our</span>
             <h2 className={styles.title}>Online Exam Experts?</h2>
             <p className={styles.intro}>
               Our experts aren’t just freelancers or base-level tutors— they’re seasoned academic professionals who have been screened and trained. They each offer their own mix of:

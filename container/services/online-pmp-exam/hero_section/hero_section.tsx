@@ -8,40 +8,40 @@ const HeroSection = () => {
       <Hero 
         slides={[
           {
-            topText: "Reliable GMAT Test Help",
-            heading: <>Stress-Free GMAT Solutions For Busy Students</>,
-            subText: <p>Searching for how you can handle your GMAT test without stress? With our online GMAT test help you are getting to concentrate on other important places and not on cramming GCIA books.</p>,
+            topText: "Reliable PMP Exam Help",
+            heading: <>Trusted Online PMP Exam Help For Busy Students</>,
+            subText: <p>Looking for trustworthy take my PMP exam help? Our service offers complete privacy and expert guidance, ensuring you stay confident and prepared throughout your exam.</p>,
             bullets: [
-              "No cramming",
-              "Save time",
-              "Easy process",
-              "Global access"
+              "Reliable PMP exam help",
+              "Perfect for busy students",
+              "Expert support for success",
+              "Stay confident and ready"
             ],
-            bgImage: "/bg1.avif"
+            bgImage: "/bg1.avif" // image_85f075.jpg ke liye
           },
           {
-            topText: "Hire Experts with Privacy",
-            heading: <>Professional GMAT Exam Takers – Discreet & Reliable Support</>,
-            subText: <p>So when you go “I need to pay someone to take my online GMAT test” we give the service. Your privacy is our top priority and every service is strictly confidential.</p>,
+            topText: "Expert Guidance Anytime",
+            heading: <>24/7 Online PMP Exam Helpers For Complete Support</>,
+            subText: <p>From preparation to live exam support, our professional online PMP exam helpers ensure you never feel alone during your exam journey.</p>,
             bullets: [
-              "Full privacy",
-              "Secure chats",
-              "No third parties",
-              "24/7 support"
+              "Help anytime you need",
+              "Flexible exam support",
+              "Expert PMP exam helpers",
+              "Never feel alone"
             ],
-            bgImage: "/bg2.avif"
+            bgImage: "/bg2.avif" // image_85f098.jpg ke liye
           },
           {
-            topText: "Trusted GMAT Experts",
-            heading: <>Ace Your GMAT With Trusted, Confidential Help</>,
-            subText: <p>Hire someone to do your online GMAT test for you, with full confidentiality and perfect score guaranteed. A safe, relaxed solution for the busy student anywhere in the world.</p>,
+            topText: "Confidential and Secure Service",
+            heading: <>Private And Secure PMP Exam Assistance You Can Rely On</>,
+            subText: <p>Your privacy matters. We provide highly confidential assistance for busy students searching for “take my PMP exam for me” solutions without worry.</p>,
             bullets: [
-              "100% private",
-              "Expert test-takers",
-              "Full test coverage",
-              "Score guaranteed"
+              "100% confidential service",
+              "Safe, secure assistance",
+              "Privacy always protected",
+              "Trusted worldwide support"
             ],
-            bgImage: "/bg3.avif"
+            bgImage: "/bg3.avif" // image_85f0d3.jpg ke liye
           }
         ]}
       />

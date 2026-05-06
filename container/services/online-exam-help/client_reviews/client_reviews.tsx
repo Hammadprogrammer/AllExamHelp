@@ -4,8 +4,8 @@ import ClientReviews from '@/container/All-props-comp/client_reviews/client_revi
 
 const ClientReviewsHome = () => {
   const reviewsData = [
-    {
-      image: "/t2.jpg", // Example image
+        {
+      image: "/t2.jpg", 
       name: "Ryan T.",
       location: "New York",
       stars: 5,
@@ -26,11 +26,11 @@ const ClientReviewsHome = () => {
       reviewText: "Was able to trust the experts, responded rapidly and safely. I got good marks thanks to them. All exam help is far the best online exam support.!!!"
     },
     {
-      image: "/t4.jpg",
+      image: "/t3.jpg",
       name: "Jessica M.",
       location: "California",
       stars: 5,
-      reviewText: "Was able to trust the experts, responded rapidly and safely. I got good marks thanks to them. All exam help is far the best online exam support.!!!"
+      reviewText: "All Exam Help is a great supplement for my online studies. I had trouble finishing my online course, but they provided great help. Thank you."
     }
   ];
 
