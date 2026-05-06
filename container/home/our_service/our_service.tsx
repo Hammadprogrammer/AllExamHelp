@@ -37,7 +37,7 @@ const OurServiceSection = () => {
     {
       title: "ATI TEASE Test Help",
       description: "Reliable assistance to complete the online ATI TEASE test accurately and on time.",
-      image: "/seight.jpg",
+      image: "/s10.jpg",
       link: "/online-teas-test"
     },
     {
@@ -49,7 +49,7 @@ const OurServiceSection = () => {
     {
       title: "GMAT Test Help",
       description: "Help understanding lessons, getting through GMAT Test, and get your online certification for you.",
-      image: "/s10.jpg",
+      image: "/seight.jpg",
       link: "/online-gmat-exam"
     },
     {
