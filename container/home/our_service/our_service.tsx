@@ -63,6 +63,42 @@ const OurServiceSection = () => {
       description: "Receive tailored support for PSI exam taken via professionals with secure and stable performance.",
       image: "/Sone.jpg",
       link: "/online-psi-exam"
+    },
+    {
+      title: "Online Course Help",
+      description: "Expert assistance for online courses to help you complete assignments and achieve better grades.",
+      image: "/ac5.jpg",
+      link: "/online-course-help"
+    },
+    {
+      title: "Online Class Help",
+      description: "Professional support for online classes to ensure you stay on track and succeed.",
+      image: "/contentone.jpeg",
+      link: "/online-class-help"
+    },
+    {
+      title: "CompTIA Exams",
+      description: "Specialized help for CompTIA certification exams to advance your IT career.",
+      image: "/cfive2.jpg",
+      link: "/comptia-exams"
+    },
+    {
+      title: "Insurance Exam",
+      description: "Expert guidance for insurance licensing exams to help you pass with confidence.",
+      image: "/ac3.jpg",
+      link: "/insurance-exam"
+    },
+    {
+      title: "Real Estate Exam",
+      description: "Professional assistance for real estate licensing exams to kickstart your career.",
+      image: "/ac4.jpg",
+      link: "/real-estate-exam"
+    },
+    {
+      title: "Online TEAS Test",
+      description: "Comprehensive support for TEAS test preparation to help you excel in nursing school admissions.",
+      image: "/c2three.jpg",
+      link: "/online-teas-test"
     }
   ];
 
