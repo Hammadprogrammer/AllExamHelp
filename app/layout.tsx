@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://allexamhelp.com'),
-  title: "Hire Class Buddy",
+  title: "All Exam Help",
   description: "Get expert assistance for your classes and assignments with Hire Class Buddy.",
   // Client ka Google Search Console verification code
   verification: {
