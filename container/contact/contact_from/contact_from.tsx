@@ -6,6 +6,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const ContactForm = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,25 +14,46 @@ const ContactForm = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Validation check for all fields
     if (formData.name && formData.email && formData.phone && formData.message) {
-      setShowPopup(true);
-      
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: ''
-      });
+      setLoading(true);
+      try {
+        const response = await fetch('https://contact-a-pi-one.vercel.app/api/allexamhelp-contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
 
-      // Auto hide popup after 3 seconds
-      setTimeout(() => {
-        setShowPopup(false);
-      }, 3000);
+        if (response.ok) {
+          setShowPopup(true);
+          
+          // Reset form
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            message: ''
+          });
+
+          // Auto hide popup after 3 seconds
+          setTimeout(() => {
+            setShowPopup(false);
+          }, 3000);
+        } else {
+          const errorData = await response.json();
+          alert(errorData.message || "Failed to send message. Please try again later.");
+        }
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        alert("An error occurred. Please check your internet connection and try again.");
+      } finally {
+        setLoading(false);
+      }
     } else {
       alert("Please fill in all fields.");
     }
@@ -129,8 +151,8 @@ const ContactForm = () => {
               ></textarea>
             </div>
 
-            <button type="submit" className={styles.submitBtn}>
-              Send
+            <button type="submit" className={styles.submitBtn} disabled={loading}>
+              {loading ? "Sending..." : "Send"}
             </button>
           </form>
         </motion.div>
