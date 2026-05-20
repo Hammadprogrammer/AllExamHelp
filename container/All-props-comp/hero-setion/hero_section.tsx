@@ -73,6 +73,54 @@ const Hero: React.FC<HeroProps> = ({
   const page = tuple[0];
   const direction = tuple[1];
 
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const [loading, setLoading] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!formData.name || !formData.email || !formData.phone) {
+      alert("Please fill in all fields.");
+      return;
+    }
+    setLoading(true);
+    try {
+      const response = await fetch('https://contact-a-pi-one.vercel.app/api/allexamhelp-contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setShowSuccess(true);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: ''
+        });
+        setTimeout(() => {
+          setShowSuccess(false);
+        }, 3000);
+      } else {
+        const errorData = await response.json();
+        alert(errorData.message || "Failed to submit request. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("An error occurred. Please check your connection and try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   // If `slides` array is provided, use it. Otherwise, create slides from legacy props to maintain backwards compatibility.
   const actualSlides: SlideData[] = slides && slides.length > 0 
     ? slides 
@@ -91,14 +139,6 @@ const Hero: React.FC<HeroProps> = ({
     setTuple([page + newDirection, newDirection]);
   };
 
-  // Background slider logic
-  useEffect(() => {
-    if (actualSlides.length <= 1) return;
-    const interval = setInterval(() => {
-      paginate(1);
-    }, 6000); // Change image every 6 seconds
-    return () => clearInterval(interval);
-  }, [page, actualSlides.length]);
 
   if (actualSlides.length === 0) return null;
 
@@ -196,42 +236,65 @@ const Hero: React.FC<HeroProps> = ({
                   </h3>
                 </div>
                 
-                <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                  <div>
-                    <input 
-                      type="text" 
-                      placeholder="Full Name" 
-                      name="name" 
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors placeholder-gray-400 text-gray-800 text-sm"
-                      required 
-                    />
-                  </div>
-                  <div>
-                    <input 
-                      type="email" 
-                      placeholder="Email" 
-                      name="email" 
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors placeholder-gray-400 text-gray-800 text-sm"
-                      required 
-                    />
-                  </div>
-                  <div>
-                    <input 
-                      type="tel" 
-                      placeholder="Phone No" 
-                      name="phone" 
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors placeholder-gray-400 text-gray-800 text-sm"
-                      required 
-                    />
-                  </div>
-                  
-                  <button 
-                    type="submit" 
-                    className="w-full py-4 text-white font-bold text-lg rounded-lg transition-all mt-4 bg-[#7DD3FC] hover:bg-[#38bdf8] shadow-md hover:shadow-lg active:scale-[0.98]"
-                  >
-                    Get Instant Quote
-                  </button>
-                </form>
+                  <form className="space-y-4" onSubmit={handleSubmit}>
+                    <div>
+                      <input 
+                        type="text" 
+                        placeholder="Full Name" 
+                        name="name" 
+                        value={formData.name}
+                        onChange={(e) => setFormData({...formData, name: e.target.value})}
+                        className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors placeholder-gray-400 text-gray-800 text-sm"
+                        required 
+                      />
+                    </div>
+                    <div>
+                      <input 
+                        type="email" 
+                        placeholder="Email" 
+                        name="email" 
+                        value={formData.email}
+                        onChange={(e) => setFormData({...formData, email: e.target.value})}
+                        className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors placeholder-gray-400 text-gray-800 text-sm"
+                        required 
+                      />
+                    </div>
+                    <div>
+                      <input 
+                        type="tel" 
+                        placeholder="Phone No" 
+                        name="phone" 
+                        value={formData.phone}
+                        onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                        className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors placeholder-gray-400 text-gray-800 text-sm"
+                        required 
+                      />
+                    </div>
+                    
+                    <button 
+                      type="submit" 
+                      disabled={loading}
+                      className="w-full py-4 text-white font-bold text-lg rounded-lg transition-all mt-4 bg-[#7DD3FC] hover:bg-[#38bdf8] disabled:bg-gray-300 shadow-md hover:shadow-lg active:scale-[0.98]"
+                    >
+                      {loading ? "Submitting..." : "Get Instant Quote"}
+                    </button>
+
+                    <AnimatePresence>
+                      {showSuccess && (
+                        <motion.div 
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          className="flex items-center justify-center gap-2 text-emerald-600 bg-emerald-50 border border-emerald-200 rounded-lg py-3 px-4 mt-4 font-semibold text-sm"
+                        >
+                          <svg className="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          <span>Form submitted successfully!</span>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </form>
               </div>
             </motion.div>
           </motion.div>
